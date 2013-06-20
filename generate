@@ -1,0 +1,2031 @@
+Script started on Thu 28 Apr 2011 03:28:52 PM MSD
+bash: «/home/local/.rvm/scripts/rvm»: No such file or directory
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rails generate ckeditor:base
+[1m[32m      create[0m  config/initializers/ckeditor.rb
+Start download ckeditor_3.5.2.tar.gz
+ckeditor/.htaccess
+tar: ckeditor/.htaccess: Cannot open: No such file or directory
+ckeditor/adapters/jquery.js
+tar: ckeditor/adapters/jquery.js: Cannot open: No such file or directory
+ckeditor/CHANGES.html
+tar: ckeditor/CHANGES.html: Cannot open: No such file or directory
+ckeditor/ckeditor.js
+tar: ckeditor/ckeditor.js: Cannot open: No such file or directory
+ckeditor/ckeditor.pack
+tar: ckeditor/ckeditor.pack: Cannot open: No such file or directory
+ckeditor/ckeditor_basic.js
+tar: ckeditor/ckeditor_basic.js: Cannot open: No such file or directory
+ckeditor/ckeditor_basic_source.js
+tar: ckeditor/ckeditor_basic_source.js: Cannot open: No such file or directory
+ckeditor/ckeditor_source.js
+tar: ckeditor/ckeditor_source.js: Cannot open: No such file or directory
+ckeditor/config.js
+tar: ckeditor/config.js: Cannot open: No such file or directory
+ckeditor/contents.css
+tar: ckeditor/contents.css: Cannot open: No such file or directory
+ckeditor/images/spacer.gif
+tar: ckeditor/images/spacer.gif: Cannot open: No such file or directory
+ckeditor/INSTALL.html
+tar: ckeditor/INSTALL.html: Cannot open: No such file or directory
+ckeditor/lang/af.js
+tar: ckeditor/lang/af.js: Cannot open: No such file or directory
+ckeditor/lang/ar.js
+tar: ckeditor/lang/ar.js: Cannot open: No such file or directory
+ckeditor/lang/bg.js
+tar: ckeditor/lang/bg.js: Cannot open: No such file or directory
+ckeditor/lang/bn.js
+tar: ckeditor/lang/bn.js: Cannot open: No such file or directory
+ckeditor/lang/bs.js
+tar: ckeditor/lang/bs.js: Cannot open: No such file or directory
+ckeditor/lang/ca.js
+tar: ckeditor/lang/ca.js: Cannot open: No such file or directory
+ckeditor/lang/cs.js
+tar: ckeditor/lang/cs.js: Cannot open: No such file or directory
+ckeditor/lang/cy.js
+tar: ckeditor/lang/cy.js: Cannot open: No such file or directory
+ckeditor/lang/da.js
+tar: ckeditor/lang/da.js: Cannot open: No such file or directory
+ckeditor/lang/de.js
+tar: ckeditor/lang/de.js: Cannot open: No such file or directory
+ckeditor/lang/el.js
+tar: ckeditor/lang/el.js: Cannot open: No such file or directory
+ckeditor/lang/en-au.js
+tar: ckeditor/lang/en-au.js: Cannot open: No such file or directory
+ckeditor/lang/en-ca.js
+tar: ckeditor/lang/en-ca.js: Cannot open: No such file or directory
+ckeditor/lang/en-gb.js
+tar: ckeditor/lang/en-gb.js: Cannot open: No such file or directory
+ckeditor/lang/en.js
+tar: ckeditor/lang/en.js: Cannot open: No such file or directory
+ckeditor/lang/eo.js
+tar: ckeditor/lang/eo.js: Cannot open: No such file or directory
+ckeditor/lang/es.js
+tar: ckeditor/lang/es.js: Cannot open: No such file or directory
+ckeditor/lang/et.js
+tar: ckeditor/lang/et.js: Cannot open: No such file or directory
+ckeditor/lang/eu.js
+tar: ckeditor/lang/eu.js: Cannot open: No such file or directory
+ckeditor/lang/fa.js
+tar: ckeditor/lang/fa.js: Cannot open: No such file or directory
+ckeditor/lang/fi.js
+tar: ckeditor/lang/fi.js: Cannot open: No such file or directory
+ckeditor/lang/fo.js
+tar: ckeditor/lang/fo.js: Cannot open: No such file or directory
+ckeditor/lang/fr-ca.js
+tar: ckeditor/lang/fr-ca.js: Cannot open: No such file or directory
+ckeditor/lang/fr.js
+tar: ckeditor/lang/fr.js: Cannot open: No such file or directory
+ckeditor/lang/gl.js
+tar: ckeditor/lang/gl.js: Cannot open: No such file or directory
+ckeditor/lang/gu.js
+tar: ckeditor/lang/gu.js: Cannot open: No such file or directory
+ckeditor/lang/he.js
+tar: ckeditor/lang/he.js: Cannot open: No such file or directory
+ckeditor/lang/hi.js
+tar: ckeditor/lang/hi.js: Cannot open: No such file or directory
+ckeditor/lang/hr.js
+tar: ckeditor/lang/hr.js: Cannot open: No such file or directory
+ckeditor/lang/hu.js
+tar: ckeditor/lang/hu.js: Cannot open: No such file or directory
+ckeditor/lang/is.js
+tar: ckeditor/lang/is.js: Cannot open: No such file or directory
+ckeditor/lang/it.js
+tar: ckeditor/lang/it.js: Cannot open: No such file or directory
+ckeditor/lang/ja.js
+tar: ckeditor/lang/ja.js: Cannot open: No such file or directory
+ckeditor/lang/km.js
+tar: ckeditor/lang/km.js: Cannot open: No such file or directory
+ckeditor/lang/ko.js
+tar: ckeditor/lang/ko.js: Cannot open: No such file or directory
+ckeditor/lang/lt.js
+tar: ckeditor/lang/lt.js: Cannot open: No such file or directory
+ckeditor/lang/lv.js
+tar: ckeditor/lang/lv.js: Cannot open: No such file or directory
+ckeditor/lang/mn.js
+tar: ckeditor/lang/mn.js: Cannot open: No such file or directory
+ckeditor/lang/ms.js
+tar: ckeditor/lang/ms.js: Cannot open: No such file or directory
+ckeditor/lang/nb.js
+tar: ckeditor/lang/nb.js: Cannot open: No such file or directory
+ckeditor/lang/nl.js
+tar: ckeditor/lang/nl.js: Cannot open: No such file or directory
+ckeditor/lang/no.js
+tar: ckeditor/lang/no.js: Cannot open: No such file or directory
+ckeditor/lang/pl.js
+tar: ckeditor/lang/pl.js: Cannot open: No such file or directory
+ckeditor/lang/pt-br.js
+tar: ckeditor/lang/pt-br.js: Cannot open: No such file or directory
+ckeditor/lang/pt.js
+tar: ckeditor/lang/pt.js: Cannot open: No such file or directory
+ckeditor/lang/ro.js
+tar: ckeditor/lang/ro.js: Cannot open: No such file or directory
+ckeditor/lang/ru.js
+tar: ckeditor/lang/ru.js: Cannot open: No such file or directory
+ckeditor/lang/sk.js
+tar: ckeditor/lang/sk.js: Cannot open: No such file or directory
+ckeditor/lang/sl.js
+tar: ckeditor/lang/sl.js: Cannot open: No such file or directory
+ckeditor/lang/sr-latn.js
+tar: ckeditor/lang/sr-latn.js: Cannot open: No such file or directory
+ckeditor/lang/sr.js
+tar: ckeditor/lang/sr.js: Cannot open: No such file or directory
+ckeditor/lang/sv.js
+tar: ckeditor/lang/sv.js: Cannot open: No such file or directory
+ckeditor/lang/th.js
+tar: ckeditor/lang/th.js: Cannot open: No such file or directory
+ckeditor/lang/tr.js
+tar: ckeditor/lang/tr.js: Cannot open: No such file or directory
+ckeditor/lang/uk.js
+tar: ckeditor/lang/uk.js: Cannot open: No such file or directory
+ckeditor/lang/vi.js
+tar: ckeditor/lang/vi.js: Cannot open: No such file or directory
+ckeditor/lang/zh-cn.js
+tar: ckeditor/lang/zh-cn.js: Cannot open: No such file or directory
+ckeditor/lang/zh.js
+tar: ckeditor/lang/zh.js: Cannot open: No such file or directory
+ckeditor/lang/_languages.js
+tar: ckeditor/lang/_languages.js: Cannot open: No such file or directory
+ckeditor/lang/_translationstatus.txt
+tar: ckeditor/lang/_translationstatus.txt: Cannot open: No such file or directory
+ckeditor/LICENSE.html
+tar: ckeditor/LICENSE.html: Cannot open: No such file or directory
+ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js
+tar: ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js: Cannot open: No such file or directory
+ckeditor/plugins/a11yhelp/lang/en.js
+tar: ckeditor/plugins/a11yhelp/lang/en.js: Cannot open: No such file or directory
+ckeditor/plugins/a11yhelp/lang/he.js
+tar: ckeditor/plugins/a11yhelp/lang/he.js: Cannot open: No such file or directory
+ckeditor/plugins/about/dialogs/about.js
+tar: ckeditor/plugins/about/dialogs/about.js: Cannot open: No such file or directory
+ckeditor/plugins/about/dialogs/logo_ckeditor.png
+tar: ckeditor/plugins/about/dialogs/logo_ckeditor.png: Cannot open: No such file or directory
+ckeditor/plugins/adobeair/plugin.js
+tar: ckeditor/plugins/adobeair/plugin.js: Cannot open: No such file or directory
+ckeditor/plugins/autogrow/plugin.js
+tar: ckeditor/plugins/autogrow/plugin.js: Cannot open: No such file or directory
+ckeditor/plugins/clipboard/dialogs/paste.js
+tar: ckeditor/plugins/clipboard/dialogs/paste.js: Cannot open: No such file or directory
+ckeditor/plugins/colordialog/dialogs/colordialog.js
+tar: ckeditor/plugins/colordialog/dialogs/colordialog.js: Cannot open: No such file or directory
+ckeditor/plugins/dialog/dialogDefinition.js
+tar: ckeditor/plugins/dialog/dialogDefinition.js: Cannot open: No such file or directory
+ckeditor/plugins/div/dialogs/div.js
+tar: ckeditor/plugins/div/dialogs/div.js: Cannot open: No such file or directory
+ckeditor/plugins/find/dialogs/find.js
+tar: ckeditor/plugins/find/dialogs/find.js: Cannot open: No such file or directory
+ckeditor/plugins/flash/dialogs/flash.js
+tar: ckeditor/plugins/flash/dialogs/flash.js: Cannot open: No such file or directory
+ckeditor/plugins/flash/images/placeholder.png
+tar: ckeditor/plugins/flash/images/placeholder.png: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/button.js
+tar: ckeditor/plugins/forms/dialogs/button.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/checkbox.js
+tar: ckeditor/plugins/forms/dialogs/checkbox.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/form.js
+tar: ckeditor/plugins/forms/dialogs/form.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/hiddenfield.js
+tar: ckeditor/plugins/forms/dialogs/hiddenfield.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/radio.js
+tar: ckeditor/plugins/forms/dialogs/radio.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/select.js
+tar: ckeditor/plugins/forms/dialogs/select.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/textarea.js
+tar: ckeditor/plugins/forms/dialogs/textarea.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/dialogs/textfield.js
+tar: ckeditor/plugins/forms/dialogs/textfield.js: Cannot open: No such file or directory
+ckeditor/plugins/forms/images/hiddenfield.gif
+tar: ckeditor/plugins/forms/images/hiddenfield.gif: Cannot open: No such file or directory
+ckeditor/plugins/iframe/dialogs/iframe.js
+tar: ckeditor/plugins/iframe/dialogs/iframe.js: Cannot open: No such file or directory
+ckeditor/plugins/iframe/images/placeholder.png
+tar: ckeditor/plugins/iframe/images/placeholder.png: Cannot open: No such file or directory
+ckeditor/plugins/iframedialog/plugin.js
+tar: ckeditor/plugins/iframedialog/plugin.js: Cannot open: No such file or directory
+ckeditor/plugins/image/dialogs/image.js
+tar: ckeditor/plugins/image/dialogs/image.js: Cannot open: No such file or directory
+ckeditor/plugins/link/dialogs/anchor.js
+tar: ckeditor/plugins/link/dialogs/anchor.js: Cannot open: No such file or directory
+ckeditor/plugins/link/dialogs/link.js
+tar: ckeditor/plugins/link/dialogs/link.js: Cannot open: No such file or directory
+ckeditor/plugins/link/images/anchor.gif
+tar: ckeditor/plugins/link/images/anchor.gif: Cannot open: No such file or directory
+ckeditor/plugins/liststyle/dialogs/liststyle.js
+tar: ckeditor/plugins/liststyle/dialogs/liststyle.js: Cannot open: No such file or directory
+ckeditor/plugins/pagebreak/images/pagebreak.gif
+tar: ckeditor/plugins/pagebreak/images/pagebreak.gif: Cannot open: No such file or directory
+ckeditor/plugins/pastefromword/filter/default.js
+tar: ckeditor/plugins/pastefromword/filter/default.js: Cannot open: No such file or directory
+ckeditor/plugins/pastetext/dialogs/pastetext.js
+tar: ckeditor/plugins/pastetext/dialogs/pastetext.js: Cannot open: No such file or directory
+ckeditor/plugins/placeholder/dialogs/placeholder.js
+tar: ckeditor/plugins/placeholder/dialogs/placeholder.js: Cannot open: No such file or directory
+ckeditor/plugins/placeholder/lang/en.js
+tar: ckeditor/plugins/placeholder/lang/en.js: Cannot open: No such file or directory
+ckeditor/plugins/placeholder/placeholder.gif
+tar: ckeditor/plugins/placeholder/placeholder.gif: Cannot open: No such file or directory
+ckeditor/plugins/placeholder/plugin.js
+tar: ckeditor/plugins/placeholder/plugin.js: Cannot open: No such file or directory
+ckeditor/plugins/scayt/dialogs/options.js
+tar: ckeditor/plugins/scayt/dialogs/options.js: Cannot open: No such file or directory
+ckeditor/plugins/scayt/dialogs/toolbar.css
+tar: ckeditor/plugins/scayt/dialogs/toolbar.css: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_address.png
+tar: ckeditor/plugins/showblocks/images/block_address.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_blockquote.png
+tar: ckeditor/plugins/showblocks/images/block_blockquote.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_div.png
+tar: ckeditor/plugins/showblocks/images/block_div.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_h1.png
+tar: ckeditor/plugins/showblocks/images/block_h1.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_h2.png
+tar: ckeditor/plugins/showblocks/images/block_h2.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_h3.png
+tar: ckeditor/plugins/showblocks/images/block_h3.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_h4.png
+tar: ckeditor/plugins/showblocks/images/block_h4.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_h5.png
+tar: ckeditor/plugins/showblocks/images/block_h5.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_h6.png
+tar: ckeditor/plugins/showblocks/images/block_h6.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_p.png
+tar: ckeditor/plugins/showblocks/images/block_p.png: Cannot open: No such file or directory
+ckeditor/plugins/showblocks/images/block_pre.png
+tar: ckeditor/plugins/showblocks/images/block_pre.png: Cannot open: No such file or directory
+ckeditor/plugins/smiley/dialogs/smiley.js
+tar: ckeditor/plugins/smiley/dialogs/smiley.js: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/angel_smile.gif
+tar: ckeditor/plugins/smiley/images/angel_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/angry_smile.gif
+tar: ckeditor/plugins/smiley/images/angry_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/broken_heart.gif
+tar: ckeditor/plugins/smiley/images/broken_heart.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/confused_smile.gif
+tar: ckeditor/plugins/smiley/images/confused_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/cry_smile.gif
+tar: ckeditor/plugins/smiley/images/cry_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/devil_smile.gif
+tar: ckeditor/plugins/smiley/images/devil_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/embaressed_smile.gif
+tar: ckeditor/plugins/smiley/images/embaressed_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/envelope.gif
+tar: ckeditor/plugins/smiley/images/envelope.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/heart.gif
+tar: ckeditor/plugins/smiley/images/heart.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/kiss.gif
+tar: ckeditor/plugins/smiley/images/kiss.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/lightbulb.gif
+tar: ckeditor/plugins/smiley/images/lightbulb.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/omg_smile.gif
+tar: ckeditor/plugins/smiley/images/omg_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/regular_smile.gif
+tar: ckeditor/plugins/smiley/images/regular_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/sad_smile.gif
+tar: ckeditor/plugins/smiley/images/sad_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/shades_smile.gif
+tar: ckeditor/plugins/smiley/images/shades_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/teeth_smile.gif
+tar: ckeditor/plugins/smiley/images/teeth_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/thumbs_down.gif
+tar: ckeditor/plugins/smiley/images/thumbs_down.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/thumbs_up.gif
+tar: ckeditor/plugins/smiley/images/thumbs_up.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/tounge_smile.gif
+tar: ckeditor/plugins/smiley/images/tounge_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif
+tar: ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/smiley/images/wink_smile.gif
+tar: ckeditor/plugins/smiley/images/wink_smile.gif: Cannot open: No such file or directory
+ckeditor/plugins/specialchar/dialogs/specialchar.js
+tar: ckeditor/plugins/specialchar/dialogs/specialchar.js: Cannot open: No such file or directory
+ckeditor/plugins/specialchar/lang/en.js
+tar: ckeditor/plugins/specialchar/lang/en.js: Cannot open: No such file or directory
+ckeditor/plugins/styles/styles/default.js
+tar: ckeditor/plugins/styles/styles/default.js: Cannot open: No such file or directory
+ckeditor/plugins/table/dialogs/table.js
+tar: ckeditor/plugins/table/dialogs/table.js: Cannot open: No such file or directory
+ckeditor/plugins/tableresize/plugin.js
+tar: ckeditor/plugins/tableresize/plugin.js: Cannot open: No such file or directory
+ckeditor/plugins/tabletools/dialogs/tableCell.js
+tar: ckeditor/plugins/tabletools/dialogs/tableCell.js: Cannot open: No such file or directory
+ckeditor/plugins/templates/dialogs/templates.js
+tar: ckeditor/plugins/templates/dialogs/templates.js: Cannot open: No such file or directory
+ckeditor/plugins/templates/templates/default.js
+tar: ckeditor/plugins/templates/templates/default.js: Cannot open: No such file or directory
+ckeditor/plugins/templates/templates/images/template1.gif
+tar: ckeditor/plugins/templates/templates/images/template1.gif: Cannot open: No such file or directory
+ckeditor/plugins/templates/templates/images/template2.gif
+tar: ckeditor/plugins/templates/templates/images/template2.gif: Cannot open: No such file or directory
+ckeditor/plugins/templates/templates/images/template3.gif
+tar: ckeditor/plugins/templates/templates/images/template3.gif: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/dialogs/uicolor.js
+tar: ckeditor/plugins/uicolor/dialogs/uicolor.js: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/lang/en.js
+tar: ckeditor/plugins/uicolor/lang/en.js: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/lang/he.js
+tar: ckeditor/plugins/uicolor/lang/he.js: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/plugin.js
+tar: ckeditor/plugins/uicolor/plugin.js: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/uicolor.gif
+tar: ckeditor/plugins/uicolor/uicolor.gif: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/yui/assets/hue_bg.png
+tar: ckeditor/plugins/uicolor/yui/assets/hue_bg.png: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/yui/assets/hue_thumb.png
+tar: ckeditor/plugins/uicolor/yui/assets/hue_thumb.png: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/yui/assets/picker_mask.png
+tar: ckeditor/plugins/uicolor/yui/assets/picker_mask.png: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/yui/assets/picker_thumb.png
+tar: ckeditor/plugins/uicolor/yui/assets/picker_thumb.png: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/yui/assets/yui.css
+tar: ckeditor/plugins/uicolor/yui/assets/yui.css: Cannot open: No such file or directory
+ckeditor/plugins/uicolor/yui/yui.js
+tar: ckeditor/plugins/uicolor/yui/yui.js: Cannot open: No such file or directory
+ckeditor/plugins/wsc/dialogs/ciframe.html
+tar: ckeditor/plugins/wsc/dialogs/ciframe.html: Cannot open: No such file or directory
+ckeditor/plugins/wsc/dialogs/tmpFrameset.html
+tar: ckeditor/plugins/wsc/dialogs/tmpFrameset.html: Cannot open: No such file or directory
+ckeditor/plugins/wsc/dialogs/wsc.css
+tar: ckeditor/plugins/wsc/dialogs/wsc.css: Cannot open: No such file or directory
+ckeditor/plugins/wsc/dialogs/wsc.js
+tar: ckeditor/plugins/wsc/dialogs/wsc.js: Cannot open: No such file or directory
+ckeditor/skins/kama/dialog.css
+tar: ckeditor/skins/kama/dialog.css: Cannot open: No such file or directory
+ckeditor/skins/kama/editor.css
+tar: ckeditor/skins/kama/editor.css: Cannot open: No such file or directory
+ckeditor/skins/kama/icons.png
+tar: ckeditor/skins/kama/icons.png: Cannot open: No such file or directory
+ckeditor/skins/kama/icons_rtl.png
+tar: ckeditor/skins/kama/icons_rtl.png: Cannot open: No such file or directory
+ckeditor/skins/kama/images/dialog_sides.gif
+tar: ckeditor/skins/kama/images/dialog_sides.gif: Cannot open: No such file or directory
+ckeditor/skins/kama/images/dialog_sides.png
+tar: ckeditor/skins/kama/images/dialog_sides.png: Cannot open: No such file or directory
+ckeditor/skins/kama/images/dialog_sides_rtl.png
+tar: ckeditor/skins/kama/images/dialog_sides_rtl.png: Cannot open: No such file or directory
+ckeditor/skins/kama/images/mini.gif
+tar: ckeditor/skins/kama/images/mini.gif: Cannot open: No such file or directory
+ckeditor/skins/kama/images/noimage.png
+tar: ckeditor/skins/kama/images/noimage.png: Cannot open: No such file or directory
+ckeditor/skins/kama/images/sprites.png
+tar: ckeditor/skins/kama/images/sprites.png: Cannot open: No such file or directory
+ckeditor/skins/kama/images/sprites_ie6.png
+tar: ckeditor/skins/kama/images/sprites_ie6.png: Cannot open: No such file or directory
+ckeditor/skins/kama/images/toolbar_start.gif
+tar: ckeditor/skins/kama/images/toolbar_start.gif: Cannot open: No such file or directory
+ckeditor/skins/kama/skin.js
+tar: ckeditor/skins/kama/skin.js: Cannot open: No such file or directory
+ckeditor/skins/kama/templates.css
+tar: ckeditor/skins/kama/templates.css: Cannot open: No such file or directory
+ckeditor/skins/office2003/dialog.css
+tar: ckeditor/skins/office2003/dialog.css: Cannot open: No such file or directory
+ckeditor/skins/office2003/editor.css
+tar: ckeditor/skins/office2003/editor.css: Cannot open: No such file or directory
+ckeditor/skins/office2003/icons.png
+tar: ckeditor/skins/office2003/icons.png: Cannot open: No such file or directory
+ckeditor/skins/office2003/icons_rtl.png
+tar: ckeditor/skins/office2003/icons_rtl.png: Cannot open: No such file or directory
+ckeditor/skins/office2003/images/dialog_sides.gif
+tar: ckeditor/skins/office2003/images/dialog_sides.gif: Cannot open: No such file or directory
+ckeditor/skins/office2003/images/dialog_sides.png
+tar: ckeditor/skins/office2003/images/dialog_sides.png: Cannot open: No such file or directory
+ckeditor/skins/office2003/images/dialog_sides_rtl.png
+tar: ckeditor/skins/office2003/images/dialog_sides_rtl.png: Cannot open: No such file or directory
+ckeditor/skins/office2003/images/mini.gif
+tar: ckeditor/skins/office2003/images/mini.gif: Cannot open: No such file or directory
+ckeditor/skins/office2003/images/noimage.png
+tar: ckeditor/skins/office2003/images/noimage.png: Cannot open: No such file or directory
+ckeditor/skins/office2003/images/sprites.png
+tar: ckeditor/skins/office2003/images/sprites.png: Cannot open: No such file or directory
+ckeditor/skins/office2003/images/sprites_ie6.png
+tar: ckeditor/skins/office2003/images/sprites_ie6.png: Cannot open: No such file or directory
+ckeditor/skins/office2003/skin.js
+tar: ckeditor/skins/office2003/skin.js: Cannot open: No such file or directory
+ckeditor/skins/office2003/templates.css
+tar: ckeditor/skins/office2003/templates.css: Cannot open: No such file or directory
+ckeditor/skins/v2/dialog.css
+tar: ckeditor/skins/v2/dialog.css: Cannot open: No such file or directory
+ckeditor/skins/v2/editor.css
+tar: ckeditor/skins/v2/editor.css: Cannot open: No such file or directory
+ckeditor/skins/v2/icons.png
+tar: ckeditor/skins/v2/icons.png: Cannot open: No such file or directory
+ckeditor/skins/v2/icons_rtl.png
+tar: ckeditor/skins/v2/icons_rtl.png: Cannot open: No such file or directory
+ckeditor/skins/v2/images/dialog_sides.gif
+tar: ckeditor/skins/v2/images/dialog_sides.gif: Cannot open: No such file or directory
+ckeditor/skins/v2/images/dialog_sides.png
+tar: ckeditor/skins/v2/images/dialog_sides.png: Cannot open: No such file or directory
+ckeditor/skins/v2/images/dialog_sides_rtl.png
+tar: ckeditor/skins/v2/images/dialog_sides_rtl.png: Cannot open: No such file or directory
+ckeditor/skins/v2/images/mini.gif
+tar: ckeditor/skins/v2/images/mini.gif: Cannot open: No such file or directory
+ckeditor/skins/v2/images/noimage.png
+tar: ckeditor/skins/v2/images/noimage.png: Cannot open: No such file or directory
+ckeditor/skins/v2/images/sprites.png
+tar: ckeditor/skins/v2/images/sprites.png: Cannot open: No such file or directory
+ckeditor/skins/v2/images/sprites_ie6.png
+tar: ckeditor/skins/v2/images/sprites_ie6.png: Cannot open: No such file or directory
+ckeditor/skins/v2/images/toolbar_start.gif
+tar: ckeditor/skins/v2/images/toolbar_start.gif: Cannot open: No such file or directory
+ckeditor/skins/v2/skin.js
+tar: ckeditor/skins/v2/skin.js: Cannot open: No such file or directory
+ckeditor/skins/v2/templates.css
+tar: ckeditor/skins/v2/templates.css: Cannot open: No such file or directory
+ckeditor/themes/default/theme.js
+tar: ckeditor/themes/default/theme.js: Cannot open: No such file or directory
+ckeditor/_samples/adobeair/application.xml
+tar: ckeditor/_samples/adobeair/application.xml: Cannot open: No such file or directory
+ckeditor/_samples/adobeair/run.bat
+tar: ckeditor/_samples/adobeair/run.bat: Cannot open: No such file or directory
+ckeditor/_samples/adobeair/run.sh
+tar: ckeditor/_samples/adobeair/run.sh: Cannot open: No such file or directory
+ckeditor/_samples/adobeair/sample.html
+tar: ckeditor/_samples/adobeair/sample.html: Cannot open: No such file or directory
+ckeditor/_samples/ajax.html
+tar: ckeditor/_samples/ajax.html: Cannot open: No such file or directory
+ckeditor/_samples/api.html
+tar: ckeditor/_samples/api.html: Cannot open: No such file or directory
+ckeditor/_samples/api_dialog/my_dialog.js
+tar: ckeditor/_samples/api_dialog/my_dialog.js: Cannot open: No such file or directory
+ckeditor/_samples/api_dialog.html
+tar: ckeditor/_samples/api_dialog.html: Cannot open: No such file or directory
+ckeditor/_samples/asp/index.html
+tar: ckeditor/_samples/asp/index.html: Cannot open: No such file or directory
+ckeditor/_samples/assets/output_for_flash.fla
+tar: ckeditor/_samples/assets/output_for_flash.fla: Cannot open: No such file or directory
+ckeditor/_samples/assets/output_for_flash.swf
+tar: ckeditor/_samples/assets/output_for_flash.swf: Cannot open: No such file or directory
+ckeditor/_samples/assets/output_xhtml.css
+tar: ckeditor/_samples/assets/output_xhtml.css: Cannot open: No such file or directory
+ckeditor/_samples/assets/swfobject.js
+tar: ckeditor/_samples/assets/swfobject.js: Cannot open: No such file or directory
+ckeditor/_samples/autogrow.html
+tar: ckeditor/_samples/autogrow.html: Cannot open: No such file or directory
+ckeditor/_samples/divreplace.html
+tar: ckeditor/_samples/divreplace.html: Cannot open: No such file or directory
+ckeditor/_samples/enterkey.html
+tar: ckeditor/_samples/enterkey.html: Cannot open: No such file or directory
+ckeditor/_samples/fullpage.html
+tar: ckeditor/_samples/fullpage.html: Cannot open: No such file or directory
+ckeditor/_samples/index.html
+tar: ckeditor/_samples/index.html: Cannot open: No such file or directory
+ckeditor/_samples/jqueryadapter.html
+tar: ckeditor/_samples/jqueryadapter.html: Cannot open: No such file or directory
+ckeditor/_samples/output_for_flash.html
+tar: ckeditor/_samples/output_for_flash.html: Cannot open: No such file or directory
+ckeditor/_samples/output_html.html
+tar: ckeditor/_samples/output_html.html: Cannot open: No such file or directory
+ckeditor/_samples/output_xhtml.html
+tar: ckeditor/_samples/output_xhtml.html: Cannot open: No such file or directory
+ckeditor/_samples/php/index.html
+tar: ckeditor/_samples/php/index.html: Cannot open: No such file or directory
+ckeditor/_samples/placeholder.html
+tar: ckeditor/_samples/placeholder.html: Cannot open: No such file or directory
+ckeditor/_samples/replacebyclass.html
+tar: ckeditor/_samples/replacebyclass.html: Cannot open: No such file or directory
+ckeditor/_samples/replacebycode.html
+tar: ckeditor/_samples/replacebycode.html: Cannot open: No such file or directory
+ckeditor/_samples/sample.css
+tar: ckeditor/_samples/sample.css: Cannot open: No such file or directory
+ckeditor/_samples/sample.js
+tar: ckeditor/_samples/sample.js: Cannot open: No such file or directory
+ckeditor/_samples/sharedspaces.html
+tar: ckeditor/_samples/sharedspaces.html: Cannot open: No such file or directory
+ckeditor/_samples/skins.html
+tar: ckeditor/_samples/skins.html: Cannot open: No such file or directory
+ckeditor/_samples/ui_color.html
+tar: ckeditor/_samples/ui_color.html: Cannot open: No such file or directory
+ckeditor/_samples/ui_languages.html
+tar: ckeditor/_samples/ui_languages.html: Cannot open: No such file or directory
+ckeditor/_source/adapters/jquery.js
+tar: ckeditor/_source/adapters/jquery.js: Cannot open: No such file or directory
+ckeditor/_source/core/ajax.js
+tar: ckeditor/_source/core/ajax.js: Cannot open: No such file or directory
+ckeditor/_source/core/ckeditor.js
+tar: ckeditor/_source/core/ckeditor.js: Cannot open: No such file or directory
+ckeditor/_source/core/ckeditor_base.js
+tar: ckeditor/_source/core/ckeditor_base.js: Cannot open: No such file or directory
+ckeditor/_source/core/ckeditor_basic.js
+tar: ckeditor/_source/core/ckeditor_basic.js: Cannot open: No such file or directory
+ckeditor/_source/core/command.js
+tar: ckeditor/_source/core/command.js: Cannot open: No such file or directory
+ckeditor/_source/core/commanddefinition.js
+tar: ckeditor/_source/core/commanddefinition.js: Cannot open: No such file or directory
+ckeditor/_source/core/config.js
+tar: ckeditor/_source/core/config.js: Cannot open: No such file or directory
+ckeditor/_source/core/dataprocessor.js
+tar: ckeditor/_source/core/dataprocessor.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/comment.js
+tar: ckeditor/_source/core/dom/comment.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/document.js
+tar: ckeditor/_source/core/dom/document.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/documentfragment.js
+tar: ckeditor/_source/core/dom/documentfragment.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/domobject.js
+tar: ckeditor/_source/core/dom/domobject.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/element.js
+tar: ckeditor/_source/core/dom/element.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/elementpath.js
+tar: ckeditor/_source/core/dom/elementpath.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/event.js
+tar: ckeditor/_source/core/dom/event.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/node.js
+tar: ckeditor/_source/core/dom/node.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/nodelist.js
+tar: ckeditor/_source/core/dom/nodelist.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/range.js
+tar: ckeditor/_source/core/dom/range.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/rangelist.js
+tar: ckeditor/_source/core/dom/rangelist.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/text.js
+tar: ckeditor/_source/core/dom/text.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/walker.js
+tar: ckeditor/_source/core/dom/walker.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom/window.js
+tar: ckeditor/_source/core/dom/window.js: Cannot open: No such file or directory
+ckeditor/_source/core/dom.js
+tar: ckeditor/_source/core/dom.js: Cannot open: No such file or directory
+ckeditor/_source/core/dtd.js
+tar: ckeditor/_source/core/dtd.js: Cannot open: No such file or directory
+ckeditor/_source/core/editor.js
+tar: ckeditor/_source/core/editor.js: Cannot open: No such file or directory
+ckeditor/_source/core/editor_basic.js
+tar: ckeditor/_source/core/editor_basic.js: Cannot open: No such file or directory
+ckeditor/_source/core/env.js
+tar: ckeditor/_source/core/env.js: Cannot open: No such file or directory
+ckeditor/_source/core/event.js
+tar: ckeditor/_source/core/event.js: Cannot open: No such file or directory
+ckeditor/_source/core/eventInfo.js
+tar: ckeditor/_source/core/eventInfo.js: Cannot open: No such file or directory
+ckeditor/_source/core/focusmanager.js
+tar: ckeditor/_source/core/focusmanager.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser/basicwriter.js
+tar: ckeditor/_source/core/htmlparser/basicwriter.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser/cdata.js
+tar: ckeditor/_source/core/htmlparser/cdata.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser/comment.js
+tar: ckeditor/_source/core/htmlparser/comment.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser/element.js
+tar: ckeditor/_source/core/htmlparser/element.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser/filter.js
+tar: ckeditor/_source/core/htmlparser/filter.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser/fragment.js
+tar: ckeditor/_source/core/htmlparser/fragment.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser/text.js
+tar: ckeditor/_source/core/htmlparser/text.js: Cannot open: No such file or directory
+ckeditor/_source/core/htmlparser.js
+tar: ckeditor/_source/core/htmlparser.js: Cannot open: No such file or directory
+ckeditor/_source/core/lang.js
+tar: ckeditor/_source/core/lang.js: Cannot open: No such file or directory
+ckeditor/_source/core/loader.js
+tar: ckeditor/_source/core/loader.js: Cannot open: No such file or directory
+ckeditor/_source/core/plugindefinition.js
+tar: ckeditor/_source/core/plugindefinition.js: Cannot open: No such file or directory
+ckeditor/_source/core/plugins.js
+tar: ckeditor/_source/core/plugins.js: Cannot open: No such file or directory
+ckeditor/_source/core/resourcemanager.js
+tar: ckeditor/_source/core/resourcemanager.js: Cannot open: No such file or directory
+ckeditor/_source/core/scriptloader.js
+tar: ckeditor/_source/core/scriptloader.js: Cannot open: No such file or directory
+ckeditor/_source/core/skins.js
+tar: ckeditor/_source/core/skins.js: Cannot open: No such file or directory
+ckeditor/_source/core/themes.js
+tar: ckeditor/_source/core/themes.js: Cannot open: No such file or directory
+ckeditor/_source/core/tools.js
+tar: ckeditor/_source/core/tools.js: Cannot open: No such file or directory
+ckeditor/_source/core/ui.js
+tar: ckeditor/_source/core/ui.js: Cannot open: No such file or directory
+ckeditor/_source/core/xml.js
+tar: ckeditor/_source/core/xml.js: Cannot open: No such file or directory
+ckeditor/_source/core/_bootstrap.js
+tar: ckeditor/_source/core/_bootstrap.js: Cannot open: No such file or directory
+ckeditor/_source/lang/af.js
+tar: ckeditor/_source/lang/af.js: Cannot open: No such file or directory
+ckeditor/_source/lang/ar.js
+tar: ckeditor/_source/lang/ar.js: Cannot open: No such file or directory
+ckeditor/_source/lang/bg.js
+tar: ckeditor/_source/lang/bg.js: Cannot open: No such file or directory
+ckeditor/_source/lang/bn.js
+tar: ckeditor/_source/lang/bn.js: Cannot open: No such file or directory
+ckeditor/_source/lang/bs.js
+tar: ckeditor/_source/lang/bs.js: Cannot open: No such file or directory
+ckeditor/_source/lang/ca.js
+tar: ckeditor/_source/lang/ca.js: Cannot open: No such file or directory
+ckeditor/_source/lang/cs.js
+tar: ckeditor/_source/lang/cs.js: Cannot open: No such file or directory
+ckeditor/_source/lang/cy.js
+tar: ckeditor/_source/lang/cy.js: Cannot open: No such file or directory
+ckeditor/_source/lang/da.js
+tar: ckeditor/_source/lang/da.js: Cannot open: No such file or directory
+ckeditor/_source/lang/de.js
+tar: ckeditor/_source/lang/de.js: Cannot open: No such file or directory
+ckeditor/_source/lang/el.js
+tar: ckeditor/_source/lang/el.js: Cannot open: No such file or directory
+ckeditor/_source/lang/en-au.js
+tar: ckeditor/_source/lang/en-au.js: Cannot open: No such file or directory
+ckeditor/_source/lang/en-ca.js
+tar: ckeditor/_source/lang/en-ca.js: Cannot open: No such file or directory
+ckeditor/_source/lang/en-gb.js
+tar: ckeditor/_source/lang/en-gb.js: Cannot open: No such file or directory
+ckeditor/_source/lang/en.js
+tar: ckeditor/_source/lang/en.js: Cannot open: No such file or directory
+ckeditor/_source/lang/eo.js
+tar: ckeditor/_source/lang/eo.js: Cannot open: No such file or directory
+ckeditor/_source/lang/es.js
+tar: ckeditor/_source/lang/es.js: Cannot open: No such file or directory
+ckeditor/_source/lang/et.js
+tar: ckeditor/_source/lang/et.js: Cannot open: No such file or directory
+ckeditor/_source/lang/eu.js
+tar: ckeditor/_source/lang/eu.js: Cannot open: No such file or directory
+ckeditor/_source/lang/fa.js
+tar: ckeditor/_source/lang/fa.js: Cannot open: No such file or directory
+ckeditor/_source/lang/fi.js
+tar: ckeditor/_source/lang/fi.js: Cannot open: No such file or directory
+ckeditor/_source/lang/fo.js
+tar: ckeditor/_source/lang/fo.js: Cannot open: No such file or directory
+ckeditor/_source/lang/fr-ca.js
+tar: ckeditor/_source/lang/fr-ca.js: Cannot open: No such file or directory
+ckeditor/_source/lang/fr.js
+tar: ckeditor/_source/lang/fr.js: Cannot open: No such file or directory
+ckeditor/_source/lang/gl.js
+tar: ckeditor/_source/lang/gl.js: Cannot open: No such file or directory
+ckeditor/_source/lang/gu.js
+tar: ckeditor/_source/lang/gu.js: Cannot open: No such file or directory
+ckeditor/_source/lang/he.js
+tar: ckeditor/_source/lang/he.js: Cannot open: No such file or directory
+ckeditor/_source/lang/hi.js
+tar: ckeditor/_source/lang/hi.js: Cannot open: No such file or directory
+ckeditor/_source/lang/hr.js
+tar: ckeditor/_source/lang/hr.js: Cannot open: No such file or directory
+ckeditor/_source/lang/hu.js
+tar: ckeditor/_source/lang/hu.js: Cannot open: No such file or directory
+ckeditor/_source/lang/is.js
+tar: ckeditor/_source/lang/is.js: Cannot open: No such file or directory
+ckeditor/_source/lang/it.js
+tar: ckeditor/_source/lang/it.js: Cannot open: No such file or directory
+ckeditor/_source/lang/ja.js
+tar: ckeditor/_source/lang/ja.js: Cannot open: No such file or directory
+ckeditor/_source/lang/km.js
+tar: ckeditor/_source/lang/km.js: Cannot open: No such file or directory
+ckeditor/_source/lang/ko.js
+tar: ckeditor/_source/lang/ko.js: Cannot open: No such file or directory
+ckeditor/_source/lang/lt.js
+tar: ckeditor/_source/lang/lt.js: Cannot open: No such file or directory
+ckeditor/_source/lang/lv.js
+tar: ckeditor/_source/lang/lv.js: Cannot open: No such file or directory
+ckeditor/_source/lang/mn.js
+tar: ckeditor/_source/lang/mn.js: Cannot open: No such file or directory
+ckeditor/_source/lang/ms.js
+tar: ckeditor/_source/lang/ms.js: Cannot open: No such file or directory
+ckeditor/_source/lang/nb.js
+tar: ckeditor/_source/lang/nb.js: Cannot open: No such file or directory
+ckeditor/_source/lang/nl.js
+tar: ckeditor/_source/lang/nl.js: Cannot open: No such file or directory
+ckeditor/_source/lang/no.js
+tar: ckeditor/_source/lang/no.js: Cannot open: No such file or directory
+ckeditor/_source/lang/pl.js
+tar: ckeditor/_source/lang/pl.js: Cannot open: No such file or directory
+ckeditor/_source/lang/pt-br.js
+tar: ckeditor/_source/lang/pt-br.js: Cannot open: No such file or directory
+ckeditor/_source/lang/pt.js
+tar: ckeditor/_source/lang/pt.js: Cannot open: No such file or directory
+ckeditor/_source/lang/ro.js
+tar: ckeditor/_source/lang/ro.js: Cannot open: No such file or directory
+ckeditor/_source/lang/ru.js
+tar: ckeditor/_source/lang/ru.js: Cannot open: No such file or directory
+ckeditor/_source/lang/sk.js
+tar: ckeditor/_source/lang/sk.js: Cannot open: No such file or directory
+ckeditor/_source/lang/sl.js
+tar: ckeditor/_source/lang/sl.js: Cannot open: No such file or directory
+ckeditor/_source/lang/sr-latn.js
+tar: ckeditor/_source/lang/sr-latn.js: Cannot open: No such file or directory
+ckeditor/_source/lang/sr.js
+tar: ckeditor/_source/lang/sr.js: Cannot open: No such file or directory
+ckeditor/_source/lang/sv.js
+tar: ckeditor/_source/lang/sv.js: Cannot open: No such file or directory
+ckeditor/_source/lang/th.js
+tar: ckeditor/_source/lang/th.js: Cannot open: No such file or directory
+ckeditor/_source/lang/tr.js
+tar: ckeditor/_source/lang/tr.js: Cannot open: No such file or directory
+ckeditor/_source/lang/uk.js
+tar: ckeditor/_source/lang/uk.js: Cannot open: No such file or directory
+ckeditor/_source/lang/vi.js
+tar: ckeditor/_source/lang/vi.js: Cannot open: No such file or directory
+ckeditor/_source/lang/zh-cn.js
+tar: ckeditor/_source/lang/zh-cn.js: Cannot open: No such file or directory
+ckeditor/_source/lang/zh.js
+tar: ckeditor/_source/lang/zh.js: Cannot open: No such file or directory
+ckeditor/_source/lang/_languages.js
+tar: ckeditor/_source/lang/_languages.js: Cannot open: No such file or directory
+ckeditor/_source/lang/_translationstatus.txt
+tar: ckeditor/_source/lang/_translationstatus.txt: Cannot open: No such file or directory
+ckeditor/_source/plugins/a11yhelp/dialogs/a11yhelp.js
+tar: ckeditor/_source/plugins/a11yhelp/dialogs/a11yhelp.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/a11yhelp/lang/en.js
+tar: ckeditor/_source/plugins/a11yhelp/lang/en.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/a11yhelp/lang/he.js
+tar: ckeditor/_source/plugins/a11yhelp/lang/he.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/a11yhelp/plugin.js
+tar: ckeditor/_source/plugins/a11yhelp/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/about/dialogs/about.js
+tar: ckeditor/_source/plugins/about/dialogs/about.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/about/dialogs/logo_ckeditor.png
+tar: ckeditor/_source/plugins/about/dialogs/logo_ckeditor.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/about/plugin.js
+tar: ckeditor/_source/plugins/about/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/adobeair/plugin.js
+tar: ckeditor/_source/plugins/adobeair/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/autogrow/plugin.js
+tar: ckeditor/_source/plugins/autogrow/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/basicstyles/plugin.js
+tar: ckeditor/_source/plugins/basicstyles/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/bidi/plugin.js
+tar: ckeditor/_source/plugins/bidi/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/blockquote/plugin.js
+tar: ckeditor/_source/plugins/blockquote/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/button/plugin.js
+tar: ckeditor/_source/plugins/button/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/clipboard/dialogs/paste.js
+tar: ckeditor/_source/plugins/clipboard/dialogs/paste.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/clipboard/plugin.js
+tar: ckeditor/_source/plugins/clipboard/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/colorbutton/plugin.js
+tar: ckeditor/_source/plugins/colorbutton/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/colordialog/dialogs/colordialog.js
+tar: ckeditor/_source/plugins/colordialog/dialogs/colordialog.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/colordialog/plugin.js
+tar: ckeditor/_source/plugins/colordialog/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/contextmenu/plugin.js
+tar: ckeditor/_source/plugins/contextmenu/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/dialog/dialogDefinition.js
+tar: ckeditor/_source/plugins/dialog/dialogDefinition.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/dialog/plugin.js
+tar: ckeditor/_source/plugins/dialog/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/dialogadvtab/plugin.js
+tar: ckeditor/_source/plugins/dialogadvtab/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/dialogui/plugin.js
+tar: ckeditor/_source/plugins/dialogui/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/div/dialogs/div.js
+tar: ckeditor/_source/plugins/div/dialogs/div.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/div/plugin.js
+tar: ckeditor/_source/plugins/div/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/domiterator/plugin.js
+tar: ckeditor/_source/plugins/domiterator/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/editingblock/plugin.js
+tar: ckeditor/_source/plugins/editingblock/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/elementspath/plugin.js
+tar: ckeditor/_source/plugins/elementspath/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/enterkey/plugin.js
+tar: ckeditor/_source/plugins/enterkey/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/entities/plugin.js
+tar: ckeditor/_source/plugins/entities/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/fakeobjects/plugin.js
+tar: ckeditor/_source/plugins/fakeobjects/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/filebrowser/plugin.js
+tar: ckeditor/_source/plugins/filebrowser/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/find/dialogs/find.js
+tar: ckeditor/_source/plugins/find/dialogs/find.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/find/plugin.js
+tar: ckeditor/_source/plugins/find/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/flash/dialogs/flash.js
+tar: ckeditor/_source/plugins/flash/dialogs/flash.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/flash/images/placeholder.png
+tar: ckeditor/_source/plugins/flash/images/placeholder.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/flash/plugin.js
+tar: ckeditor/_source/plugins/flash/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/floatpanel/plugin.js
+tar: ckeditor/_source/plugins/floatpanel/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/font/plugin.js
+tar: ckeditor/_source/plugins/font/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/format/plugin.js
+tar: ckeditor/_source/plugins/format/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/button.js
+tar: ckeditor/_source/plugins/forms/dialogs/button.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/checkbox.js
+tar: ckeditor/_source/plugins/forms/dialogs/checkbox.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/form.js
+tar: ckeditor/_source/plugins/forms/dialogs/form.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/hiddenfield.js
+tar: ckeditor/_source/plugins/forms/dialogs/hiddenfield.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/radio.js
+tar: ckeditor/_source/plugins/forms/dialogs/radio.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/select.js
+tar: ckeditor/_source/plugins/forms/dialogs/select.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/textarea.js
+tar: ckeditor/_source/plugins/forms/dialogs/textarea.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/dialogs/textfield.js
+tar: ckeditor/_source/plugins/forms/dialogs/textfield.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/images/hiddenfield.gif
+tar: ckeditor/_source/plugins/forms/images/hiddenfield.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/forms/plugin.js
+tar: ckeditor/_source/plugins/forms/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/horizontalrule/plugin.js
+tar: ckeditor/_source/plugins/horizontalrule/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/htmldataprocessor/plugin.js
+tar: ckeditor/_source/plugins/htmldataprocessor/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/htmlwriter/plugin.js
+tar: ckeditor/_source/plugins/htmlwriter/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/iframe/dialogs/iframe.js
+tar: ckeditor/_source/plugins/iframe/dialogs/iframe.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/iframe/images/placeholder.png
+tar: ckeditor/_source/plugins/iframe/images/placeholder.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/iframe/plugin.js
+tar: ckeditor/_source/plugins/iframe/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/iframedialog/plugin.js
+tar: ckeditor/_source/plugins/iframedialog/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/image/dialogs/image.js
+tar: ckeditor/_source/plugins/image/dialogs/image.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/image/plugin.js
+tar: ckeditor/_source/plugins/image/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/indent/plugin.js
+tar: ckeditor/_source/plugins/indent/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/justify/plugin.js
+tar: ckeditor/_source/plugins/justify/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/keystrokes/plugin.js
+tar: ckeditor/_source/plugins/keystrokes/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/link/dialogs/anchor.js
+tar: ckeditor/_source/plugins/link/dialogs/anchor.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/link/dialogs/link.js
+tar: ckeditor/_source/plugins/link/dialogs/link.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/link/images/anchor.gif
+tar: ckeditor/_source/plugins/link/images/anchor.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/link/plugin.js
+tar: ckeditor/_source/plugins/link/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/list/plugin.js
+tar: ckeditor/_source/plugins/list/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/listblock/plugin.js
+tar: ckeditor/_source/plugins/listblock/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/liststyle/dialogs/liststyle.js
+tar: ckeditor/_source/plugins/liststyle/dialogs/liststyle.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/liststyle/plugin.js
+tar: ckeditor/_source/plugins/liststyle/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/maximize/plugin.js
+tar: ckeditor/_source/plugins/maximize/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/menu/plugin.js
+tar: ckeditor/_source/plugins/menu/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/menubutton/plugin.js
+tar: ckeditor/_source/plugins/menubutton/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/newpage/plugin.js
+tar: ckeditor/_source/plugins/newpage/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/pagebreak/images/pagebreak.gif
+tar: ckeditor/_source/plugins/pagebreak/images/pagebreak.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/pagebreak/plugin.js
+tar: ckeditor/_source/plugins/pagebreak/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/panel/plugin.js
+tar: ckeditor/_source/plugins/panel/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/panelbutton/plugin.js
+tar: ckeditor/_source/plugins/panelbutton/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/pastefromword/filter/default.js
+tar: ckeditor/_source/plugins/pastefromword/filter/default.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/pastefromword/plugin.js
+tar: ckeditor/_source/plugins/pastefromword/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/pastetext/dialogs/pastetext.js
+tar: ckeditor/_source/plugins/pastetext/dialogs/pastetext.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/pastetext/plugin.js
+tar: ckeditor/_source/plugins/pastetext/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/placeholder/dialogs/placeholder.js
+tar: ckeditor/_source/plugins/placeholder/dialogs/placeholder.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/placeholder/lang/en.js
+tar: ckeditor/_source/plugins/placeholder/lang/en.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/placeholder/placeholder.gif
+tar: ckeditor/_source/plugins/placeholder/placeholder.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/placeholder/plugin.js
+tar: ckeditor/_source/plugins/placeholder/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/popup/plugin.js
+tar: ckeditor/_source/plugins/popup/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/preview/plugin.js
+tar: ckeditor/_source/plugins/preview/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/print/plugin.js
+tar: ckeditor/_source/plugins/print/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/removeformat/plugin.js
+tar: ckeditor/_source/plugins/removeformat/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/resize/plugin.js
+tar: ckeditor/_source/plugins/resize/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/richcombo/plugin.js
+tar: ckeditor/_source/plugins/richcombo/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/save/plugin.js
+tar: ckeditor/_source/plugins/save/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/scayt/dialogs/options.js
+tar: ckeditor/_source/plugins/scayt/dialogs/options.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/scayt/dialogs/toolbar.css
+tar: ckeditor/_source/plugins/scayt/dialogs/toolbar.css: Cannot open: No such file or directory
+ckeditor/_source/plugins/scayt/plugin.js
+tar: ckeditor/_source/plugins/scayt/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/selection/plugin.js
+tar: ckeditor/_source/plugins/selection/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_address.png
+tar: ckeditor/_source/plugins/showblocks/images/block_address.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_blockquote.png
+tar: ckeditor/_source/plugins/showblocks/images/block_blockquote.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_div.png
+tar: ckeditor/_source/plugins/showblocks/images/block_div.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_h1.png
+tar: ckeditor/_source/plugins/showblocks/images/block_h1.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_h2.png
+tar: ckeditor/_source/plugins/showblocks/images/block_h2.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_h3.png
+tar: ckeditor/_source/plugins/showblocks/images/block_h3.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_h4.png
+tar: ckeditor/_source/plugins/showblocks/images/block_h4.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_h5.png
+tar: ckeditor/_source/plugins/showblocks/images/block_h5.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_h6.png
+tar: ckeditor/_source/plugins/showblocks/images/block_h6.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_p.png
+tar: ckeditor/_source/plugins/showblocks/images/block_p.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/images/block_pre.png
+tar: ckeditor/_source/plugins/showblocks/images/block_pre.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/showblocks/plugin.js
+tar: ckeditor/_source/plugins/showblocks/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/showborders/plugin.js
+tar: ckeditor/_source/plugins/showborders/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/dialogs/smiley.js
+tar: ckeditor/_source/plugins/smiley/dialogs/smiley.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/angel_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/angel_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/angry_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/angry_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/broken_heart.gif
+tar: ckeditor/_source/plugins/smiley/images/broken_heart.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/confused_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/confused_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/cry_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/cry_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/devil_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/devil_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/embaressed_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/embaressed_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/envelope.gif
+tar: ckeditor/_source/plugins/smiley/images/envelope.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/heart.gif
+tar: ckeditor/_source/plugins/smiley/images/heart.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/kiss.gif
+tar: ckeditor/_source/plugins/smiley/images/kiss.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/lightbulb.gif
+tar: ckeditor/_source/plugins/smiley/images/lightbulb.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/omg_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/omg_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/regular_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/regular_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/sad_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/sad_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/shades_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/shades_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/teeth_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/teeth_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/thumbs_down.gif
+tar: ckeditor/_source/plugins/smiley/images/thumbs_down.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/thumbs_up.gif
+tar: ckeditor/_source/plugins/smiley/images/thumbs_up.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/tounge_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/tounge_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/whatchutalkingabout_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/whatchutalkingabout_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/images/wink_smile.gif
+tar: ckeditor/_source/plugins/smiley/images/wink_smile.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/smiley/plugin.js
+tar: ckeditor/_source/plugins/smiley/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/sourcearea/plugin.js
+tar: ckeditor/_source/plugins/sourcearea/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/specialchar/dialogs/specialchar.js
+tar: ckeditor/_source/plugins/specialchar/dialogs/specialchar.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/specialchar/lang/en.js
+tar: ckeditor/_source/plugins/specialchar/lang/en.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/specialchar/plugin.js
+tar: ckeditor/_source/plugins/specialchar/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/styles/plugin.js
+tar: ckeditor/_source/plugins/styles/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/styles/styles/default.js
+tar: ckeditor/_source/plugins/styles/styles/default.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/stylescombo/plugin.js
+tar: ckeditor/_source/plugins/stylescombo/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/tab/plugin.js
+tar: ckeditor/_source/plugins/tab/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/table/dialogs/table.js
+tar: ckeditor/_source/plugins/table/dialogs/table.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/table/plugin.js
+tar: ckeditor/_source/plugins/table/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/tableresize/plugin.js
+tar: ckeditor/_source/plugins/tableresize/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/tabletools/dialogs/tableCell.js
+tar: ckeditor/_source/plugins/tabletools/dialogs/tableCell.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/tabletools/plugin.js
+tar: ckeditor/_source/plugins/tabletools/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/templates/dialogs/templates.js
+tar: ckeditor/_source/plugins/templates/dialogs/templates.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/templates/plugin.js
+tar: ckeditor/_source/plugins/templates/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/templates/templates/default.js
+tar: ckeditor/_source/plugins/templates/templates/default.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/templates/templates/images/template1.gif
+tar: ckeditor/_source/plugins/templates/templates/images/template1.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/templates/templates/images/template2.gif
+tar: ckeditor/_source/plugins/templates/templates/images/template2.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/templates/templates/images/template3.gif
+tar: ckeditor/_source/plugins/templates/templates/images/template3.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/toolbar/plugin.js
+tar: ckeditor/_source/plugins/toolbar/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/dialogs/uicolor.js
+tar: ckeditor/_source/plugins/uicolor/dialogs/uicolor.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/lang/en.js
+tar: ckeditor/_source/plugins/uicolor/lang/en.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/lang/he.js
+tar: ckeditor/_source/plugins/uicolor/lang/he.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/plugin.js
+tar: ckeditor/_source/plugins/uicolor/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/uicolor.gif
+tar: ckeditor/_source/plugins/uicolor/uicolor.gif: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/yui/assets/hue_bg.png
+tar: ckeditor/_source/plugins/uicolor/yui/assets/hue_bg.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/yui/assets/hue_thumb.png
+tar: ckeditor/_source/plugins/uicolor/yui/assets/hue_thumb.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/yui/assets/picker_mask.png
+tar: ckeditor/_source/plugins/uicolor/yui/assets/picker_mask.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/yui/assets/picker_thumb.png
+tar: ckeditor/_source/plugins/uicolor/yui/assets/picker_thumb.png: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/yui/assets/yui.css
+tar: ckeditor/_source/plugins/uicolor/yui/assets/yui.css: Cannot open: No such file or directory
+ckeditor/_source/plugins/uicolor/yui/yui.js
+tar: ckeditor/_source/plugins/uicolor/yui/yui.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/undo/plugin.js
+tar: ckeditor/_source/plugins/undo/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/wsc/dialogs/ciframe.html
+tar: ckeditor/_source/plugins/wsc/dialogs/ciframe.html: Cannot open: No such file or directory
+ckeditor/_source/plugins/wsc/dialogs/tmpFrameset.html
+tar: ckeditor/_source/plugins/wsc/dialogs/tmpFrameset.html: Cannot open: No such file or directory
+ckeditor/_source/plugins/wsc/dialogs/wsc.css
+tar: ckeditor/_source/plugins/wsc/dialogs/wsc.css: Cannot open: No such file or directory
+ckeditor/_source/plugins/wsc/dialogs/wsc.js
+tar: ckeditor/_source/plugins/wsc/dialogs/wsc.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/wsc/plugin.js
+tar: ckeditor/_source/plugins/wsc/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/plugins/wysiwygarea/plugin.js
+tar: ckeditor/_source/plugins/wysiwygarea/plugin.js: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/dialog.css
+tar: ckeditor/_source/skins/kama/dialog.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/editor.css
+tar: ckeditor/_source/skins/kama/editor.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/elementspath.css
+tar: ckeditor/_source/skins/kama/elementspath.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/icons.css
+tar: ckeditor/_source/skins/kama/icons.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/icons.png
+tar: ckeditor/_source/skins/kama/icons.png: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/icons_rtl.png
+tar: ckeditor/_source/skins/kama/icons_rtl.png: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/dialog_sides.gif
+tar: ckeditor/_source/skins/kama/images/dialog_sides.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/dialog_sides.png
+tar: ckeditor/_source/skins/kama/images/dialog_sides.png: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/dialog_sides_rtl.png
+tar: ckeditor/_source/skins/kama/images/dialog_sides_rtl.png: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/mini.gif
+tar: ckeditor/_source/skins/kama/images/mini.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/noimage.png
+tar: ckeditor/_source/skins/kama/images/noimage.png: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/sprites.png
+tar: ckeditor/_source/skins/kama/images/sprites.png: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/sprites_ie6.png
+tar: ckeditor/_source/skins/kama/images/sprites_ie6.png: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/images/toolbar_start.gif
+tar: ckeditor/_source/skins/kama/images/toolbar_start.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/mainui.css
+tar: ckeditor/_source/skins/kama/mainui.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/menu.css
+tar: ckeditor/_source/skins/kama/menu.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/panel.css
+tar: ckeditor/_source/skins/kama/panel.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/presets.css
+tar: ckeditor/_source/skins/kama/presets.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/reset.css
+tar: ckeditor/_source/skins/kama/reset.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/richcombo.css
+tar: ckeditor/_source/skins/kama/richcombo.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/skin.js
+tar: ckeditor/_source/skins/kama/skin.js: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/templates.css
+tar: ckeditor/_source/skins/kama/templates.css: Cannot open: No such file or directory
+ckeditor/_source/skins/kama/toolbar.css
+tar: ckeditor/_source/skins/kama/toolbar.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/dialog.css
+tar: ckeditor/_source/skins/office2003/dialog.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/editor.css
+tar: ckeditor/_source/skins/office2003/editor.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/elementspath.css
+tar: ckeditor/_source/skins/office2003/elementspath.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/icons.css
+tar: ckeditor/_source/skins/office2003/icons.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/icons.png
+tar: ckeditor/_source/skins/office2003/icons.png: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/icons_rtl.png
+tar: ckeditor/_source/skins/office2003/icons_rtl.png: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/images/dialog_sides.gif
+tar: ckeditor/_source/skins/office2003/images/dialog_sides.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/images/dialog_sides.png
+tar: ckeditor/_source/skins/office2003/images/dialog_sides.png: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/images/dialog_sides_rtl.png
+tar: ckeditor/_source/skins/office2003/images/dialog_sides_rtl.png: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/images/mini.gif
+tar: ckeditor/_source/skins/office2003/images/mini.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/images/noimage.png
+tar: ckeditor/_source/skins/office2003/images/noimage.png: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/images/sprites.png
+tar: ckeditor/_source/skins/office2003/images/sprites.png: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/images/sprites_ie6.png
+tar: ckeditor/_source/skins/office2003/images/sprites_ie6.png: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/mainui.css
+tar: ckeditor/_source/skins/office2003/mainui.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/menu.css
+tar: ckeditor/_source/skins/office2003/menu.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/panel.css
+tar: ckeditor/_source/skins/office2003/panel.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/presets.css
+tar: ckeditor/_source/skins/office2003/presets.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/reset.css
+tar: ckeditor/_source/skins/office2003/reset.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/richcombo.css
+tar: ckeditor/_source/skins/office2003/richcombo.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/skin.js
+tar: ckeditor/_source/skins/office2003/skin.js: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/templates.css
+tar: ckeditor/_source/skins/office2003/templates.css: Cannot open: No such file or directory
+ckeditor/_source/skins/office2003/toolbar.css
+tar: ckeditor/_source/skins/office2003/toolbar.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/dialog.css
+tar: ckeditor/_source/skins/v2/dialog.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/editor.css
+tar: ckeditor/_source/skins/v2/editor.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/elementspath.css
+tar: ckeditor/_source/skins/v2/elementspath.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/icons.css
+tar: ckeditor/_source/skins/v2/icons.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/icons.png
+tar: ckeditor/_source/skins/v2/icons.png: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/icons_rtl.png
+tar: ckeditor/_source/skins/v2/icons_rtl.png: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/dialog_sides.gif
+tar: ckeditor/_source/skins/v2/images/dialog_sides.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/dialog_sides.png
+tar: ckeditor/_source/skins/v2/images/dialog_sides.png: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/dialog_sides_rtl.png
+tar: ckeditor/_source/skins/v2/images/dialog_sides_rtl.png: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/mini.gif
+tar: ckeditor/_source/skins/v2/images/mini.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/noimage.png
+tar: ckeditor/_source/skins/v2/images/noimage.png: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/sprites.png
+tar: ckeditor/_source/skins/v2/images/sprites.png: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/sprites_ie6.png
+tar: ckeditor/_source/skins/v2/images/sprites_ie6.png: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/images/toolbar_start.gif
+tar: ckeditor/_source/skins/v2/images/toolbar_start.gif: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/mainui.css
+tar: ckeditor/_source/skins/v2/mainui.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/menu.css
+tar: ckeditor/_source/skins/v2/menu.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/panel.css
+tar: ckeditor/_source/skins/v2/panel.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/presets.css
+tar: ckeditor/_source/skins/v2/presets.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/reset.css
+tar: ckeditor/_source/skins/v2/reset.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/richcombo.css
+tar: ckeditor/_source/skins/v2/richcombo.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/skin.js
+tar: ckeditor/_source/skins/v2/skin.js: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/templates.css
+tar: ckeditor/_source/skins/v2/templates.css: Cannot open: No such file or directory
+ckeditor/_source/skins/v2/toolbar.css
+tar: ckeditor/_source/skins/v2/toolbar.css: Cannot open: No such file or directory
+ckeditor/_source/themes/default/theme.js
+tar: ckeditor/_source/themes/default/theme.js: Cannot open: No such file or directory
+tar: Exiting with failure status due to previous errors
+[1m[32m      create[0m  public/javascripts/ckeditor
+/home/local/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/fileutils.rb:243:in `mkdir': Permission denied - /home/local/site/tt11/public/javascripts/ckeditor (Errno::EACCES)
+	from /home/local/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/fileutils.rb:243:in `fu_mkdir'
+	from /home/local/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/fileutils.rb:217:in `mkdir_p'
+	from /home/local/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/fileutils.rb:215:in `reverse_each'
+	from /home/local/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/fileutils.rb:215:in `mkdir_p'
+	from /home/local/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/fileutils.rb:201:in `each'
+	from /home/local/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/fileutils.rb:201:in `mkdir_p'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:51:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `call'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `invoke_with_conflict_check'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:50:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions.rb:95:in `action'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:15:in `empty_directory'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/directory.rb:59:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions.rb:95:in `action'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/directory.rb:46:in `directory'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/ckeditor-3.5.2/lib/generators/ckeditor/base/base_generator.rb:24:in `install_ckeditor'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `send'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/shell.rb:14:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/core_ext/ordered_hash.rb:75:in `each'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/group.rb:226:in `dispatch'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/base.rb:389:in `start'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/generators.rb:163:in `invoke'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands/generate.rb:10
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands.rb:17
+	from script/rails:6:in `require'
+	from script/rails:6
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rails generate ckeditor:migration
+[1m[32m      create[0m  app/models/ckeditor/asset.rb
+[1m[32m      create[0m  app/models/ckeditor/picture.rb
+[1m[32m      create[0m  app/models/ckeditor/attachment_file.rb
+[1m[32m      create[0m  db/migrate/20110428153932_create_ckeditor_assets.rb
+/home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `initialize': Permission denied - /home/local/site/tt11/db/migrate/20110428153932_create_ckeditor_assets.rb (Errno::EACCES)
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `open'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `call'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `invoke_with_conflict_check'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:61:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions.rb:95:in `action'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:26:in `create_file'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/file_manipulation.rb:110:in `template'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/generators/migration.rb:60:in `migration_template'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/ckeditor-3.5.2/lib/generators/ckeditor/migration/migration_generator.rb:33:in `create_migration'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `send'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/shell.rb:14:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/core_ext/ordered_hash.rb:75:in `each'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/group.rb:226:in `dispatch'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/base.rb:389:in `start'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/generators.rb:163:in `invoke'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands/generate.rb:10
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands.rb:17
+	from script/rails:6:in `require'
+	from script/rails:6
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rails generate ckeditor:migration --backend=attachment_fu
+[1m[31m    conflict[0m  app/models/ckeditor/asset.rb
+Overwrite /home/local/site/tt11/app/models/ckeditor/asset.rb? (enter "h" for help) [Ynaqdh] n
+[1m[33m        skip[0m  app/models/ckeditor/asset.rb
+[1m[31m    conflict[0m  app/models/ckeditor/picture.rb
+Overwrite /home/local/site/tt11/app/models/ckeditor/picture.rb? (enter "h" for help) [Ynaqdh] n
+[1m[33m        skip[0m  app/models/ckeditor/picture.rb
+[1m[31m    conflict[0m  app/models/ckeditor/attachment_file.rb
+Overwrite /home/local/site/tt11/app/models/ckeditor/attachment_file.rb? (enter "h" for help) [Ynaqdh] n
+[1m[33m        skip[0m  app/models/ckeditor/attachment_file.rb
+[1m[32m      create[0m  db/migrate/20110428154054_create_ckeditor_assets.rb
+/home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `initialize': Permission denied - /home/local/site/tt11/db/migrate/20110428154054_create_ckeditor_assets.rb (Errno::EACCES)
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `open'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `call'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `invoke_with_conflict_check'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:61:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions.rb:95:in `action'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:26:in `create_file'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/file_manipulation.rb:110:in `template'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/generators/migration.rb:60:in `migration_template'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/ckeditor-3.5.2/lib/generators/ckeditor/migration/migration_generator.rb:33:in `create_migration'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `send'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/shell.rb:14:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/core_ext/ordered_hash.rb:75:in `each'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/group.rb:226:in `dispatch'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/base.rb:389:in `start'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/generators.rb:163:in `invoke'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands/generate.rb:10
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands.rb:17
+	from script/rails:6:in `require'
+	from script/rails:6
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rake db:migrate
+(in /home/local/site/tt11)
+rake aborted!
+Permission denied - /home/local/site/tt11/db/schema.rb
+
+(See full trace by running task with --trace)
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rake db:migrateils generate ckeditor:migration --backend=attachment_fu[K
+[1m[34m   identical[0m  app/models/ckeditor/asset.rb
+[1m[34m   identical[0m  app/models/ckeditor/picture.rb
+[1m[34m   identical[0m  app/models/ckeditor/attachment_file.rb
+[1m[32m      create[0m  db/migrate/20110428154429_create_ckeditor_assets.rb
+/home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `initialize': Permission denied - /home/local/site/tt11/db/migrate/20110428154429_create_ckeditor_assets.rb (Errno::EACCES)
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `open'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:63:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `call'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/empty_directory.rb:114:in `invoke_with_conflict_check'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:61:in `invoke!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions.rb:95:in `action'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/create_file.rb:26:in `create_file'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/actions/file_manipulation.rb:110:in `template'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/generators/migration.rb:60:in `migration_template'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/ckeditor-3.5.2/lib/generators/ckeditor/migration/migration_generator.rb:33:in `create_migration'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `send'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/task.rb:22:in `run'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:118:in `invoke_task'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/shell.rb:14:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/core_ext/ordered_hash.rb:75:in `each'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `map'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/invocation.rb:124:in `invoke_all'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/group.rb:226:in `dispatch'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/thor-0.14.6/lib/thor/base.rb:389:in `start'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/generators.rb:163:in `invoke'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands/generate.rb:10
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands.rb:17
+	from script/rails:6:in `require'
+	from script/rails:6
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rails generate ckeditor:migration
+[1m[34m   identical[0m  app/models/ckeditor/asset.rb
+[1m[34m   identical[0m  app/models/ckeditor/picture.rb
+[1m[34m   identical[0m  app/models/ckeditor/attachment_file.rb
+[1m[32m      create[0m  db/migrate/20110428154847_create_ckeditor_assets.rb
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rails generate ckeditor:migration[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pke db:migrate
+(in /home/local/site/tt11)
+==  CreateCkeditorAssets: migrating ===========================================
+-- create_table(:ckeditor_assets)
+   -> 0.8533s
+-- add_index("ckeditor_assets", ["assetable_type", "type", "assetable_id"], {:name=>"idx_assetable_type"})
+   -> 0.1995s
+-- add_index("ckeditor_assets", ["assetable_type", "assetable_id"], {:name=>"fk_assetable"})
+   -> 0.3039s
+-- add_index("ckeditor_assets", ["user_id"], {:name=>"fk_user"})
+   -> 0.1858s
+==  CreateCkeditorAssets: migrated (1.5436s) ==================================
+
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rake db:migrateils generate ckeditor:migration[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pke db:migrateils generate ckeditor:migration --backend=attachment_fu[K[5Pbase
+/home/local/site/tt11/config/environment.rb:7: undefined local variable or method `config' for main:Object (NameError)
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:596:in `new_constants_in'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:225:in `load_dependency'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/activesupport-3.0.5/lib/active_support/dependencies.rb:239:in `require'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/application.rb:103:in `require_environment!'
+	from /home/local/.rvm/gems/ree-1.8.7-2011.03/gems/railties-3.0.5/lib/rails/commands.rb:16
+	from script/rails:6:in `require'
+	from script/rails:6
+]0;local@local: ~/site/tt11local@local:~/site/tt11$ rails generate ckeditor:base
+[1m[34m   identical[0m  config/initializers/ckeditor.rb
+Start download ckeditor_3.5.2.tar.gz
+ckeditor/.htaccess
+ckeditor/adapters/jquery.js
+ckeditor/CHANGES.html
+ckeditor/ckeditor.js
+ckeditor/ckeditor.pack
+ckeditor/ckeditor_basic.js
+ckeditor/ckeditor_basic_source.js
+ckeditor/ckeditor_source.js
+ckeditor/config.js
+ckeditor/contents.css
+ckeditor/images/spacer.gif
+ckeditor/INSTALL.html
+ckeditor/lang/af.js
+ckeditor/lang/ar.js
+ckeditor/lang/bg.js
+ckeditor/lang/bn.js
+ckeditor/lang/bs.js
+ckeditor/lang/ca.js
+ckeditor/lang/cs.js
+ckeditor/lang/cy.js
+ckeditor/lang/da.js
+ckeditor/lang/de.js
+ckeditor/lang/el.js
+ckeditor/lang/en-au.js
+ckeditor/lang/en-ca.js
+ckeditor/lang/en-gb.js
+ckeditor/lang/en.js
+ckeditor/lang/eo.js
+ckeditor/lang/es.js
+ckeditor/lang/et.js
+ckeditor/lang/eu.js
+ckeditor/lang/fa.js
+ckeditor/lang/fi.js
+ckeditor/lang/fo.js
+ckeditor/lang/fr-ca.js
+ckeditor/lang/fr.js
+ckeditor/lang/gl.js
+ckeditor/lang/gu.js
+ckeditor/lang/he.js
+ckeditor/lang/hi.js
+ckeditor/lang/hr.js
+ckeditor/lang/hu.js
+ckeditor/lang/is.js
+ckeditor/lang/it.js
+ckeditor/lang/ja.js
+ckeditor/lang/km.js
+ckeditor/lang/ko.js
+ckeditor/lang/lt.js
+ckeditor/lang/lv.js
+ckeditor/lang/mn.js
+ckeditor/lang/ms.js
+ckeditor/lang/nb.js
+ckeditor/lang/nl.js
+ckeditor/lang/no.js
+ckeditor/lang/pl.js
+ckeditor/lang/pt-br.js
+ckeditor/lang/pt.js
+ckeditor/lang/ro.js
+ckeditor/lang/ru.js
+ckeditor/lang/sk.js
+ckeditor/lang/sl.js
+ckeditor/lang/sr-latn.js
+ckeditor/lang/sr.js
+ckeditor/lang/sv.js
+ckeditor/lang/th.js
+ckeditor/lang/tr.js
+ckeditor/lang/uk.js
+ckeditor/lang/vi.js
+ckeditor/lang/zh-cn.js
+ckeditor/lang/zh.js
+ckeditor/lang/_languages.js
+ckeditor/lang/_translationstatus.txt
+ckeditor/LICENSE.html
+ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js
+ckeditor/plugins/a11yhelp/lang/en.js
+ckeditor/plugins/a11yhelp/lang/he.js
+ckeditor/plugins/about/dialogs/about.js
+ckeditor/plugins/about/dialogs/logo_ckeditor.png
+ckeditor/plugins/adobeair/plugin.js
+ckeditor/plugins/autogrow/plugin.js
+ckeditor/plugins/clipboard/dialogs/paste.js
+ckeditor/plugins/colordialog/dialogs/colordialog.js
+ckeditor/plugins/dialog/dialogDefinition.js
+ckeditor/plugins/div/dialogs/div.js
+ckeditor/plugins/find/dialogs/find.js
+ckeditor/plugins/flash/dialogs/flash.js
+ckeditor/plugins/flash/images/placeholder.png
+ckeditor/plugins/forms/dialogs/button.js
+ckeditor/plugins/forms/dialogs/checkbox.js
+ckeditor/plugins/forms/dialogs/form.js
+ckeditor/plugins/forms/dialogs/hiddenfield.js
+ckeditor/plugins/forms/dialogs/radio.js
+ckeditor/plugins/forms/dialogs/select.js
+ckeditor/plugins/forms/dialogs/textarea.js
+ckeditor/plugins/forms/dialogs/textfield.js
+ckeditor/plugins/forms/images/hiddenfield.gif
+ckeditor/plugins/iframe/dialogs/iframe.js
+ckeditor/plugins/iframe/images/placeholder.png
+ckeditor/plugins/iframedialog/plugin.js
+ckeditor/plugins/image/dialogs/image.js
+ckeditor/plugins/link/dialogs/anchor.js
+ckeditor/plugins/link/dialogs/link.js
+ckeditor/plugins/link/images/anchor.gif
+ckeditor/plugins/liststyle/dialogs/liststyle.js
+ckeditor/plugins/pagebreak/images/pagebreak.gif
+ckeditor/plugins/pastefromword/filter/default.js
+ckeditor/plugins/pastetext/dialogs/pastetext.js
+ckeditor/plugins/placeholder/dialogs/placeholder.js
+ckeditor/plugins/placeholder/lang/en.js
+ckeditor/plugins/placeholder/placeholder.gif
+ckeditor/plugins/placeholder/plugin.js
+ckeditor/plugins/scayt/dialogs/options.js
+ckeditor/plugins/scayt/dialogs/toolbar.css
+ckeditor/plugins/showblocks/images/block_address.png
+ckeditor/plugins/showblocks/images/block_blockquote.png
+ckeditor/plugins/showblocks/images/block_div.png
+ckeditor/plugins/showblocks/images/block_h1.png
+ckeditor/plugins/showblocks/images/block_h2.png
+ckeditor/plugins/showblocks/images/block_h3.png
+ckeditor/plugins/showblocks/images/block_h4.png
+ckeditor/plugins/showblocks/images/block_h5.png
+ckeditor/plugins/showblocks/images/block_h6.png
+ckeditor/plugins/showblocks/images/block_p.png
+ckeditor/plugins/showblocks/images/block_pre.png
+ckeditor/plugins/smiley/dialogs/smiley.js
+ckeditor/plugins/smiley/images/angel_smile.gif
+ckeditor/plugins/smiley/images/angry_smile.gif
+ckeditor/plugins/smiley/images/broken_heart.gif
+ckeditor/plugins/smiley/images/confused_smile.gif
+ckeditor/plugins/smiley/images/cry_smile.gif
+ckeditor/plugins/smiley/images/devil_smile.gif
+ckeditor/plugins/smiley/images/embaressed_smile.gif
+ckeditor/plugins/smiley/images/envelope.gif
+ckeditor/plugins/smiley/images/heart.gif
+ckeditor/plugins/smiley/images/kiss.gif
+ckeditor/plugins/smiley/images/lightbulb.gif
+ckeditor/plugins/smiley/images/omg_smile.gif
+ckeditor/plugins/smiley/images/regular_smile.gif
+ckeditor/plugins/smiley/images/sad_smile.gif
+ckeditor/plugins/smiley/images/shades_smile.gif
+ckeditor/plugins/smiley/images/teeth_smile.gif
+ckeditor/plugins/smiley/images/thumbs_down.gif
+ckeditor/plugins/smiley/images/thumbs_up.gif
+ckeditor/plugins/smiley/images/tounge_smile.gif
+ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif
+ckeditor/plugins/smiley/images/wink_smile.gif
+ckeditor/plugins/specialchar/dialogs/specialchar.js
+ckeditor/plugins/specialchar/lang/en.js
+ckeditor/plugins/styles/styles/default.js
+ckeditor/plugins/table/dialogs/table.js
+ckeditor/plugins/tableresize/plugin.js
+ckeditor/plugins/tabletools/dialogs/tableCell.js
+ckeditor/plugins/templates/dialogs/templates.js
+ckeditor/plugins/templates/templates/default.js
+ckeditor/plugins/templates/templates/images/template1.gif
+ckeditor/plugins/templates/templates/images/template2.gif
+ckeditor/plugins/templates/templates/images/template3.gif
+ckeditor/plugins/uicolor/dialogs/uicolor.js
+ckeditor/plugins/uicolor/lang/en.js
+ckeditor/plugins/uicolor/lang/he.js
+ckeditor/plugins/uicolor/plugin.js
+ckeditor/plugins/uicolor/uicolor.gif
+ckeditor/plugins/uicolor/yui/assets/hue_bg.png
+ckeditor/plugins/uicolor/yui/assets/hue_thumb.png
+ckeditor/plugins/uicolor/yui/assets/picker_mask.png
+ckeditor/plugins/uicolor/yui/assets/picker_thumb.png
+ckeditor/plugins/uicolor/yui/assets/yui.css
+ckeditor/plugins/uicolor/yui/yui.js
+ckeditor/plugins/wsc/dialogs/ciframe.html
+ckeditor/plugins/wsc/dialogs/tmpFrameset.html
+ckeditor/plugins/wsc/dialogs/wsc.css
+ckeditor/plugins/wsc/dialogs/wsc.js
+ckeditor/skins/kama/dialog.css
+ckeditor/skins/kama/editor.css
+ckeditor/skins/kama/icons.png
+ckeditor/skins/kama/icons_rtl.png
+ckeditor/skins/kama/images/dialog_sides.gif
+ckeditor/skins/kama/images/dialog_sides.png
+ckeditor/skins/kama/images/dialog_sides_rtl.png
+ckeditor/skins/kama/images/mini.gif
+ckeditor/skins/kama/images/noimage.png
+ckeditor/skins/kama/images/sprites.png
+ckeditor/skins/kama/images/sprites_ie6.png
+ckeditor/skins/kama/images/toolbar_start.gif
+ckeditor/skins/kama/skin.js
+ckeditor/skins/kama/templates.css
+ckeditor/skins/office2003/dialog.css
+ckeditor/skins/office2003/editor.css
+ckeditor/skins/office2003/icons.png
+ckeditor/skins/office2003/icons_rtl.png
+ckeditor/skins/office2003/images/dialog_sides.gif
+ckeditor/skins/office2003/images/dialog_sides.png
+ckeditor/skins/office2003/images/dialog_sides_rtl.png
+ckeditor/skins/office2003/images/mini.gif
+ckeditor/skins/office2003/images/noimage.png
+ckeditor/skins/office2003/images/sprites.png
+ckeditor/skins/office2003/images/sprites_ie6.png
+ckeditor/skins/office2003/skin.js
+ckeditor/skins/office2003/templates.css
+ckeditor/skins/v2/dialog.css
+ckeditor/skins/v2/editor.css
+ckeditor/skins/v2/icons.png
+ckeditor/skins/v2/icons_rtl.png
+ckeditor/skins/v2/images/dialog_sides.gif
+ckeditor/skins/v2/images/dialog_sides.png
+ckeditor/skins/v2/images/dialog_sides_rtl.png
+ckeditor/skins/v2/images/mini.gif
+ckeditor/skins/v2/images/noimage.png
+ckeditor/skins/v2/images/sprites.png
+ckeditor/skins/v2/images/sprites_ie6.png
+ckeditor/skins/v2/images/toolbar_start.gif
+ckeditor/skins/v2/skin.js
+ckeditor/skins/v2/templates.css
+ckeditor/themes/default/theme.js
+ckeditor/_samples/adobeair/application.xml
+ckeditor/_samples/adobeair/run.bat
+ckeditor/_samples/adobeair/run.sh
+ckeditor/_samples/adobeair/sample.html
+ckeditor/_samples/ajax.html
+ckeditor/_samples/api.html
+ckeditor/_samples/api_dialog/my_dialog.js
+ckeditor/_samples/api_dialog.html
+ckeditor/_samples/asp/index.html
+ckeditor/_samples/assets/output_for_flash.fla
+ckeditor/_samples/assets/output_for_flash.swf
+ckeditor/_samples/assets/output_xhtml.css
+ckeditor/_samples/assets/swfobject.js
+ckeditor/_samples/autogrow.html
+ckeditor/_samples/divreplace.html
+ckeditor/_samples/enterkey.html
+ckeditor/_samples/fullpage.html
+ckeditor/_samples/index.html
+ckeditor/_samples/jqueryadapter.html
+ckeditor/_samples/output_for_flash.html
+ckeditor/_samples/output_html.html
+ckeditor/_samples/output_xhtml.html
+ckeditor/_samples/php/index.html
+ckeditor/_samples/placeholder.html
+ckeditor/_samples/replacebyclass.html
+ckeditor/_samples/replacebycode.html
+ckeditor/_samples/sample.css
+ckeditor/_samples/sample.js
+ckeditor/_samples/sharedspaces.html
+ckeditor/_samples/skins.html
+ckeditor/_samples/ui_color.html
+ckeditor/_samples/ui_languages.html
+ckeditor/_source/adapters/jquery.js
+ckeditor/_source/core/ajax.js
+ckeditor/_source/core/ckeditor.js
+ckeditor/_source/core/ckeditor_base.js
+ckeditor/_source/core/ckeditor_basic.js
+ckeditor/_source/core/command.js
+ckeditor/_source/core/commanddefinition.js
+ckeditor/_source/core/config.js
+ckeditor/_source/core/dataprocessor.js
+ckeditor/_source/core/dom/comment.js
+ckeditor/_source/core/dom/document.js
+ckeditor/_source/core/dom/documentfragment.js
+ckeditor/_source/core/dom/domobject.js
+ckeditor/_source/core/dom/element.js
+ckeditor/_source/core/dom/elementpath.js
+ckeditor/_source/core/dom/event.js
+ckeditor/_source/core/dom/node.js
+ckeditor/_source/core/dom/nodelist.js
+ckeditor/_source/core/dom/range.js
+ckeditor/_source/core/dom/rangelist.js
+ckeditor/_source/core/dom/text.js
+ckeditor/_source/core/dom/walker.js
+ckeditor/_source/core/dom/window.js
+ckeditor/_source/core/dom.js
+ckeditor/_source/core/dtd.js
+ckeditor/_source/core/editor.js
+ckeditor/_source/core/editor_basic.js
+ckeditor/_source/core/env.js
+ckeditor/_source/core/event.js
+ckeditor/_source/core/eventInfo.js
+ckeditor/_source/core/focusmanager.js
+ckeditor/_source/core/htmlparser/basicwriter.js
+ckeditor/_source/core/htmlparser/cdata.js
+ckeditor/_source/core/htmlparser/comment.js
+ckeditor/_source/core/htmlparser/element.js
+ckeditor/_source/core/htmlparser/filter.js
+ckeditor/_source/core/htmlparser/fragment.js
+ckeditor/_source/core/htmlparser/text.js
+ckeditor/_source/core/htmlparser.js
+ckeditor/_source/core/lang.js
+ckeditor/_source/core/loader.js
+ckeditor/_source/core/plugindefinition.js
+ckeditor/_source/core/plugins.js
+ckeditor/_source/core/resourcemanager.js
+ckeditor/_source/core/scriptloader.js
+ckeditor/_source/core/skins.js
+ckeditor/_source/core/themes.js
+ckeditor/_source/core/tools.js
+ckeditor/_source/core/ui.js
+ckeditor/_source/core/xml.js
+ckeditor/_source/core/_bootstrap.js
+ckeditor/_source/lang/af.js
+ckeditor/_source/lang/ar.js
+ckeditor/_source/lang/bg.js
+ckeditor/_source/lang/bn.js
+ckeditor/_source/lang/bs.js
+ckeditor/_source/lang/ca.js
+ckeditor/_source/lang/cs.js
+ckeditor/_source/lang/cy.js
+ckeditor/_source/lang/da.js
+ckeditor/_source/lang/de.js
+ckeditor/_source/lang/el.js
+ckeditor/_source/lang/en-au.js
+ckeditor/_source/lang/en-ca.js
+ckeditor/_source/lang/en-gb.js
+ckeditor/_source/lang/en.js
+ckeditor/_source/lang/eo.js
+ckeditor/_source/lang/es.js
+ckeditor/_source/lang/et.js
+ckeditor/_source/lang/eu.js
+ckeditor/_source/lang/fa.js
+ckeditor/_source/lang/fi.js
+ckeditor/_source/lang/fo.js
+ckeditor/_source/lang/fr-ca.js
+ckeditor/_source/lang/fr.js
+ckeditor/_source/lang/gl.js
+ckeditor/_source/lang/gu.js
+ckeditor/_source/lang/he.js
+ckeditor/_source/lang/hi.js
+ckeditor/_source/lang/hr.js
+ckeditor/_source/lang/hu.js
+ckeditor/_source/lang/is.js
+ckeditor/_source/lang/it.js
+ckeditor/_source/lang/ja.js
+ckeditor/_source/lang/km.js
+ckeditor/_source/lang/ko.js
+ckeditor/_source/lang/lt.js
+ckeditor/_source/lang/lv.js
+ckeditor/_source/lang/mn.js
+ckeditor/_source/lang/ms.js
+ckeditor/_source/lang/nb.js
+ckeditor/_source/lang/nl.js
+ckeditor/_source/lang/no.js
+ckeditor/_source/lang/pl.js
+ckeditor/_source/lang/pt-br.js
+ckeditor/_source/lang/pt.js
+ckeditor/_source/lang/ro.js
+ckeditor/_source/lang/ru.js
+ckeditor/_source/lang/sk.js
+ckeditor/_source/lang/sl.js
+ckeditor/_source/lang/sr-latn.js
+ckeditor/_source/lang/sr.js
+ckeditor/_source/lang/sv.js
+ckeditor/_source/lang/th.js
+ckeditor/_source/lang/tr.js
+ckeditor/_source/lang/uk.js
+ckeditor/_source/lang/vi.js
+ckeditor/_source/lang/zh-cn.js
+ckeditor/_source/lang/zh.js
+ckeditor/_source/lang/_languages.js
+ckeditor/_source/lang/_translationstatus.txt
+ckeditor/_source/plugins/a11yhelp/dialogs/a11yhelp.js
+ckeditor/_source/plugins/a11yhelp/lang/en.js
+ckeditor/_source/plugins/a11yhelp/lang/he.js
+ckeditor/_source/plugins/a11yhelp/plugin.js
+ckeditor/_source/plugins/about/dialogs/about.js
+ckeditor/_source/plugins/about/dialogs/logo_ckeditor.png
+ckeditor/_source/plugins/about/plugin.js
+ckeditor/_source/plugins/adobeair/plugin.js
+ckeditor/_source/plugins/autogrow/plugin.js
+ckeditor/_source/plugins/basicstyles/plugin.js
+ckeditor/_source/plugins/bidi/plugin.js
+ckeditor/_source/plugins/blockquote/plugin.js
+ckeditor/_source/plugins/button/plugin.js
+ckeditor/_source/plugins/clipboard/dialogs/paste.js
+ckeditor/_source/plugins/clipboard/plugin.js
+ckeditor/_source/plugins/colorbutton/plugin.js
+ckeditor/_source/plugins/colordialog/dialogs/colordialog.js
+ckeditor/_source/plugins/colordialog/plugin.js
+ckeditor/_source/plugins/contextmenu/plugin.js
+ckeditor/_source/plugins/dialog/dialogDefinition.js
+ckeditor/_source/plugins/dialog/plugin.js
+ckeditor/_source/plugins/dialogadvtab/plugin.js
+ckeditor/_source/plugins/dialogui/plugin.js
+ckeditor/_source/plugins/div/dialogs/div.js
+ckeditor/_source/plugins/div/plugin.js
+ckeditor/_source/plugins/domiterator/plugin.js
+ckeditor/_source/plugins/editingblock/plugin.js
+ckeditor/_source/plugins/elementspath/plugin.js
+ckeditor/_source/plugins/enterkey/plugin.js
+ckeditor/_source/plugins/entities/plugin.js
+ckeditor/_source/plugins/fakeobjects/plugin.js
+ckeditor/_source/plugins/filebrowser/plugin.js
+ckeditor/_source/plugins/find/dialogs/find.js
+ckeditor/_source/plugins/find/plugin.js
+ckeditor/_source/plugins/flash/dialogs/flash.js
+ckeditor/_source/plugins/flash/images/placeholder.png
+ckeditor/_source/plugins/flash/plugin.js
+ckeditor/_source/plugins/floatpanel/plugin.js
+ckeditor/_source/plugins/font/plugin.js
+ckeditor/_source/plugins/format/plugin.js
+ckeditor/_source/plugins/forms/dialogs/button.js
+ckeditor/_source/plugins/forms/dialogs/checkbox.js
+ckeditor/_source/plugins/forms/dialogs/form.js
+ckeditor/_source/plugins/forms/dialogs/hiddenfield.js
+ckeditor/_source/plugins/forms/dialogs/radio.js
+ckeditor/_source/plugins/forms/dialogs/select.js
+ckeditor/_source/plugins/forms/dialogs/textarea.js
+ckeditor/_source/plugins/forms/dialogs/textfield.js
+ckeditor/_source/plugins/forms/images/hiddenfield.gif
+ckeditor/_source/plugins/forms/plugin.js
+ckeditor/_source/plugins/horizontalrule/plugin.js
+ckeditor/_source/plugins/htmldataprocessor/plugin.js
+ckeditor/_source/plugins/htmlwriter/plugin.js
+ckeditor/_source/plugins/iframe/dialogs/iframe.js
+ckeditor/_source/plugins/iframe/images/placeholder.png
+ckeditor/_source/plugins/iframe/plugin.js
+ckeditor/_source/plugins/iframedialog/plugin.js
+ckeditor/_source/plugins/image/dialogs/image.js
+ckeditor/_source/plugins/image/plugin.js
+ckeditor/_source/plugins/indent/plugin.js
+ckeditor/_source/plugins/justify/plugin.js
+ckeditor/_source/plugins/keystrokes/plugin.js
+ckeditor/_source/plugins/link/dialogs/anchor.js
+ckeditor/_source/plugins/link/dialogs/link.js
+ckeditor/_source/plugins/link/images/anchor.gif
+ckeditor/_source/plugins/link/plugin.js
+ckeditor/_source/plugins/list/plugin.js
+ckeditor/_source/plugins/listblock/plugin.js
+ckeditor/_source/plugins/liststyle/dialogs/liststyle.js
+ckeditor/_source/plugins/liststyle/plugin.js
+ckeditor/_source/plugins/maximize/plugin.js
+ckeditor/_source/plugins/menu/plugin.js
+ckeditor/_source/plugins/menubutton/plugin.js
+ckeditor/_source/plugins/newpage/plugin.js
+ckeditor/_source/plugins/pagebreak/images/pagebreak.gif
+ckeditor/_source/plugins/pagebreak/plugin.js
+ckeditor/_source/plugins/panel/plugin.js
+ckeditor/_source/plugins/panelbutton/plugin.js
+ckeditor/_source/plugins/pastefromword/filter/default.js
+ckeditor/_source/plugins/pastefromword/plugin.js
+ckeditor/_source/plugins/pastetext/dialogs/pastetext.js
+ckeditor/_source/plugins/pastetext/plugin.js
+ckeditor/_source/plugins/placeholder/dialogs/placeholder.js
+ckeditor/_source/plugins/placeholder/lang/en.js
+ckeditor/_source/plugins/placeholder/placeholder.gif
+ckeditor/_source/plugins/placeholder/plugin.js
+ckeditor/_source/plugins/popup/plugin.js
+ckeditor/_source/plugins/preview/plugin.js
+ckeditor/_source/plugins/print/plugin.js
+ckeditor/_source/plugins/removeformat/plugin.js
+ckeditor/_source/plugins/resize/plugin.js
+ckeditor/_source/plugins/richcombo/plugin.js
+ckeditor/_source/plugins/save/plugin.js
+ckeditor/_source/plugins/scayt/dialogs/options.js
+ckeditor/_source/plugins/scayt/dialogs/toolbar.css
+ckeditor/_source/plugins/scayt/plugin.js
+ckeditor/_source/plugins/selection/plugin.js
+ckeditor/_source/plugins/showblocks/images/block_address.png
+ckeditor/_source/plugins/showblocks/images/block_blockquote.png
+ckeditor/_source/plugins/showblocks/images/block_div.png
+ckeditor/_source/plugins/showblocks/images/block_h1.png
+ckeditor/_source/plugins/showblocks/images/block_h2.png
+ckeditor/_source/plugins/showblocks/images/block_h3.png
+ckeditor/_source/plugins/showblocks/images/block_h4.png
+ckeditor/_source/plugins/showblocks/images/block_h5.png
+ckeditor/_source/plugins/showblocks/images/block_h6.png
+ckeditor/_source/plugins/showblocks/images/block_p.png
+ckeditor/_source/plugins/showblocks/images/block_pre.png
+ckeditor/_source/plugins/showblocks/plugin.js
+ckeditor/_source/plugins/showborders/plugin.js
+ckeditor/_source/plugins/smiley/dialogs/smiley.js
+ckeditor/_source/plugins/smiley/images/angel_smile.gif
+ckeditor/_source/plugins/smiley/images/angry_smile.gif
+ckeditor/_source/plugins/smiley/images/broken_heart.gif
+ckeditor/_source/plugins/smiley/images/confused_smile.gif
+ckeditor/_source/plugins/smiley/images/cry_smile.gif
+ckeditor/_source/plugins/smiley/images/devil_smile.gif
+ckeditor/_source/plugins/smiley/images/embaressed_smile.gif
+ckeditor/_source/plugins/smiley/images/envelope.gif
+ckeditor/_source/plugins/smiley/images/heart.gif
+ckeditor/_source/plugins/smiley/images/kiss.gif
+ckeditor/_source/plugins/smiley/images/lightbulb.gif
+ckeditor/_source/plugins/smiley/images/omg_smile.gif
+ckeditor/_source/plugins/smiley/images/regular_smile.gif
+ckeditor/_source/plugins/smiley/images/sad_smile.gif
+ckeditor/_source/plugins/smiley/images/shades_smile.gif
+ckeditor/_source/plugins/smiley/images/teeth_smile.gif
+ckeditor/_source/plugins/smiley/images/thumbs_down.gif
+ckeditor/_source/plugins/smiley/images/thumbs_up.gif
+ckeditor/_source/plugins/smiley/images/tounge_smile.gif
+ckeditor/_source/plugins/smiley/images/whatchutalkingabout_smile.gif
+ckeditor/_source/plugins/smiley/images/wink_smile.gif
+ckeditor/_source/plugins/smiley/plugin.js
+ckeditor/_source/plugins/sourcearea/plugin.js
+ckeditor/_source/plugins/specialchar/dialogs/specialchar.js
+ckeditor/_source/plugins/specialchar/lang/en.js
+ckeditor/_source/plugins/specialchar/plugin.js
+ckeditor/_source/plugins/styles/plugin.js
+ckeditor/_source/plugins/styles/styles/default.js
+ckeditor/_source/plugins/stylescombo/plugin.js
+ckeditor/_source/plugins/tab/plugin.js
+ckeditor/_source/plugins/table/dialogs/table.js
+ckeditor/_source/plugins/table/plugin.js
+ckeditor/_source/plugins/tableresize/plugin.js
+ckeditor/_source/plugins/tabletools/dialogs/tableCell.js
+ckeditor/_source/plugins/tabletools/plugin.js
+ckeditor/_source/plugins/templates/dialogs/templates.js
+ckeditor/_source/plugins/templates/plugin.js
+ckeditor/_source/plugins/templates/templates/default.js
+ckeditor/_source/plugins/templates/templates/images/template1.gif
+ckeditor/_source/plugins/templates/templates/images/template2.gif
+ckeditor/_source/plugins/templates/templates/images/template3.gif
+ckeditor/_source/plugins/toolbar/plugin.js
+ckeditor/_source/plugins/uicolor/dialogs/uicolor.js
+ckeditor/_source/plugins/uicolor/lang/en.js
+ckeditor/_source/plugins/uicolor/lang/he.js
+ckeditor/_source/plugins/uicolor/plugin.js
+ckeditor/_source/plugins/uicolor/uicolor.gif
+ckeditor/_source/plugins/uicolor/yui/assets/hue_bg.png
+ckeditor/_source/plugins/uicolor/yui/assets/hue_thumb.png
+ckeditor/_source/plugins/uicolor/yui/assets/picker_mask.png
+ckeditor/_source/plugins/uicolor/yui/assets/picker_thumb.png
+ckeditor/_source/plugins/uicolor/yui/assets/yui.css
+ckeditor/_source/plugins/uicolor/yui/yui.js
+ckeditor/_source/plugins/undo/plugin.js
+ckeditor/_source/plugins/wsc/dialogs/ciframe.html
+ckeditor/_source/plugins/wsc/dialogs/tmpFrameset.html
+ckeditor/_source/plugins/wsc/dialogs/wsc.css
+ckeditor/_source/plugins/wsc/dialogs/wsc.js
+ckeditor/_source/plugins/wsc/plugin.js
+ckeditor/_source/plugins/wysiwygarea/plugin.js
+ckeditor/_source/skins/kama/dialog.css
+ckeditor/_source/skins/kama/editor.css
+ckeditor/_source/skins/kama/elementspath.css
+ckeditor/_source/skins/kama/icons.css
+ckeditor/_source/skins/kama/icons.png
+ckeditor/_source/skins/kama/icons_rtl.png
+ckeditor/_source/skins/kama/images/dialog_sides.gif
+ckeditor/_source/skins/kama/images/dialog_sides.png
+ckeditor/_source/skins/kama/images/dialog_sides_rtl.png
+ckeditor/_source/skins/kama/images/mini.gif
+ckeditor/_source/skins/kama/images/noimage.png
+ckeditor/_source/skins/kama/images/sprites.png
+ckeditor/_source/skins/kama/images/sprites_ie6.png
+ckeditor/_source/skins/kama/images/toolbar_start.gif
+ckeditor/_source/skins/kama/mainui.css
+ckeditor/_source/skins/kama/menu.css
+ckeditor/_source/skins/kama/panel.css
+ckeditor/_source/skins/kama/presets.css
+ckeditor/_source/skins/kama/reset.css
+ckeditor/_source/skins/kama/richcombo.css
+ckeditor/_source/skins/kama/skin.js
+ckeditor/_source/skins/kama/templates.css
+ckeditor/_source/skins/kama/toolbar.css
+ckeditor/_source/skins/office2003/dialog.css
+ckeditor/_source/skins/office2003/editor.css
+ckeditor/_source/skins/office2003/elementspath.css
+ckeditor/_source/skins/office2003/icons.css
+ckeditor/_source/skins/office2003/icons.png
+ckeditor/_source/skins/office2003/icons_rtl.png
+ckeditor/_source/skins/office2003/images/dialog_sides.gif
+ckeditor/_source/skins/office2003/images/dialog_sides.png
+ckeditor/_source/skins/office2003/images/dialog_sides_rtl.png
+ckeditor/_source/skins/office2003/images/mini.gif
+ckeditor/_source/skins/office2003/images/noimage.png
+ckeditor/_source/skins/office2003/images/sprites.png
+ckeditor/_source/skins/office2003/images/sprites_ie6.png
+ckeditor/_source/skins/office2003/mainui.css
+ckeditor/_source/skins/office2003/menu.css
+ckeditor/_source/skins/office2003/panel.css
+ckeditor/_source/skins/office2003/presets.css
+ckeditor/_source/skins/office2003/reset.css
+ckeditor/_source/skins/office2003/richcombo.css
+ckeditor/_source/skins/office2003/skin.js
+ckeditor/_source/skins/office2003/templates.css
+ckeditor/_source/skins/office2003/toolbar.css
+ckeditor/_source/skins/v2/dialog.css
+ckeditor/_source/skins/v2/editor.css
+ckeditor/_source/skins/v2/elementspath.css
+ckeditor/_source/skins/v2/icons.css
+ckeditor/_source/skins/v2/icons.png
+ckeditor/_source/skins/v2/icons_rtl.png
+ckeditor/_source/skins/v2/images/dialog_sides.gif
+ckeditor/_source/skins/v2/images/dialog_sides.png
+ckeditor/_source/skins/v2/images/dialog_sides_rtl.png
+ckeditor/_source/skins/v2/images/mini.gif
+ckeditor/_source/skins/v2/images/noimage.png
+ckeditor/_source/skins/v2/images/sprites.png
+ckeditor/_source/skins/v2/images/sprites_ie6.png
+ckeditor/_source/skins/v2/images/toolbar_start.gif
+ckeditor/_source/skins/v2/mainui.css
+ckeditor/_source/skins/v2/menu.css
+ckeditor/_source/skins/v2/panel.css
+ckeditor/_source/skins/v2/presets.css
+ckeditor/_source/skins/v2/reset.css
+ckeditor/_source/skins/v2/richcombo.css
+ckeditor/_source/skins/v2/skin.js
+ckeditor/_source/skins/v2/templates.css
+ckeditor/_source/skins/v2/toolbar.css
+ckeditor/_source/themes/default/theme.js
+[1m[34m       exist[0m  public/javascripts/ckeditor
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/attachment/dialogs/attachment.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/attachment/images/attachment.png
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/attachment/lang/en.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/attachment/lang/ru.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/attachment/lang/uk.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/attachment/plugin.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/embed/dialogs/embed.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/embed/images/embed.png
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/embed/lang/en.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/embed/lang/ru.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/embed/lang/uk.js
+[1m[32m      create[0m  public/javascripts/ckeditor/_source/plugins/embed/plugin.js
+[1m[31m    conflict[0m  public/javascripts/ckeditor/config.js
+Overwrite /home/local/site/tt11/public/javascripts/ckeditor/config.js? (enter "h" for help) [Ynaqdh] y
+[1m[33m       force[0m  public/javascripts/ckeditor/config.js
+[1m[32m      create[0m  public/javascripts/ckeditor/css/ckfinder.css
+[1m[32m      create[0m  public/javascripts/ckeditor/css/fck_dialog.css
+[1m[32m      create[0m  public/javascripts/ckeditor/css/fck_editor.css
+[1m[32m      create[0m  public/javascripts/ckeditor/css/swfupload.css
+[1m[32m      create[0m  public/javascripts/ckeditor/images/add.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/cancelbutton.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/ckfnothumb.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/doc.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/mp3.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/pdf.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/rar.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/refresh.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/select_files.png
+[1m[34m   identical[0m  public/javascripts/ckeditor/images/spacer.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/swf.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/toolbar.start.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/images/xls.gif
+[1m[32m      create[0m  public/javascripts/ckeditor/plugins/attachment/dialogs/attachment.js
+[1m[32m      create[0m  public/javascripts/ckeditor/plugins/attachment/images/attachment.png
+[1m[32m      create[0m  public/javascripts/ckeditor/plugins/attachment/lang/en.js
+[1m[32m      create[0m  public/javascripts/ckeditor/plugins/attachment/lang/ru.js
+[1m[32m      create[0m  public/javascripts/ckeditor/plugins/attachment/lang/uk.js
+[1m

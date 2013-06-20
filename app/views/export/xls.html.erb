@@ -1,0 +1,40 @@
+
+
+<% converter=Iconv.new('Windows-1251','UTF-8') %>
+
+<h1><%= converter.iconv('Сотрудники Живого офиса') %></h1>
+<table >
+  <tr >
+    <th ><%= converter.iconv('ФИО') %></th>
+
+    <th ><%= converter.iconv('Должность') %></th>
+    <th ><%= converter.iconv('сотрудник/начальник отдела') %>  </th>
+    <th ><%= converter.iconv('Отдел') %></th>
+    <th ><%= converter.iconv('Телефон') %></th>
+    <th ><%= converter.iconv('Почта') %></th>
+
+    <th ><%= converter.iconv('Дирекция') %></th>
+
+  </tr>
+
+<% @office1s.each do |office1| %>
+  <tr>
+    <td >
+
+  <%= converter.iconv(office1.last_name) %>
+    <%= converter.iconv(office1.name) %>
+     <%= converter.iconv(office1.patronimic) %>
+
+    </td>
+
+    <td><%=h converter.iconv(office1.job) %></td>
+    <td>  <%= converter.iconv('начальник отдела') if office1.dir %> <%= converter.iconv('сотрудник') unless office1.dir %> </td>
+    <td><%=h converter.iconv(office1.dep) %></td>
+    <td><%=h converter.iconv(office1.phone) %></td>
+    <td><%=h converter.iconv(office1.mail) %></td>
+    <td><%=h converter.iconv(office1.departament) %></td>
+
+  </tr>
+<% end %>
+</table>
+

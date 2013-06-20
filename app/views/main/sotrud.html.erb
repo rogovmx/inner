@@ -1,0 +1,8 @@
+<% content_for(:cont) do %>
+
+ <div class="path"> <%= @path %> </div>
+ <%= render :partial=>'/part/alf' if (params[:smenu]=='1' or params[:smenu]==nil)  %>
+ <%= render :partial=>'/part/struct' if params[:smenu]=='2'   %>
+  <%= render :partial=>'/part/struct_sotr' if params[:smenu]=='3'   %>
+
+<%end%>

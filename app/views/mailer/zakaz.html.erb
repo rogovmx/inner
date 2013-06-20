@@ -1,0 +1,6 @@
+<%= @user %>
+<%=@street%>
+<% @cart.each do |cart| %>
+  <% @cat=Cat1.find_by_k1c(cart.k1s) %>
+  <%= cart.k1s %>- <%=@cat.name %>  <%= cart.price %>- <%= cart.quantity %>
+<%end%>

@@ -1,0 +1,235 @@
+<% content_for(:cont) do %>
+  <script type="text/javascript" src="/jq/jquery-1.2.3.js"></script>
+
+<style type="text/css">
+ #q_answ_submit {background: transparent ; border: none; color: red; cursor: pointer;  }
+  #opros label {font-weight: normal;}
+.tp {position:relative;text-indent:0;}
+.tp strong {color: red;}
+.tp b {
+   color:#000;
+   cursor:help;
+   font-weight:normal;
+}
+.tp b span {display:none;}
+/*-- для FF, OPERA, IE7 --*/
+.tp b:hover {
+   
+}
+.tp b:hover span {
+   background: #fdd4b6;
+   color:#000;
+   display:block;
+   padding:7px;
+   position:absolute;
+   top:2px;
+   left:5px;
+   z-index:10;
+   text-align:left;
+   width:250px;
+
+}
+.tp img  {width: 70px;   border: 1px solid #b1b3b6;}
+.tp i img  {width: 70px;   border: none;}
+.tp i  { border: 1px solid #b1b3b6; display:block; width: 70px; height: 70px; overflow: hidden;}
+button {background: none; font-size: 12px;  border: none; color: green; position: relative; left: -30px;}
+.comments a {color: red;}
+</style>
+
+<!--[if IE 6]>
+<style type="text/css">
+.tp b {behavior:url(hover.htc);}
+.tp .hover {
+   
+}
+.tp .hover span {
+   background:#fdd4b6;
+   color:#000;
+   display:block;
+   padding:7px;
+   position:absolute;
+   top:2px;
+   left:5px;
+   z-index:10;
+   text-align:left;
+   width:250px;
+}
+</style>
+<![endif]-->
+
+
+<div style="position: relative; width: 734px; background: url(/images/vs1_06.jpg) repeat-y top right;" >
+  
+
+
+  
+<!--
+  <div style="margin-left: 100px; margin-bottom: 10px; font-size: 11px; color: #85c441;">
+    В меню "мой профиль" Вы сможете выбрать аватарку и внести дополнительную информацию о себе
+  </div> <br/>
+-->
+ <br/><br/>
+<div>
+  <% if login? %>
+  <a href="#" onclick="show_id('newsubj')" style="text-decoration: none; color: red; margin-left: 60px;">
+    Написать сообщение</a></div> <br/>
+  <% else %>
+    <p style="margin-left: 60px; margin-bottom: 30px; color: red">
+      Написать сообщение можно после авторизации.
+    </p>
+  <% end %>
+
+  <div id="newsubj" style="display:none;">
+   <%= render :partial=>'new_subj2' %>
+  </div>
+
+<%= will_paginate @desk_subjs %>
+    <br/>
+
+<% for desk_subj in @desk_subjs %>
+  
+<table class="subj" cellspacing="0" cellpadding="0" >
+   <tr>
+     <td style="width: 70px; padding: 0px;" valign="top" rowspan="2" >
+
+        <% if desk_subj.user_id %>
+       <% @user = Office1.find_by_id(desk_subj.user_id) %>
+        <img src="/images/photo/<%= if @user then @user.pic else 'qq' end %>.jpg" width="70px" />
+        <% else %>
+        <img src="/images/ava/qq.jpg" width="70px" />
+        <% end %>
+
+    </td>
+    <td style="width:700px;" valign="top"  >
+      
+      
+    <div class="ndt"  >
+        <span class="name">
+            <% if desk_subj.user_id %>
+       <% @user = Office1.find_by_id(desk_subj.user_id) %>
+       <%= @user.last_name + ' ' + @user.name if @user %>
+
+        <% end %>
+        </span>
+   
+ 
+      <span class="ddate">
+      <%= desk_subj.created_at.strftime("%d")+'.'+ desk_subj.created_at.strftime("%m")+'.'+ desk_subj.created_at.strftime("%Y")%>.
+      </span>
+
+ 
+      <div class="title"> <%= raw  desk_subj.subj %> &nbsp; </div>
+      </div>
+     
+        <div class="text"><%= raw  desk_subj.s_text %> </div>
+    
+     </td>
+    </tr>
+
+
+  <tr>
+ 
+    <td style="width:100%" >
+  
+      <div id="<%='desk_answ_' + desk_subj.id.to_s%>" >
+   <script type="text/javascript">
+     jq=jQuery.noConflict();
+  jq(document).ready(function(){
+    
+    jq("#<%='d_' + desk_subj.id.to_s%>").click(function () {
+      jq("#<%='desk_answ_' + desk_subj.id.to_s%>").slideToggle("slow");
+    });
+
+  });
+  </script>
+    <% da=0 %>
+     <table  class="answ" style="display: inherit;"  cellspacing="0" cellpadding="0" >
+    <% desk_subj.desk_answ.each do |t| %>
+       <% da +=1 %>
+
+       
+          <tr style="display: inherit; margin-bottom: 10px; ">
+             <td style="width: 70px; height: 80px; padding: 0px; display: inherit; padding-bottom: 10px;" valign="top"  >
+        <% if t.user_id %>
+        <% @user = Office1.find_by_id(t.user_id) %>
+            <% if @user and @user.pic %>
+            <img src="/images/photo/<%=@user.pic %>.jpg" width="70px" />
+             <% else %>
+             <img src="/images/ava/qq.jpg" width="70px" />
+             <% end %>
+        <% else %>
+        <img src="/images/ava/qq.jpg" width="70px" />
+        <% end %>
+                 </td>
+            <td style="width:500px;" >
+              <div class="ndt" >
+     <span class="name">
+            <% if t.user_id %>
+       <% @user = Office1.find_by_id(t.user_id) %>
+       <% if @user %>
+       <%= @user.last_name + ' ' + @user.name %>
+       <% end %>
+            <% end %>
+        </span>
+              <span class="ddate" >
+
+              <%= t.created_at.strftime("%d")+'.'+t.created_at.strftime("%m")+'.'+t.created_at.strftime("%Y") %>
+        
+              </span>
+              </div>
+   
+              <div class="text" style=" padding-bottom: 10px;" >
+           <%= raw t.a_text%>
+          
+              </div>
+             </td>
+           
+      
+          </tr>
+          <% end %>
+        </table>  
+
+      </div>   
+        <% if da==0 %>
+        <%else%>
+       <button id="<%='d_' + desk_subj.id.to_s%>">свернуть/развернуть ответы</button> <br/>
+       <%end%>
+    
+    
+        <span class="comments" style="float:right; ">
+
+     <% if login? %>
+   <%=link_to_remote 'Добавить комментарий', :url=>{:action => 'new_answ', :id=>desk_subj.id}, :update=>('new_answ'+ desk_subj.id.to_s)  %>
+
+  <% else %>
+    <span style="color: #999999">
+      Добавить комментарий можно после авторизации.
+    </span>
+  <% end %>
+
+
+
+   
+      </span> <br/>
+      <div id="<%='new_answ'+ desk_subj.id.to_s%>" ><br/> </div>
+       
+    </td>
+   
+  </tr>
+  </table>
+
+      <% end %>
+
+
+<br />
+
+<%= will_paginate @desk_subjs %>
+
+<br/>
+
+<%#= render :partial=>'/desk_subjs/new_subj' %>
+
+
+
+</div>
+<%end%>

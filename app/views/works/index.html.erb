@@ -1,0 +1,16 @@
+<h1>Приказы, распоряжения, положения, инструкции</h1>
+
+<table>
+
+<% @works.each do |work| %>
+  <tr>
+    <td><%= work.title %></td>
+    <td><%#= work.content %></td>
+    
+    <td><%= link_to 'Редактировать', edit_work_path(work) %></td>
+    <td><%#= link_to 'Destroy', work, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+

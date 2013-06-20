@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subj:</b>
+  <%= @editsubj.subj %>
+</p>
+
+<p>
+  <b>S text:</b>
+  <%= @editsubj.s_text %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @editsubj.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_editsubj_path(@editsubj) %> |
+<%= link_to 'Back', editsubjs_path %>

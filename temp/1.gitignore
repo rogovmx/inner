@@ -1,0 +1,10 @@
+/doc
+/rails
+/*.gem
+/coverage
+/nbproject
+/old_vendor
+/config/database.yml
+/log/*
+/tmp
+.idea/

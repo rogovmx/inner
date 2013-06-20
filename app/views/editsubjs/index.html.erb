@@ -1,0 +1,54 @@
+<h1>Стена</h1>
+<style type="text/css">
+.u1 {background-color: white}
+.u2 {background-color: transparent;}
+</style>
+<ol>
+
+<% @editsubjs.each do |editsubj| %>
+ 
+  <li class="<%= cycle('u1', 'u2')  %> ">
+       <div style="float: right; padding-left: 10px; ">
+  <%= link_to 'Редактировать', edit_editsubj_path(editsubj) %>
+    <%= link_to 'Удалить' , {:controller=>'editsubjs',  :action=>'dd' , :id=>editsubj.id} , :method => :delete , :confirm => 'Are you sure?' , :style=>'color:red' %>
+    </div>
+    <div style="width: 600px; margin-bottom: 10px; ">
+<% if editsubj.subj and editsubj.subj != '' %>
+  <%=editsubj.subj %>
+      <% else %>
+      Сообщение без темы от:     <%= editsubj.created_at.strftime("%d")+'.'+editsubj.created_at.strftime("%m")+'.'+editsubj.created_at.strftime("%Y") %>
+      
+      <% end %>
+
+    </div>
+
+   
+<% @desk_answs=DeskAnsw.find :all , :conditions=>['desk_subj_id=?', editsubj.id] %>
+      <% if @desk_answs and @desk_answs.size != 0 %>
+    <ul>
+
+<% for desk_answ in @desk_answs %>
+      <li style="color: #999999">
+    <div style="float: right; padding-left: 10px;">
+    <%= link_to 'Редактировать ответ', :controller=>'desk_answs' , :action=>'edit' , :id=>desk_answ.id %>
+    <%= link_to 'Удалить', {:controller=>'desk_answs' , :action=>'del', :id=>desk_answ.id }, :confirm => 'Are you sure?', :method => :delete , :style=>'color:red' %>
+      </div>
+        
+<div style="width: 500px; margin-bottom: 10px; ">
+      <%=raw desk_answ.a_text %>
+</div>
+  
+      </li>
+
+<% end %>
+</ul>
+
+
+      <% end %>
+
+
+</li>
+<% end %>
+
+  
+</ol>

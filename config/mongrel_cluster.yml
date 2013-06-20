@@ -1,0 +1,8 @@
+--- 
+address: 127.0.0.1
+log_file: /home/local/site/tt11/log/mongrel.log
+port: "8000"
+cwd: /home/local/site/tt11
+environment: development
+pid_file: tmp/pids/mongrel.pid
+servers: 2

@@ -1,0 +1,146 @@
+<% content_for(:cont) do %>
+<style type="text/css">
+  #errorExplanation
+  {
+    padding:15px;
+    background-color:#dcdcdc;
+    color: red;
+  }
+
+  .errorExplanation h2
+  {
+    visibility:hidden;
+    display:none;
+  }
+  .errorExplanation p
+  {
+    visibility:hidden;
+    display:none;
+  }
+</style>
+<% user=User.find :first, :conditions=>["old_id=?",params[:id]] %>
+<% user_old=MUsers.find :first, :conditions=>["id=?",params[:id]]%>
+
+<!-- Начало верстки -->
+
+<div class="spens_form" style="width:545px;">
+  <br>
+  <span><b>
+  Сайт находится в режиме тестирования.<br> Приносим извинения за временные неудобства.
+    </b></span>
+  <br><br>
+  Здравствуйте , <%= user_old.name %>!
+  <br /><br />
+<!--  <span>Мы рады приветствовать Вас на нашем новом сайте!</span> -->
+  <ul>
+    <li>Хорошо, что Вы зашли на наш новый сайт «Живой офис»!
+
+Ваши регистрационные данные перенесены с сайта «Спенс» АВТОМАТИЧЕСКИ.
+
+Просим вас потратить пару минут и еще раз заполнить некоторые поля.
+
+
+
+
+Давайте вместе убедимся, что информация актуальна и мы сможем без проблем сделать отгрузки товара и начислить Вам бонусы.
+
+
+
+
+</li>
+
+  </ul>
+  <br /><span>Поля в красной рамке обязательны к заполнению.</span><br />
+  <%=error_messages_for 'user'%>
+
+    <% form_for :user do |form| %>
+      <input name="authenticity_token" type="hidden" value="3a0328c1591f06d9095a4c59aa9c22d9ec3afd49" />
+       <%= form.hidden_field :old_id ,:value=>params[:id]  %>
+       <%= form.hidden_field :old ,:value=>0  %>
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr class="odd">
+          <td><label for="user_name">Введите ваш логин, в дальнейшем он будет использоваться для идентификации Вас в качестве клиента <a href="">zhivojoffice.ru</a>:</label></td>
+          <td> <%= form.text_field :name, :size => 30 ,:class=>'it',:value=>user.name %></td>
+        </tr>
+        <tr>
+          <td><label for="user_password">Придумайте и введите пароль,<br />рекомендуется не менее пяти символов:</label></td>
+          <td> <%= form.password_field :password, :size => 30,:value=>user_old.password%></td>
+        </tr>
+        <tr class="odd">
+          <td><label for="user_password_confirmation">Введите пароль еще раз:</label></td>
+          <td>  <%= form.password_field :password_confirmation, :size => 30 ,:value=>user_old.password %></td>
+        </tr>
+        <tr>
+          <td><label for="user_surname">Ваша фамилия:</label></td>
+          <td> <%= form.text_field :surname, :size => 30  ,:class=>'input_n'%></td>
+        </tr>
+        <tr class="odd">
+          <td><label for="user_scr_name">Ваше имя:</label></td>
+          <td><%= form.text_field :scr_name, :size => 30 %></td>
+        </tr>
+        <tr>
+          <td><label for="user_patronymic">Ваше отчество:</label></td>
+          <td> <%= form.text_field :patronymic, :size => 30 ,:class=>'input_n'%></td>
+        </tr>
+        <tr class="odd">
+          <td><label for="user_mail">Введите ваш e-mail:</label></td>
+          <td><%= form.text_field :mail, :size => 30 ,:value=>user.mail%></td>
+        </tr>
+        <tr>
+          <td><label for="user_phone">Введите ваш телефон, мы свяжемся с Вами сразу после завершения регистрации:</label></td>
+          <td>
+         <!-- <input id="user_phone" name="user[phoneprefix]" pattern="\S" size="4" type="text" />&nbsp;&nbsp;&nbsp;-->
+            <%= form.text_field :phone, :size => 30 %>
+            </td>
+        </tr>
+      </table>
+
+      <table>
+        <tr class="odd">
+          <td>
+          <!--  <label for="company_ind">Если Ваша организация уже является нашим клиентом, введите код организации (запросите у менеджера) или фамилию Вашего менеджера и нажмите кнопку "Завершить оформление". Если нет, поле "Код компании" оставьте пустым.</label>-->
+         <label for="company_ind">Введите название Вашей организации</label>
+          </td>
+          <td>  <%= form.text_field :company_ind, :size => 30 %></td>
+        </tr>
+        <tr >
+          <td>
+          <!--  <label for="company_ind">Если Ваша организация уже является нашим клиентом, введите код организации (запросите у менеджера) или фамилию Вашего менеджера и нажмите кнопку "Завершить оформление". Если нет, поле "Код компании" оставьте пустым.</label>-->
+         <label for="inn">Введите ИНН Вашей организации</label>
+          </td>
+          <td>  <%= form.text_field :inn, :size => 30 %></td>
+        </tr>
+        <tr class="odd">
+          <td><label for="soglasen">Я согласна(согласен) получать от <a href="http://www.zhivojoffice.ru">www.zhivojoffice.ru</a> поздравления , информацию о бонусной программе и рекламных акциях.</label></td>
+          <td align="center">
+
+<%= form.check_box :soglasen,:checked=>'checked' %></td>
+        </tr>
+      </table>
+      <br>
+      <p style="text-align: center;">
+      
+         <%= submit_tag "Завершить оформление", :class => "submit" %>
+
+
+      </p>
+      <br>
+    <%end%>
+<ul>
+
+    <li>Личные сведения, полученные в распоряжение <a href="http://www.zhivojoffice.ru">www.zhivojoffice.ru</a> при регистрации или каким-либо иным образом, не будут без разрешения пользователей передаваться третьим организациям и лицам, за исключением ситуаций, когда этого требует закон или судебное решение.</li>
+  </ul>
+</div>
+
+<!--  Конец верстки -->
+<%  end %>
+
+
+<% content_for(:bs) do %>
+  <%=bs%>
+  <%  end %>
+
+<%# content_for(:sp) do %>
+  <%#=sp%>
+  <%#  end %>
+

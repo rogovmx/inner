@@ -1,0 +1,2 @@
+module DeskSubjsHelper
+end

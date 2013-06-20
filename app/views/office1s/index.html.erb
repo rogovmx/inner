@@ -1,0 +1,85 @@
+<style type="text/css">
+  td {padding: 3px;}
+  th {text-align: left; color: white; background-color: #87bc40; padding: 3px;}
+</style>
+
+
+<h1>Работники живого офиса</h1>
+<div>
+<% for alf in @alf do %>
+<% if alf == @letter %>
+  <%= link_to alf , { :letter => alf} , :style => 'font-weight: bold; color: red;' %> &nbsp;&nbsp;
+<% else %>
+   <%= link_to alf , { :letter => alf}  %> &nbsp;&nbsp;
+ <% end %>
+<% end %>
+</div>
+
+<%= link_to 'Скачать в xls' , {:controller=>'export' , :action=>'xls'} , :style=>'float: right;'  %>
+<br/>
+<%= link_to 'Новый сотрудник',  :action=>'new' %> <br/><br/>
+<table cellpadding="0" cellspacing="0" style="font-size: small">
+  <tr style="color: white;">
+     <th style="color: white;"> Фото</th>
+    <th style="color: white;">ФИО</th>
+    <th style="color: white;"> Город </th>
+    <th style="color: white;">Дирекция</th>
+     <th style="color: white;">Отдел</th>
+    <th style="color: white;">Должность</th>
+    <th style="color: white;">сотрудник/ <br/> руководитель</th>
+    <th style="color: white;">Телефон</th>
+    <th style="color: white;">Почта</th>
+    <th style="color: white;"> Операции</th>
+  </tr>
+
+<% @office1s.each do |office1| %>
+  <tr style="<%=cycle('background-color: white;','background-color: #ddffff;') %> ">
+
+    <td> <img src="/images/photo/<%=h office1.pic %>.jpg" width="50px"/></td>
+    <td style="<%='background-color: #e6e7e8;' if office1.dekret %> ">
+<%= link_to edit_office1_path(office1) do %>
+  <%= office1.last_name %> <br/>
+    <%= office1.name %>
+     <%= office1.patronimic %>
+<% end %>
+    </td>
+    <td> <%  if office1.city == 1%>
+      <span style="color:green"> СПб </span>
+         <%  elsif office1.city == 2%> 
+       <span style="color:red">   Мск </span>
+         <%  elsif office1.city == 3%> 
+       <span style="color:blue">  Смо </span>
+         <%  elsif office1.city == 4%>
+       <span style="color: violet ">  Тверь </span>
+       <% end %>
+    </td>
+     <td>
+<% dep=Dep1.find(office1.dep1) if office1.dep1!= nil %>
+<%= dep.name if dep %>
+</td>
+
+     <td>
+<% otd=Otdel1.find(office1.otdel1) if office1.otdel1!= nil %>
+<%= otd.name if otd %>
+</td>
+
+    <td><%= office1.job %> <br/>
+    <%=raw '<span style="color: red;">В декрете</span>' if office1.dekret %>
+    </td>
+    <td>  <%= 'руководитель' if office1.dir %> <%= 'сотрудник' unless office1.dir %> </td>
+    <td><%= office1.phone %></td>
+    <td><%= office1.mail %></td>
+
+    <td><%#= link_to 'Показать', office11 %> 
+    <%= link_to 'Редактировать', edit_office1_path(office1) %><br/><br/>
+    <%#= link_to 'Удалить', office1, :confirm => 'Точно удалить?', :method => :delete %>
+    <%= link_to 'Удалить', {:controller=>'office1s' , :action=>'del' , :id=>office1.id} , :confirm => 'Точно удалить?', :style=>'color:red' %>
+
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Новый сотрудник', new_office1_path %>

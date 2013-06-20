@@ -1,0 +1,39 @@
+
+<% content_for(:cont) do %>
+<div class="f_root">
+
+<h1>Новая тема</h1>
+
+<%= form_for(@forumtheme) do |f| %>
+<%= f.hidden_field :forumroot_id , :value => params[:root] %>
+<%= f.hidden_field :office1_id , :value => @usr.id if login? %>
+
+ <% if admin? %>
+<div class="field">
+    <%= f.label 'Видимость' %>
+    <%= f.check_box :vis %>
+  </div>
+<% end %>
+
+  <div class="field">
+    <%= f.label 'Название темы' %><br />
+    <%= f.text_field :title %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label 'Сообщение' %><br />
+    <%= f.cktext_area :content ,:toolbar=>'Full', :width=>'550px', :height=>'200px'  %>
+  </div>
+
+
+
+  <div class="actions">
+    <%= f.submit 'Сохранить'%>
+  </div>
+<% end %>
+
+
+<%= link_to 'Вернуться', :action=>'index' , :id => params[:root]%>
+</div>
+<% end %>

@@ -1,0 +1,27 @@
+ <div class="dwelcome">
+  Здравствуйте!&nbsp;
+ <% @user =User.find_by_id(session[:user_id]) %>
+ <%= @user.name %><br>
+ 
+  
+</div>
+
+<div class="cart"  >
+<% @cart=Cart.find :all,:conditions=>['User_id=? or sesion_id=?',@user.id,session.session_id]%>
+<% if @cart %>
+<% @cart_count=Cart.count :conditions=>['User_id=? or sesion_id=?',@user.id,session.session_id]%>
+<%@cart_sum=0%>
+    <% @cart.each do |cart|
+       @cart_sum+=cart.price*cart.quantity
+     end %>
+В Ващей корзине:<br>
+ Наименований:&nbsp; <%=@cart_count%><br>
+ На сумму:&nbsp; <%= @cart_sum %> р.<br>
+<br>
+    <%=link_to 'Перейти в корзину',:controller=>'kt1',:action=>'edit_cart'%>&nbsp;<%= link_to "Выйти", :controller => 'login', :action => 'logout' %>
+<%else%>
+Ваша корзина пуста.<br>
+  <%= link_to "Выйти", :controller => 'login', :action => 'logout' %>
+<%end%>
+
+</div>

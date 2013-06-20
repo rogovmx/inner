@@ -1,0 +1,11 @@
+<% content_for(:cont) do %>
+
+ <div class="path"> <%= @path %> </div>
+
+<%= render :partial=>'/part/prikaz' if params[:smenu]=='1' %>
+<%= render :partial=>'/part/raspor' if params[:smenu]=='2' %>
+<%= render :partial=>'/part/polozh' if params[:smenu]=='3' %>
+ <%= render :partial=>'/part/instr' if params[:smenu]=='4' %>
+  <%= render :partial=>'/part/pravila' if params[:smenu]=='5' %>
+
+<% end %>

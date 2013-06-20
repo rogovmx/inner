@@ -1,0 +1,19 @@
+<div id="news_box">
+ 
+          
+          
+            <span style="color:#955AA5;"> Сегодня можно отметить</span><br/>
+            
+           <% @holiday = Holiday.find :first, :conditions =>['month=? and day=?',Time.now.month , Time.now.day] %>
+           <a href="holiday/index" style="text-decoration:none; font-size: 12px; color: black; margin-left: 0px;">
+          <%=h @holiday.title %>
+           </a>
+           <br/>
+      
+           <a href="holiday/index" style="margin-left: 0px;">
+            еще больше праздников...
+              </a>
+        
+        
+
+        </div>

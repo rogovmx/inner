@@ -1,0 +1,39 @@
+
+<% content_for(:cont) do %>
+<div class="f_root">
+
+<h1 class="forum_h1">Форум Живого офиса</h1>
+
+<table class="f_root_table" cellpadding="1" cellspacing="1">
+  <tbody>
+    <tr>
+      <th> </th>
+      <th width="75%">Раздел форума </th>
+      <th width="10%" align="center">Тем </th>
+      <th width="10%" align="center">Сообщений </th>
+    </tr>
+<% @forumroots.each do |forumroot| %>
+
+    <tr style="background-color: <%= cycle('white','#F2EFF6') %>">
+      <td> <%= image_tag('/images/folder.gif')  %>  </td>
+      <td> <%= link_to forumroot.title ,  {:controller=> 'forumthemes' , :id => forumroot.id  } , :class=>'f_title' %>
+        <% if admin? %>
+        <div style="float: right;">
+        <%='раздел отключен'  unless forumroot.vis  %>
+        <%= link_to 'Редактировать', edit_forumroot_path(forumroot) %> | 
+        <%= link_to 'Удалить', {:action=>'destr' , :id=>forumroot.id}, :confirm => 'Точно?' %>
+        </div>
+        <% end %>
+      </td>
+      <td align="center"> <%= forumroot.forumtheme.find_all{|f| f.vis}.size  %>  </td>
+      <td align="center"> <%= forumroot.forumtheme.size + forumroot.forumtheme.inject(0){|r,s| (r + s.forumtalk.find_all{|f| f.vis}.size) }   %>  </td>
+  
+</tr>
+<% end %>
+
+
+</tbody>
+</table>
+<%= button_to 'Добавить раздел форума', new_forumroot_path if admin? %>
+</div>
+<% end %>

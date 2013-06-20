@@ -1,0 +1,62 @@
+<% content_for(:cont) do %>
+<h1>Пользователи</h1>
+<ul>
+  <% for user in @show_users %>
+<li>
+<p>
+  <b>Логин:</b>
+  <%= user.name %>
+</p>
+<p>
+  <b>Пароль:</b>
+  <%= user.hashed_password %>
+</p>
+<p>
+  <b>Сальт:</b>
+  <%= user.salt %>
+</p>
+
+  <p>
+  <b>Scr name:</b>
+  <%= user.scr_name %>
+</p>
+
+<p>
+  <b>Patronymic:</b>
+  <%=  user.patronymic %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%= user.surname %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= user.phone %>
+</p>
+
+<p>
+  <b>M phone:</b>
+  <%= user.m_phone %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= user.company %>
+</p>
+
+<p>
+  <b>Company ind:</b>
+  <%= user.company_ind %>
+</p>
+<p>
+  <b>Role:</b>
+  <%= user.role %>
+</p>
+
+  </li>
+  <hr>
+  <% end %>
+</ul>
+<%end%>

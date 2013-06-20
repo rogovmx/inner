@@ -1,0 +1,165 @@
+
+
+<style type="text/css">
+
+ /* .add_user p
+  {
+    width: 500px; text-align: right; display: inline-block; margin-bottom: 10px;
+    }
+    */
+.add_user legend {color: green;}
+
+</style>
+
+<div class="add_user">
+  <%= error_messages_for 'user' %>
+
+  <fieldset style="padding: 10px;">
+    <legend> Редактирование пользователя: <%=@office1.last_name %>  </legend>
+
+ <% form_for(@office1) do |f| %>
+  <%= f.error_messages %>
+<%= hidden_field :role, :value=>'user' %>
+    <%#= hidden_field :city, :value=>@usr.city %>
+
+<br />
+
+<table>
+  <tr>
+    <td>
+  <p style="margin-bottom: 30px;">
+    <b> Город: </b> 
+    <select id="office1_city" name="office1[city]" style="width: 200px;">
+      <option value="1" <%='selected="selected"' if @office1.city == 1 %>>Санкт-Петербург </option>
+      <option value="2" <%='selected="selected"' if @office1.city == 2 %>>Москва </option>
+      <option value="3" <%='selected="selected"' if @office1.city == 3 %>>Смоленск </option>
+      <option value="4" <%='selected="selected"' if @office1.city == 4 %>>Тверь</option>
+    </select>
+
+  </p>
+
+    </td> <td></td>
+  </tr>
+  <tr>
+    <td>
+  <p>
+    <%= f.label 'Фамилия:' %> <br/>
+    <%= f.text_field :last_name %>
+  </p>
+    </td> <td>
+      <p>  
+   <%= f.label 'Декрет:' %>
+  <%= f.check_box :dekret %>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <p >
+    <%= f.label 'Имя:'%><br/>
+    <%= f.text_field :name %>
+  </p>
+    </td>
+    <td>
+    <p >
+    <%= f.label 'Отчество:' %><br/>
+    <%= f.text_field :patronimic %>
+  </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+
+      <p >
+    <%= f.label 'Дирекция:' %><br/>
+    <%= f.collection_select(:dep1 , @dep1, :id, :name) %>
+  </p>
+
+    </td>
+    <td>
+  <p >
+    <%= f.label 'Отдел' %><br/>
+   <%= f.collection_select(:otdel1 , @otdel1, :id, :name) %>
+  </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+  <p >
+    <%= f.label 'Должность:' %><br/>
+    <%= f.text_field :job , :style=>'width: 400px;' %><br/>
+     <%= f.label 'Руководитель:' %>
+  <%= f.check_box :dir %>
+  </p>
+    </td> 
+  </tr>
+  <tr>
+    <td>
+
+  <p >
+    <%= f.label 'Телефон:' %><br/>
+    <%= f.text_field :phone %>
+  </p>
+    </td>
+    <td>
+  <p >
+    <%= f.label 'Почта:' %><br/>
+    <%= f.text_field :mail %>
+  </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <p>
+    <%= f.label 'Фото:' %><br />
+    <%= f.text_field :pic %>
+  </p>
+    </td> <td>
+     <p>
+    <%= f.label 'Кабинет:' %><br />
+    <%= f.text_field :room %>
+  </p>
+    </td>
+  </tr>
+</table>
+  <br/>
+      <p>
+    <%= f.label 'Бриф' %><br />
+    <%= f.cktext_area :about ,:toolbar=>'Full' %>
+  </p>
+<br/>
+
+
+      <%#*<p>%>
+    <%#= f.label 'Пароль' %>
+    <%#= f.password_field :password %>
+  <%#*</p>%>
+<%#*<br/>%>
+
+      <%#*<p>%>
+    <%#= f.label 'Подтверждение пароля' %>
+    <%#= f.password_field :password_confirmation %>
+  <%#*</p>%>
+<%#*<br/>%>
+
+
+  <div style="margin: 20px auto; text-align: center; ">
+    <%= f.submit 'Сохранить', :style=>'padding: 5px; background-color: green; color: white; font-weight: bold; cursor: pointer;' %>
+  </div>
+<% end %>
+
+
+  </fieldset>
+<br/> <br/>
+<%#= link_to 'Показать', @office1 %> |
+<%= link_to 'Вернуться', office1s_path %>
+<br/><br/>
+</div>
+<br/>
+
+
+
+
+
+
+

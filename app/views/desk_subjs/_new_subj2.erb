@@ -1,0 +1,56 @@
+<%#= javascript_include_tag :ckeditor %>
+<b   class="name"> Новое сообщение </b>
+<br/>
+<table>
+  <tr> <td style="width: 70px" valign="top">
+      <% if login? %>
+       <%# @user2 = Office1.find_by_id(session[:user_id]) %>
+      <div style="width: 70px; height: 70px; background-color: silver; margin-top: 30px; border: 1px solid #b1b3b6;">
+        <img src="/images/photo/<%=@usr.pic %>.jpg" width="70px" />
+      </div>
+<% else %>
+      <div style="width: 70px; height: 70px; background-color: silver; margin-top: 30px; border: 1px solid #b1b3b6;  background-image: url(/images/ava/qq.jpg); background-position: center center;">
+</div>
+<% end %>
+   
+        
+
+    </td>
+    <td>
+<div id="new_mess" style="  margin-top: 20px; margin-left: 50px">
+
+<%=  form_for :desk_subj_new, :url=>{:controller=>'desk_subjs' , :action => "save_mess" } do |f|  %>
+
+  <% if login? %>
+  <% @usr = Office1.find_by_id(session[:user_id]) %>
+  <%= f.hidden_field :user_id , :value=>@usr.id  %>
+  <%#= f.hidden_field :city , :value=>@usr.city %>
+  <% end %>
+   <div class="label2"> Тема сообщения :</div>
+   <div class="okno2" >
+   
+
+
+        <%= f.text_area :subj, :cols => 60, :rows=> 1 ,:class=>'tema' %>
+   </div>
+  <br/>
+  <div class="label2"> Ваше сообщение :</div>
+  <div  align="left" style="margin-bottom: 15px;">
+
+       <%= f.cktext_area :s_text ,:toolbar=>'Full', :width=>'550px', :height=>'200px'  %>
+  </div>
+
+
+  <a href="#" onclick="zp('newsubj')"  style="float:left;"> Отмена </a>
+
+    <%= f.submit '' , :class =>'new_sub' %>
+
+
+<% end %>
+
+
+</div>
+    </td> </tr>
+</table>
+
+

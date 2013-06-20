@@ -1,0 +1,7 @@
+<% content_for(:cont) do %>
+<%= render :partial=>'/part/albwork' if params[:smenu]=='1' or params[:smenu]==nil %>
+<%= render :partial=>'/part/albotd' if params[:smenu]=='2' %>
+
+
+
+<% end %>

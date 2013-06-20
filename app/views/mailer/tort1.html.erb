@@ -1,0 +1,29 @@
+
+ФИО:&nbsp;<%=@order.name %> <br />
+Телефон:&nbsp;<%=@order.phone%><br />
+<br>
+
+Адрес доставки:<%= @order.adres  %><br>
+
+
+    
+    
+    
+  
+<% @order.licakeorder.each do |cart| %>
+  
+<% @cake=Cake1.find_by_id(cart.cake1_id) %>
+<% @fill=Filler1.find_by_id(cart.filler1_id) %>
+<% @price= cart.weight * @cake.price%>
+ 
+<b >Название:</b>&nbsp; <%= @cake.name %> <br/>
+  
+<b>Наполнитель:</b>&nbsp;<%=@fill.name %><br/>
+    
+<b>Вес:</b>&nbsp;<%= cart.weight %><br/>
+   
+<b>Цена: </b>&nbsp;<%= @price %><br/>
+  
+<%end%>
+
+

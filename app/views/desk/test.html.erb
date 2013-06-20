@@ -1,0 +1,28 @@
+<% content_for(:cont) do %>
+
+          <div class="right_block">
+            <div style="margin-bottom: 10px;">
+            <% if login? %>
+            <%= user_name %>
+            <% else %>
+            <div id="sitelogin">
+            <%= render :partial=>'/part/login' %>
+            </div>
+            <% end %>
+          </div>
+
+
+
+          <%= render :partial=>'status' %>
+            <img src="/images/vs_19.jpg" width="160px" />
+            <%= render :partial=>'/part/newsbox' %>
+            <img src="/images/cat.jpg" />
+            <br/>
+          <br/>
+           <img src="/images/vs_35.jpg" />
+
+          </div>
+
+
+
+<% end %>

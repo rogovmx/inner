@@ -1,0 +1,39 @@
+ 
+      <div style="width: 70px; height: 70px; margin: 10px; float: left; border: 1px solid #00ae4d;">
+        <% if @stf.pic %>
+        <img src="/images/photo/<%=@stf.pic + '.jpg'%>" width="70px" />
+        <% else %>
+        <img src="/images/no_image_s.gif" width="70px" />
+      <%end %>
+      </div>
+      <div style=" width: 200px; margin-left: 92px; margin-top: 10px; padding-bottom: 10px;" onmouseover="show_id('<%="alf"+ @stf.id.to_s %>')">
+        <span style="color: #00ae4d;  font-weight: bold; font-size: 13px; ">
+        <%= @stf.last_name %> <br/>
+        <%= @stf.name + ' ' + @stf.patronimic %>
+        </span>
+        <% if @stf.about and @stf.about != '' %>
+        <span>
+          <br/>
+          <%= link_to 'бриф' , {:controller=>'main' , :action=>'breef' , :id=>@stf.id} , :popup=>true %>
+        </span>
+        <% end %>
+        <br/>
+        <span>
+            <%= @stf.job %>
+        </span>
+        <br/> <br/>
+        <span>
+          <% @otdel=Otdel1.find_by_id(@stf.otdel1) %>
+          <b>Отдел:&nbsp; </b> <%= @otdel.name %>
+        </span>
+        <br/> <br/>
+        <span>
+          <b>Tелефон: &nbsp; </b><%= @stf.phone %>
+        </span>
+        <br/>
+        <span>
+          <a href="mailto:<%= @stf.mail %>"><%= @stf.mail %></a>
+        </span>
+
+
+      </div>

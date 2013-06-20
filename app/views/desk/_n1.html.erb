@@ -1,0 +1,17 @@
+<div>
+
+  <div id="photo" style="width: 700px; height: 518px; background-image: url(/images/ava/n_back.gif);
+       background-position: center center; background-repeat: no-repeat; ">
+
+<img src="/images/news/n1_1.jpg" />
+  </div>
+  <%@pic=Newspic.find :all, :conditions => ['news_id=?',@num] %>
+  <div id="pics">
+    <% for n in @pic %>
+        <%= link_to_remote image_tag('/images/news/'+n.img_sm, :width => "70px", :class=>'n_pics'), :url => {:controller => 'desk_subjs',:action => 'news', :id=>n.id}, :update => 'photo'  %>
+  
+    <%end%>
+  </div>
+
+
+</div>

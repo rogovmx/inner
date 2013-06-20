@@ -1,0 +1,29 @@
+<%= form_for(@editsubj) do |f| %>
+  <% if @editsubj.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@editsubj.errors.count, "error") %> prohibited this editsubj from being saved:</h2>
+
+      <ul>
+      <% @editsubj.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p class="field">
+    <%= f.label 'Тема' %><br />
+    <%= f.text_field :subj , :style=>'width: 800px;' %>
+  </p>
+  <br />
+  <p class="field">
+    <%= f.label 'Сообщение' %><br />
+    <%= f.cktext_area :s_text ,:toolbar=>'Full' %>
+  </p>
+  <br />
+<br/>
+  <p class="actions">
+    <%= f.submit 'Сохранить' %>
+  </p>
+  <br/>
+<% end %>

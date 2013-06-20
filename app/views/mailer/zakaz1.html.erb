@@ -1,0 +1,59 @@
+<br>
+Номер заказа: <%=@order.id%><br>
+ <%# @legals=Legal.find(@order.legal_id) %>
+  <%# @adr_dost=AdrDost.find(@order.adr_dost_id) %>
+<% @legals=Client.find(@order.legal_id) %>
+Сумма заказа: <%=@order.summa%><br>
+<% if @legals.id==1 %>
+<% user_id=@order.user_id %>
+<%@user=User.find(user_id)%>
+User:&nbsp;<%=@user.name%>
+<br />Компания:&nbsp;<%=@user.company_ind%> <br />
+ФИО:&nbsp;<%=@user.surname + ' ' +  @user.scr_name + ' ' + @user.patronymic %> <br />
+Телефон:&nbsp;<%=@user.phone%><br />
+ИНН:&nbsp;<%=@user.inn%><br />
+<%else%>
+Юр.лицо:<%= @legals.name %><br>
+Код 1С :<%= @legals.k1c %><br>
+<%end%>
+<br>
+
+Адрес доставки:<%#= @adr_dost.street_id  %><br>
+Дата доставки:<%#= @order.data_dost  %><br>
+Детали заказа:<br>
+<table >
+  <tr>
+    <th>Код 1С</th>
+    <th>Название</th>
+    <th>Цена</th>
+    <th>
+      Количество
+    </th>
+  </tr>
+<% @order.lineitem.each do |cart| %>
+  <% if cart.otdel=='katr' %>
+    <% @cat=Rashod.find_by_k1c(cart.k1c) %>
+
+<% elsif cart.otdel=='kanc'%>
+
+<% @cat=Cat1.find_by_k1c(cart.k1c) %>
+  <%else%>
+   <% @cat=Raspr1.find_by_k1c(cart.k1c) %>
+<%end%>
+  <tr>
+    <td style="padding: 2px;">
+<%= cart.k1c %>
+    </td>
+    <td style="padding: 2px;">
+<%=@cat.name %> 
+    </td>
+    <td style="padding: 2px;">
+<%= cart.price %>
+    </td>
+    <td style="padding: 2px;">
+<%= cart.quantity %>
+    </td>
+  </tr>
+<%end%>
+</table>
+

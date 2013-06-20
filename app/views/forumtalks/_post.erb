@@ -1,0 +1,41 @@
+<table class="subj2 <%= 'off' unless @post.vis %> " cellspacing="0" cellpadding="0" style="width: 710px;" >
+   <tr>
+     <td style="width: 70px; padding: 0px;" valign="top" rowspan="2" >
+      <% @user = @post.office1 %>
+        <% if @user %>
+         <img src="/images/photo/<%= @user.pic%>.jpg" width="70px" />
+        <% else %>
+        <img src="/images/ava/qq.jpg" width="70px" />
+        <% end %>
+
+    </td>
+    <td  valign="top"  >
+
+
+    <div class="ndt"  >
+        <span class="name">
+             <%= @user.last_name if @user %> <%= @user.name if @user %>
+        </span>
+
+
+      <span class="ddate">
+      <%= @post.created_at.strftime("%d")+'.'+ @post.created_at.strftime("%m")+'.'+ @post.created_at.strftime("%Y")%>.
+      </span>
+<% if admin? %>
+  <div style="float: right;">
+    <span style="color: red;"> <%='сообщение отключено'  unless @post.vis  %> </span>
+ <%= link_to 'Редактировать', edit_forumtalk_path(@post) %> |
+ <%= link_to 'Удалить', {:controller => 'forumtalks' ,:action => 'destr' , :id => @post.id} %>
+  </div>
+<% end %>
+
+      <div class="title"> <%= raw  @post.title %>  </div>
+      </div>
+
+
+        <div class="text"><%= raw  @post.content %> </div>
+
+     </td>
+    </tr>
+
+</table>

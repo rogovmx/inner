@@ -1,0 +1,42 @@
+<h1>Listing a_tests</h1>
+
+
+<%= link_to 'mail' , :action=>'mm' %>
+
+<br/>
+<%= link_to 'удаление несуществующих товаров' , :action=>'del' %>
+
+<br/>
+
+<%= link_to 'распродажа' , :action=>'raspr' %>
+
+<br/>
+
+<%= link_to 'скидки' , :action=>'sale' %>
+
+<br/>
+
+<%= link_to 'Отчет по воде' , :action=>'water' %>
+
+<br/>
+
+<%= link_to 'Загрузка цены' , :action=>'price' %>
+
+<br/> <br/><br/>
+
+<% @user=User.find(session[:user_id]) if session[:user_id] %>
+
+<% form_for :user_id , :url=>{:controller=>'a_tests' , :action=>'userid' } do |f| %>
+<%= session[:user_id] if session[:user_id] %> <%= @user.name if session[:user_id] %>  <br/>
+введите user_id <br/>
+<%= f.text_field :userid %>
+<%= f.submit %>
+<br/>
+<a href="/"> На сайт </a>
+
+<% end %>
+<br/>
+<br/>
+<br/>
+
+

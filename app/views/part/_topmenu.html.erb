@@ -1,0 +1,122 @@
+<%
+    @st1='color:#955aa5;' if @menu == 1
+    @st2='color:#955aa5;' if @menu == 2
+    @st3='color:#955aa5;' if @menu == 3
+    @st4='color:#955aa5;' if @menu == 4
+    @st5='color:#955aa5;' if @menu == 5
+    @st6='color:#955aa5;' if @menu == 6
+    @st7='color:#955aa5;' if @menu == 7
+%>
+
+
+
+<ul id ="main_menu">
+                <li class="menu_super" >
+                  <%= link_to 'что нового', {:controller=>'desk_subjs' , :action=>'index' } , :style=>@st1 %>
+                                 
+                   </li>
+
+
+                <li class="menu_super" >
+                  <%= link_to 'о компании', {:controller=>'main' , :action=>'about' , :smenu=>'11'} , :style=>@st2 %>
+                  
+                  <ul>
+                    
+                      <li >
+                      <%= link_to 'миссия', {:controller=>'main' , :action=>'about' , :smenu=>'11'} %>
+                       </li>
+
+                    <li >
+                      <%= link_to 'история', {:controller=>'main' , :action=>'about' , :smenu=>'2'} %>
+                       </li>
+
+                         <li >
+                      <%= link_to 'наши ценности', {:controller=>'main' , :action=>'about' , :smenu=>'3'} %>
+                       </li>
+                    
+                                        <li>
+                      <%= link_to 'наши достижения', {:controller=>'main' , :action=>'about' , :smenu=>'5'} %>
+                     </li>
+                  </ul>
+                   </li>
+
+
+                <li class="menu_super" >
+                  <%= link_to 'работа', {:controller=>'main' , :action=>'work', :smenu=>'1' } , :style=>@st3 %>
+
+                           <ul>
+
+                      <li >
+                      <%= link_to 'приказы', {:controller=>'main' , :action=>'work' , :smenu=>'1'} %>
+                       </li>
+
+                    <li >
+                      <%= link_to 'распоряжения', {:controller=>'main' ,:action=>'work' , :smenu=>'2'} %>
+                       </li>
+
+                         <li >
+                      <%= link_to 'положения', {:controller=>'main' , :action=>'work' , :smenu=>'3'} %>
+                       </li>
+
+                                        <li>
+                      <%= link_to 'инструкции', {:controller=>'main' , :action=>'work' , :smenu=>'4'} %>
+                     </li>
+                     <li>
+                      <%= link_to 'правила', {:controller=>'main' , :action=>'work' , :smenu=>'5'} %>
+                     </li>
+                  </ul>
+
+
+                  </li>
+
+                    <li class="menu_super" >
+                       <%= link_to 'сотрудники', {:controller=>'main' , :action=>'sotrud' , :smenu=>'1'} , :style=>@st4 %>
+                 
+                  <ul>
+                    <li>
+                      <%= link_to 'алфавитный указатель', {:controller=>'main' , :action=>'sotrud' , :smenu=>'1'}  %>
+                      </li>
+                     <li>
+                       <%= link_to 'структура и сотрудники', {:controller=>'main' , :action=>'sotrud' , :smenu=>'3'}  %>
+                      </li>
+                   <li>
+                       <%= link_to 'структура компании', {:controller=>'main' , :action=>'sotrud' , :smenu=>'2'}  %>
+                      </li>
+               
+                  </ul>
+                  </li>
+                
+                 <li class="menu_super" >
+                     <%= link_to 'альбомы', {:controller=>'main' , :action=>'album', :smenu=>'1'} , :style=>@st5 %>
+                                 <ul>
+                    <li>
+                      <%= link_to 'про работу', {:controller=>'main' , :action=>'album' , :smenu=>'1'}  %>
+                      </li>
+                    <li>
+                       <%= link_to 'про отдых', {:controller=>'main' , :action=>'album' , :smenu=>'2'}  %>
+                      </li>
+                  
+                  </ul>
+
+
+                  </li>
+
+
+                  <li class="menu_super" style="" >
+                    <%= link_to 'форум', {:controller=>'forumroots' } , :style=>@st7 %>
+
+
+
+                  </li>
+
+
+
+
+                  <li class="menu_super" style="" >
+                    <a href="http://zhivoioffice.ru/" target="_blank" style="<%=@st6 %>" >сайт&nbsp;Живой&nbsp;Офис </a>
+
+
+
+                  </li>
+                
+              </ul>

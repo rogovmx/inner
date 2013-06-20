@@ -1,0 +1,18 @@
+<p>
+  <b>Subj:</b>
+  <%=h @desk_answ.desk_subj_id %>
+</p>
+
+<p>
+  <b>A text:</b>
+  <%=h @desk_answ.a_text %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @desk_answ.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_desk_answ_path(@desk_answ) %> |
+<%= link_to 'Back', desk_answs_path %>

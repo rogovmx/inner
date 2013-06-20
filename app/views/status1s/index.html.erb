@@ -1,0 +1,65 @@
+<style type="text/css">
+  .status_t th {background-color: gold; color:  #0A246A; padding: 3px;}
+  .status_t td {padding: 3px;}
+.u1 {background-color: white}
+.u2 {background-color: transparent;}
+</style>
+
+
+<div style="margin: 0 auto; width: 80%">
+<h2>Отпуск, больничный, командировка, увольнение</h2>
+
+<br />
+
+<%= link_to 'Добавить статус', new_status1_path %>
+<br/> <br/>
+
+<table cellspacing="1" cellpadding="6"   class="status_t" >
+  <tr>
+    <th>Имя</th>
+    <th>Выход на работу</th>
+    <th>Статус</th>
+    <th>Заместитель</th>
+  
+  </tr>
+
+<% @status1s.each do |status1| %>
+  <tr class="<%= cycle('u1', 'u2')%>">
+    <td><%= status1.name %></td>
+    <td><%= status1.date %></td>
+    
+<% case status1.status %>
+<%  when 1 %>
+    <td style="background-color: yellowgreen">
+      <span > В отпуске </span>
+      </td>
+<% when 2 %>
+      <td style="background-color: orangered">
+      <span > На больничном </span>
+      </td>
+<% when 4 %>
+      <td style="background-color: #65D4F7">
+      <span > В командировке </span>
+      </td>
+<%  when 3  %>
+      <td>
+Уволен
+</td>
+<%  end %>
+ 
+
+    
+    <td><%= status1.subst %></td>
+    
+    <td><%= link_to 'Редактировать', edit_status1_path(status1) %></td>
+    <td><%= link_to 'Удалить', {:controller=>'status1s' , :action=>'del' , :id=>status1.id}, :confirm => 'Вы уверены?', :method => :delete , :style=>'color:red' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Добавить статус', new_status1_path %>
+<br/>
+<br/>
+</div>

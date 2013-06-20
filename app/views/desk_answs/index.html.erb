@@ -1,0 +1,38 @@
+<% content_for(:cont) do %>
+<%unless login?%>
+
+                  <%else%>
+<div style="height: 300px;">
+<h1>Listing desk_answs</h1>
+
+<table >
+  <tr>
+    <th>Subj</th>
+    <th>A text</th>
+    <th>User</th>
+  </tr>
+
+<% for desk_answ in @desk_answs %>
+  <tr>
+    <td><%=h desk_answ.desk_subj_id %></td>
+    <td><%=h desk_answ.a_text %>
+
+
+
+    </td>
+    <td><%=h desk_answ.user_id %></td>
+    <td><%= link_to 'Show', desk_answ %></td>
+    <td><%= link_to 'Edit', edit_desk_answ_path(desk_answ) %></td>
+    <td><%= link_to 'Destroy', desk_answ, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New desk_answ', new_desk_answ_path %>
+
+</div>
+<% end %>
+000000000
+<% end %>

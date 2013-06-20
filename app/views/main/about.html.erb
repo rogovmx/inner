@@ -1,0 +1,13 @@
+<% content_for(:cont) do %>
+
+ <div class="path"> <%= @path %> </div>
+ <div class="text_content">
+ <%= render :partial=>'/part/pr' if params[:smenu]=='1' %>
+  <%= render :partial=>'/part/missia' if params[:smenu]=='11' %>
+  <%= render :partial=>'/part/hist' if params[:smenu]=='2' %>
+  <%= render :partial=>'/part/cennosti' if params[:smenu]=='3' %>
+  <%= render :partial=>'/part/pressa' if params[:smenu]=='4' %>
+  <%= render :partial=>'/part/progr' if params[:smenu]=='5' %>
+
+ </div>
+<% end %>

@@ -1,0 +1,28 @@
+<% content_for(:cont) do %>
+<h1>Listing deskprofs</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Nic</th>
+    <th>Job</th>
+    <th>Avatar</th>
+  </tr>
+
+<% for deskprof in @deskprofs %>
+  <tr>
+    <td><%=h deskprof.user_id %></td>
+    <td><%=h deskprof.nic %></td>
+    <td><%=h deskprof.job %></td>
+    <td><%=h deskprof.avatar_id %></td>
+    <td><%= link_to 'Show', deskprof %></td>
+    <td><%= link_to 'Edit', edit_deskprof_path(deskprof) %></td>
+    <td><%= link_to 'Destroy', deskprof, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New deskprof', new_deskprof_path %>
+<%end%>

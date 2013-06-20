@@ -1,0 +1,57 @@
+<% content_for(:cont) do %>
+
+<div class="depot-form">
+
+  <%= error_messages_for 'user' %>
+
+  <fieldset>
+    <legend>Введите Ваши данные</legend>
+
+    <% form_for :user do |form| %>
+     <p>
+        <label for="user_name">Логин:</label><br>
+        <%= form.text_field :name, :size => 40 %>
+      <br><br>
+        <label for="user_password">Пароль:</label><br>
+        <%= form.password_field :password, :size => 40 %>
+     <br><br>
+        <label for="user_password_confirmation">Повторите:</label><br>
+        <%= form.password_field :password_confirmation, :size => 40 %>
+     <br><br>
+        <label for="user_scr_name">Имя:</label><br>
+        <%= form.text_field :scr_name, :size => 40 %>
+    <br><br>
+      
+        <label for="user_patronymic">Отчество:</label><br>
+        <%= form.text_field :patronymic, :size => 40 %>
+     <br><br>
+        <label for="user_surname">Фамилия:</label><br>
+        <%= form.text_field :surname, :size => 40 %>
+     <br><br>
+        <label for="user_phone">Телефон:</label><br>
+        <%= form.text_field :phone, :size => 40 %>
+    <br><br>
+        <label for="user_m_phone">Мобилный телефон:</label><br>
+        <%= form.text_field :m_phone, :size => 40 %>
+<br><br>
+        <label for="user_mail">E-mail:</label><br>
+        <%= form.text_field :mail, :size => 40 %>
+     <br><br>
+        <label for="user_company">Компания:</label><br>
+        <%= form.text_field :company, :size => 40 %>
+     <br><br>
+        <label for="user_company_ind">Номер компании:</label><br>
+        <%= form.text_field :company_ind, :size => 40 %>
+     <br><br>
+        <label for="user_role">Роль:</label><br>
+        <%= form.text_field :role, :size => 40 %>
+      </p>
+
+
+
+      <%= submit_tag "Отправить", :class => "submit" %>
+    
+    <% end %>  
+  </fieldset>
+</div>
+<%end%>

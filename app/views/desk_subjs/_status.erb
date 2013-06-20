@@ -1,0 +1,85 @@
+<%
+    @status_o=Status1.find :all , :conditions=>['status=?', 1]
+    @status_b=Status1.find :all , :conditions=>['status=?', 2]
+    @status_u=Status1.find :all , :conditions=>['status=?', 3]
+    @status_k=Status1.find :all , :conditions=>['status=?', 4]
+
+%>
+
+
+<% if @status_k and @status_k.size != 0%>
+<div class="status" >
+  <img src="/images/status_04.jpg" />
+  <h3> В командировке </h3>
+<% for stat in @status_k do %>
+  <p style="margin-bottom: 15px;">
+    <span class="name"> <%= stat.name %> </span> <br/>
+    <b>В офис:</b> <%= stat.date %>
+ <% if stat.subst and stat.subst!='' %>
+    <br/>
+<span style="font-weight: bold;">замещает:</span> <br/>
+<%= stat.subst %>
+<% end %>
+  </p>
+<% end %>
+  <img src="/images/vs_35.jpg"/>
+</div>
+<% end %>
+
+
+
+<% if @status_o and @status_o.size != 0%>
+<div class="status" >
+  <img src="/images/status_01.jpg" />
+  <h3> В отпуске </h3>
+<% for stat in @status_o do %>
+  <p style="margin-bottom: 15px;">
+    <span class="name"> <%= stat.name %> </span> <br/>
+    <b>На работу:</b> <%= stat.date %>
+ <% if stat.subst and stat.subst!='' %>
+    <br/>
+<span style="font-weight: bold;">замещает:</span> <br/>
+<%= stat.subst %>
+<% end %>
+  </p>
+<% end %>
+  <img src="/images/vs_35.jpg"/>
+</div>
+<% end %>
+
+
+
+<% if @status_b and @status_b.size != 0%>
+<div class="status" >
+  <img src="/images/status_02.jpg" />
+  <h3> На больничном </h3>
+<% for stat in @status_b do %>
+  <p style="margin-bottom: 15px;">
+    <span class="name"> <%= stat.name %> </span> <br/>
+<%= stat.date %> <br/>
+<span style="font-weight: bold;">замещает:</span> <br/>
+<%= stat.subst %>
+  </p>
+<% end %>
+  <img src="/images/vs_35.jpg"/>
+</div>
+<% end %>
+
+
+
+<% if @status_u and @status_u.size != 0%>
+<div class="status" >
+  <img src="/images/status_03.jpg" />
+  <h3> Благодарим за работу </h3>
+<% for stat in @status_u do %>
+  <p style="margin-bottom: 15px;">
+    <span class="name"> <%= stat.name %> </span> <br/>
+<% if stat.subst and stat.subst!=''  %>
+<span style="font-weight: bold;">замещает:</span> <br/>
+<%= stat.subst %>
+<% end %>
+  </p>
+<% end %>
+  <img src="/images/vs_35.jpg"/>
+</div>
+<% end %>

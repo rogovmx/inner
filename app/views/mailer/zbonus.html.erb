@@ -1,0 +1,38 @@
+
+Детали заказа:<br>
+<table >
+  <tr>
+    <th>Клиент</th>
+    <th>Код 1С клиента</th>
+    <th>Код 1С бонуса</th>
+    <th>Название</th>
+    <th>Цена</th>
+    
+  </tr>
+<% @order.each do |cart| %>
+  <% @user=User.find(cart.user_id) %>
+  <% @client=Client.find(@user.client_id) %>
+
+<% @cat=Bonus3.find_by_id(cart.k1c) %>
+
+  <tr>
+    <td>
+      <%= @client.name %>
+    </td>
+    <td>
+<%= @client.k1c %>
+    </td>
+    <td>
+          <%= cart.k1c %>
+    </td>
+    <td>
+          <%=@cat.name %>
+    </td>
+    <td>
+         <%= cart.bonus_price %>
+    </td>
+   
+  </tr>
+<%end%>
+</table>
+

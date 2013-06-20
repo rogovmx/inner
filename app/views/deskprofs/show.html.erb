@@ -1,0 +1,27 @@
+<% content_for(:cont) do %>
+<p>
+  <b>User:</b>
+  <%=h @deskprof.user_id %>
+</p>
+
+<p>
+  <b>Nic:</b>
+  <%=h @deskprof.nic %>
+</p>
+
+<p>
+  <b>Job:</b>
+  <%=h @deskprof.job %>
+</p>
+
+<p>
+  <b>Avatar:</b>
+  <%=h @deskprof.avatar_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_deskprof_path(@deskprof) %> |
+<%= link_to 'Back', deskprofs_path %>
+
+
+<%end%>

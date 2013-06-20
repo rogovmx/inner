@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+     <title>Внутренний сайт компании Живой Офис</title>
+    <meta name="author" content="Administrator" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="Товары для жизни офисных сотрудников" />
+    <meta http-equiv="content-language" content="ru" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="csrf-token" content="<%= form_authenticity_token %>" />
+    <meta name="csrf-param" content="authenticity_token" />
+
+   <%= stylesheet_link_tag 'style1' %>
+    <%= stylesheet_link_tag 'desk' %>
+   <%= javascript_include_tag :defaults  %>
+     <%#= javascript_include_tag "jquery-1.4.2.min", "rails" %>
+<%= javascript_include_tag :ckeditor %>
+ <script language="JavaScript">
+
+var timerID = null;
+var timerRunning = false;
+var id,pause=0,position=0;
+
+function stopclock (){
+        if(timerRunning)
+                clearTimeout(timerID);
+        timerRunning = false;
+}
+
+function showtime () {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+      	var dd = document.getElementById('cl');
+
+        var timeValue = "" + ((hours >24) ? hours -24 :hours);
+        timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+
+        dd.innerHTML = timeValue;
+        timerID = setTimeout("showtime()",1000);
+        timerRunning = true;
+}
+function startclock () {
+        stopclock();
+        showtime();
+}
+
+
+</script>
+
+
+ <style type="text/css">
+                      .text_menu {padding-top:5px;}
+                      * html .text_menu {padding-top:0px;}
+                    </style>
+
+  </head>
+  <body onLoad="startclock()">
+
+
+
+
+
+    <div id="container" class="max">
+
+      <div id="header-section" class="clearfix" style="position: relative;">
+<% if admin? %>
+               <div style="position: absolute; top: 60px; right: 300px;">
+
+          <span style="color: limegreen; cursor: pointer;"  >
+          <img src="/images/login.jpg"/>
+            </span>
+<%= link_to 'Администрирование' , {:controller=>'office1s' , :action=>'index'} , :style=>"color: limegreen; cursor: pointer; text-decoration: none;" %>
+            </div>
+
+
+
+<% end %>
+
+
+
+<% unless login? %>
+        <div style="position: absolute; top: 10px; right: 300px;">
+
+          <span style="color: limegreen; cursor: pointer;" onclick="$('log').toggle();" >
+          <img src="/images/login.jpg" alt="login"/>
+            Войти </span>
+        </div>
+
+
+        <div id="log" style="display: none">
+         
+            <div id="sitelogin">
+            <%= render :partial=>'/part/login' %>
+            </div>
+           
+        </div>
+<% else %>
+        <div style="position: absolute; top: 10px; right: 300px;">
+
+          <span style="color: limegreen; cursor: pointer;"  >
+          <img src="/images/login.jpg"/>
+            </span>
+
+<%= link_to 'Выйти' , {:controller=>'main' , :action=>'logout'} , :style=>"color: limegreen; cursor: pointer; text-decoration: none;" %>
+        </div>
+ <% end %>
+
+        <div id="header" class="wide">
+
+          <div class="menu" id="gmenu_1">
+            <div class="content">
+              <a href="/">
+              <img src="/images/vs_02.jpg" border="none"/>
+              </a>
+
+              <div class="vs_top">
+            <div class="date">
+      <% @month = 'января' if Time.now.strftime("%m") == '01'
+         @month = 'февраля' if Time.now.strftime("%m") == '02'
+         @month = 'марта' if Time.now.strftime("%m") == '03'
+         @month = 'апреля' if Time.now.strftime("%m") == '04'
+         @month = 'мая' if Time.now.strftime("%m") == '05'
+         @month = 'июня' if Time.now.strftime("%m") == '06'
+         @month = 'июля' if Time.now.strftime("%m") == '07'
+         @month = 'августа' if Time.now.strftime("%m") == '08'
+         @month = 'сентября' if Time.now.strftime("%m") == '09'
+         @month = 'октября' if Time.now.strftime("%m") == '10'
+         @month = 'ноября' if Time.now.strftime("%m") == '11'
+         @month = 'декабря' if Time.now.strftime("%m") == '12'
+
+            %>
+              сегодня&nbsp; <%=h Time.now.strftime("%d")+' '+ @month +' '+ Time.now.strftime("%Y")%>
+
+      </div>
+                <div id="cl" >
+                  </div>
+                 <%= render :partial=>'/part/topmenu' %>
+
+                  <div id="serch_box" >
+                  <form name="search_form" method="get" action="/search/index">
+                    <div id="ser2">
+                    <input type=”text” id="ser22" name="search" />
+                    </div>
+                           <button id="ser_butt" type="submit" > </button>
+
+                  </form>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+        </div>
+
+      <div id="main-section" class="clearfix">
+
+        <div id="main" class="wide max">
+
+          
+                    <div class="right_block">
+            <div style="margin-bottom: 10px;">
+            <% if login? %>
+              <h3>
+<%= user_name %> </h3>
+             <% end %>
+          </div>
+
+
+
+
+
+          <%= render :partial=>'/desk_subjs/status' %>
+            <img src="/images/vs_19.jpg" width="160px" />
+            <%= render :partial=>'/part/newsbox' %>
+            <img src="/images/cat.jpg" />
+            <br/>
+          <br/>
+           <img src="/images/vs_35.jpg" />
+
+ <%= render :partial => '/part/curs' if @items %>
+
+           <div style=" margin-top: 10px; margin-left: 20px; text-align: center;">
+<script type="text/javascript" src="http://pogoda.mail.ru/informer/weather.js?city=1301&view=1&encoding=utf"></script>
+
+<script type="text/javascript" src="http://pogoda.mail.ru/informer/weather.js?city=1460&view=1&encoding=utf"></script>
+
+<script type="text/javascript" src="http://pogoda.mail.ru/informer/weather.js?city=2212&view=1&encoding=utf"></script>
+
+<script type="text/javascript" src="http://pogoda.mail.ru/informer/weather.js?city=2371&view=1&encoding=utf"></script>
+           </div>
+                    </div>
+
+
+
+
+
+                 <%= yield :cont %>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+
+      <div id="footer" class="wide clearfix">
+
+            <div class="divider"></div>
+
+
+
+        <div class="gadget simplesite_menu">
+          <div class="content" style=" text-align: center;">
+            <span style="color:#3265a4;"><script language="JavaScript">
+<!-- Begin
+user = "support1";
+site = "zhivojoffice.ru";
+document.write('<a style="text-decoration:none;" href="mailto:' + user + '@' + site + '\">');
+document.write('обратиться в службу поддержки' + '</a>');
+// End -->
+</script> </span>
+            <br/>
+              <br/>
+            <span style="font-size:10px; color:#7c7c7c;">     Живой офис   &copy;  2011</span>
+            <br/>
+              <span style="font-size:10px; color:#7c7c7c;">Бумага ,канцтовары в офис <br/> с  бесплатной доставкой в Санкт-Петербурге.<br />  </span>
+            <br/>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div id="push"></div>
+    </div>
+
+
+
+  </body>
+</html>
+
+<!-- This document saved from http://www.zhivojoffice.ru/ -->
+

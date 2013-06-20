@@ -1,0 +1,50 @@
+<%= form_for(@status1) do |f| %>
+  <% if @status1.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@status1.errors.count, "error") %> prohibited this status1 from being saved:</h2>
+
+      <ul>
+      <% @status1.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<br />
+  <div class="field">
+    <%= f.label 'Имя' %><br />
+    <%= f.text_field :name ,:style=>'width: 400px;' %>
+  </div>
+  <div class="field">
+    <%= f.label 'Выход на работу' %><br />
+    <%= f.text_field :date ,:style=>'width: 400px;'%>
+  </div>
+<br/>
+  <div class="field">
+    <%= f.radio_button(:status, 1) %>
+   <%= f.label('status_1' , 'В отпуске') %> <br/>
+
+       <%= f.radio_button(:status, 2) %>
+   <%= f.label('status_2' , 'На больничном') %> <br/>
+
+          <%= f.radio_button(:status, 4) %>
+   <%= f.label('status_4' , 'В командировке') %> <br/>
+
+       <%= f.radio_button(:status, 3) %>
+   <%= f.label('status_3' , 'Уволен') %> <br/>
+
+
+    <%#= f.label :status %><br />
+    <%#= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label 'Заместитель' %><br />
+    <%= f.text_field :subst ,:style=>'width: 400px;' %>
+  </div>
+<br/>
+  <div class="actions">
+    <%= f.submit 'Сохранить' %>
+  </div>
+<% end %>
+<br/>

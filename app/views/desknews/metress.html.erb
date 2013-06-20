@@ -1,0 +1,41 @@
+<% content_for(:cont) do %>
+<div style="margin-left:20px; text-align: left; font-weight: bold; background: url(/images/metress.gif); background-position: top left; background-repeat: no-repeat; width: 885px; height: 709px;">
+  <div style=" margin-top: 10px; "><a href="/doc/user.pdf"> Скачать подробную инструкцию</a> </div>
+
+  <div style=" margin-top: 430px; text-align: left;">
+    <span style="color: #3265a4; font-size: 16px; font-weight: bold;">  Но это еще не всё! </span> <br/>
+    <span>
+    Так как в нашем каталоге, кроме необходимых, много красивых интересных <br/>
+и относительно дорогих канцелярских принадлежностей,<br/>
+то мы сочли нужным предложить 2 ограничивающих инструмента: </span> <br/>
+ <span style="color: #b25ca5;">
+● установка персонального лимита каждого сотрудника (или отдела), <br/>
+
+● введение списка запрещенных товаров 
+ </span> <br/><br/>
+<span style="color: #3265a4; font-size: 16px; font-weight: bold;">
+Заинтересовались?
+</span>
+<br/>
+<span>
+Зайдите в свой 
+
+<% unless login? %>
+<a href="/login/login"><img src="/images/cabinet.gif" style=" position: relative; top: 10px;" /> </a>
+<% else %>
+<img src="/images/cabinet.gif" style=" position: relative; top: 10px;" />
+<% end %>
+
+В меню найдите строку «сотрудники» и введите туда имена или названия отделов. Готово!
+</span>
+<br/><br/>
+<span style="color:#f1222a; font-size: 14px; font-weight: bold;">
+Теперь заказ канцелярии для большого офиса стал по-настоящему удобным!
+</span>
+
+
+
+  </div>
+</div>
+
+<%end%>

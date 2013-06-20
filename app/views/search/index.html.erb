@@ -1,0 +1,87 @@
+<% content_for(:cont) do %>
+
+
+ <% ff=0 %>
+<% if @s_desk and @s_desk.size != 0 %>
+<% ff=1 %>
+ <div style="margin-top: 20px; border-bottom: 1px dashed silver; clear: both; float: none;">
+
+   <h1>Новости</h1>
+  <br/>
+<% @s_desk.each do |news| %>
+  <p> <strong> <%= raw news.subj %>  </strong> </p>
+   <p> <%= raw   news.s_text %>   </p>
+   <br/>
+<% end %>
+
+   </div>
+  <br/>
+<br/>
+   <% end %>
+
+
+<div style="margin-top: 20px;">
+  <% if @s_office and @s_office.size != 0 %>
+  <% ff=1 %>
+  <h1>Сотрудники</h1>
+  <br/>
+<% @s_office.each do |stuff| %>
+      <div class="alf_about" style="float:left; position: static; height: 160px; margin: 5px;"  >
+      <div style="width: 70px;  margin: 10px; float: left; border: 1px solid #00ae4d;">
+        <% if stuff.pic %>
+        <img src="/images/photo/<%=stuff.pic + '.jpg'%>" width="70px" />
+        <% else %>
+        <img src="/images/no_image_s.gif" width="70px" />
+      <%end %>
+      </div>
+        <span style="float: left; clear: left; margin-left: 15px;">
+          <b>Город:</b> <br/>
+        <%=
+        case stuff.city
+        when 1
+          'СПб'
+        when 2
+          'Мск'
+        when 3
+          'Смо'
+        when 4
+          'Тверь'
+        end
+        %>
+
+        </span>
+      <div style=" width: 200px; margin-left: 90px; margin-top: 10px; padding-bottom: 10px;">
+        <span style="color: #00ae4d;  font-weight: bold; font-size: 13px; ">
+        <%= stuff.last_name %> <br/>
+        <%= stuff.name + ' ' + stuff.patronimic %>
+        </span>
+        <br/>
+        <span>
+            <%= stuff.job %>
+        </span>
+        <br/> <br/>
+        <span>
+           <% @otdel=Otdel1.find_by_id(stuff.otdel1) %>
+          <b>Отдел:&nbsp; </b> <%= @otdel.name %>
+        </span>
+        <br/> <br/>
+        <span>
+          <b>Tелефон: &nbsp; </b><%= stuff.phone %>
+        </span>
+        <br/>
+        <span>
+          <a href="mailto:<%= stuff.mail %>"><%= stuff.mail %></a>
+        </span>
+
+
+      </div>
+    </div>
+<% end %>
+<% end %>
+  </div>
+
+<% if ff == 0  %>
+<h1 style="margin-top: 30px;"> По Вашему запросу ни чего не найдено </h1>
+<% end %>
+
+<% end %>

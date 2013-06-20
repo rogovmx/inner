@@ -1,0 +1,50 @@
+<p>
+  <b>Имя:</b>
+  <%=h @office1.name %>
+</p>
+
+<p>
+  <b>Отчество:</b>
+  <%=h @office1.patronimic %>
+</p>
+
+<p>
+  <b>LФамилия:</b>
+  <%=h @office1.last_name %>
+</p>
+
+
+
+<p>
+  <b>Должность:</b>
+  <%=h @office1.job %> <br/> <%= 'начальник отдела' if @office1.dir %> <%= 'сотрудник' unless @office1.dir %>
+</p>
+
+<p>
+  <b>Отдел:</b>
+  <%=h @office1.dep %>
+</p>
+
+<p>
+  <b>Телефон:</b>
+  <%=h @office1.phone %>
+</p>
+
+<p>
+  <b>E-Mail:</b>
+  <%=h @office1.mail %>
+</p>
+
+<p>
+  <b>Фото:</b>
+  <img src="/images/photo/<%=h @office1.pic %>.jpg" />
+</p>
+
+<p>
+  <b>Дирекция:</b>
+  <%=h @office1.departament %>
+</p>
+
+
+<%= link_to 'Редактировать', edit_office1_path(@office1) %> |
+<%= link_to 'Вернуться', office1s_path %>

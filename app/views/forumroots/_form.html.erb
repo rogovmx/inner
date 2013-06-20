@@ -1,0 +1,15 @@
+<%= form_for(@forumroot) do |f| %>
+
+
+  <div class="field">
+    <%= f.label 'Название' %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label 'Видимый' %>
+    <%= f.check_box :vis %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Сохранить' %>
+  </div>
+<% end %>

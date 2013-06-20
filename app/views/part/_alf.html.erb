@@ -1,0 +1,187 @@
+<h1>Санкт-Петербург (812)324-80-50</h1>
+<% nn =0 %>
+ <div class="alf_col">
+<% @alfa.each do |ag| %>
+
+  <h2 > <%= ag %></h2>
+
+<% dd=0 %>
+    <% @stuff.each do |stuff| %>
+<% dd+=1 %>
+    <% ff=stuff.last_name %>
+    <% if ff[0,2]==ag %>
+    <% nn +=1 %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative; z-index: <%= (500-dd) %>   ">
+
+    <% @stf=stuff %>
+    
+    <span class="alf_n" style="float: right; position: relative; z-index: 0; ">
+   <%= stuff.phone %>
+  </span>
+    <span class="alf_n" onclick="show_id('<%="alf"+ @stf.id.to_s %>')">
+    <%= link_to_remote stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic , :url=>{:controller=>'main', :action=>'alf' ,:id=>stuff.id} , :update=>'alf'+ @stf.id.to_s , :class=>'alf_n' , :style=>'color:black; text-decoration: none;' %>
+   </span>
+    <!--
+<%#*<span class="alf_n" onclick="show_id('<%="alf"+ @stf.id.to_s %>')">  %>
+     <%#= stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic %>
+     <%#*</span>%>
+-->
+ <div id="<%='alf'+ @stf.id.to_s %>" onmouseout="zp('<%="alf"+ @stf.id.to_s %>')" onmouseover="show_id('<%="alf"+ @stf.id.to_s %>')" class="alf_about" style="display: none; left:0px;">
+    <%#= render :partial=>'/part/alf3', :object=>@stf %>
+      </div>
+
+  </div>
+        <% if nn == @col or nn == @col*2+7 %>
+        </div> <div  class="alf_col">
+        <% end %>
+
+     <%end%>
+    <%end%>
+     
+   <%end%>
+  </div>
+<div style="float: none; clear: both; margin-bottom: 100px;"> </div>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+<h1>Москва (495)730-30-77</h1>
+<% nn =0 %>
+ <div class="alf_col">
+<% @alfam.each do |ag| %>
+
+  <h2 > <%= ag %></h2>
+
+<% dd=0 %>
+    <% @stuffm.each do |stuff| %>
+<% dd+=1 %>
+    <% ff=stuff.last_name %>
+    <% if ff[0,2]==ag %>
+    <% nn +=1 %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative; z-index: <%= (500-dd) %>   ">
+
+    <% @stfm=stuff %>
+
+    <span class="alf_n" style="float: right; position: relative; z-index: 0; ">
+   <%= stuff.phone %>
+  </span>
+    <span class="alf_n" onclick="show_id('<%="alf"+ @stfm.id.to_s %>')">
+    <%= link_to_remote stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic , :url=>{:controller=>'main', :action=>'alf' ,:id=>stuff.id} , :update=>'alf'+ @stfm.id.to_s , :class=>'alf_n' , :style=>'color:black; text-decoration: none;' %>
+   </span>
+    <!--
+<%#*<span class="alf_n" onclick="show_id('<%="alf"+ @stf.id.to_s %>')">  %>
+     <%#= stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic %>
+     <%#*</span>%>
+-->
+ <div id="<%='alf'+ @stfm.id.to_s %>" onmouseout="zp('<%="alf"+ @stfm.id.to_s %>')" onmouseover="show_id('<%="alf"+ @stfm.id.to_s %>')" class="alf_about" style="display: none; left:0px;">
+    <%#= render :partial=>'/part/alf3', :object=>@stf %>
+      </div>
+
+  </div>
+        <% if nn == @colm or nn == @colm*2+7 %>
+        </div> <div  class="alf_col">
+        <% end %>
+
+     <%end%>
+    <%end%>
+
+   <%end%>
+  </div>
+<div style="float: none; clear: both; margin-bottom: 100px;"> </div>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+<h1>Тверь. Контакт-центр.</h1>
+<% nn =0 %>
+ <div class="alf_col">
+<% @alfat.each do |ag| %>
+
+  <h2 > <%= ag %></h2>
+
+<% dd=0 %>
+    <% @stufft.each do |stuff| %>
+<% dd+=1 %>
+    <% ff=stuff.last_name %>
+    <% if ff[0,2]==ag %>
+    <% nn +=1 %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative; z-index: <%= (500-dd) %>   ">
+
+    <% @stft=stuff %>
+
+    <span class="alf_n" style="float: right; position: relative; z-index: 0; ">
+   <%= stuff.phone %>
+  </span>
+    <span class="alf_n" onclick="show_id('<%="alf"+ @stft.id.to_s %>')">
+    <%= link_to_remote stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic , :url=>{:controller=>'main', :action=>'alf' ,:id=>stuff.id} , :update=>'alf'+ @stft.id.to_s , :class=>'alf_n' , :style=>'color:black; text-decoration: none;' %>
+   </span>
+    <!--
+<%#*<span class="alf_n" onclick="show_id('<%="alf"+ @stf.id.to_s %>')">  %>
+     <%#= stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic %>
+     <%#*</span>%>
+-->
+ <div id="<%='alf'+ @stft.id.to_s %>" onmouseout="zp('<%="alf"+ @stft.id.to_s %>')" onmouseover="show_id('<%="alf"+ @stft.id.to_s %>')" class="alf_about" style="display: none; left:0px;">
+    <%#= render :partial=>'/part/alf3', :object=>@stf %>
+      </div>
+
+  </div>
+        <% if nn == @colt or nn == @colt*2+7 %>
+        </div> <div  class="alf_col">
+        <% end %>
+
+     <%end%>
+    <%end%>
+
+   <%end%>
+  </div>
+<div style="float: none; clear: both; margin-bottom: 100px;"> </div>
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+<h1>Смоленск (4812)24-44-24</h1>
+<% nn =0 %>
+ <div class="alf_col">
+<% @alfas.each do |ag| %>
+
+  <h2 > <%= ag %></h2>
+
+<% dd=0 %>
+    <% @stuffs.each do |stuff| %>
+<% dd+=1 %>
+    <% ff=stuff.last_name %>
+    <% if ff[0,2]==ag %>
+    <% nn +=1 %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative; z-index: <%= (500-dd) %>   ">
+
+    <% @stfs=stuff %>
+
+    <span class="alf_n" style="float: right; position: relative; z-index: 0; ">
+   <%= stuff.phone %>
+  </span>
+    <span class="alf_n" onclick="show_id('<%="alf"+ @stfs.id.to_s %>')">
+    <%= link_to_remote stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic , :url=>{:controller=>'main', :action=>'alf' ,:id=>stuff.id} , :update=>'alf'+ @stfs.id.to_s , :class=>'alf_n' , :style=>'color:black; text-decoration: none;' %>
+   </span>
+    <!--
+<%#*<span class="alf_n" onclick="show_id('<%="alf"+ @stf.id.to_s %>')">  %>
+     <%#= stuff.last_name + ' ' + stuff.name + ' ' + stuff.patronimic %>
+     <%#*</span>%>
+-->
+ <div id="<%='alf'+ @stfs.id.to_s %>" onmouseout="zp('<%="alf"+ @stfs.id.to_s %>')" onmouseover="show_id('<%="alf"+ @stfs.id.to_s %>')" class="alf_about" style="display: none; left:0px;">
+    <%#= render :partial=>'/part/alf3', :object=>@stf %>
+      </div>
+
+  </div>
+        <% if nn == @cols or nn == @cols*2+7 %>
+        </div> <div  class="alf_col">
+        <% end %>
+
+     <%end%>
+    <%end%>
+
+   <%end%>
+  </div>
+
+<div style="float: none; clear: both; margin-bottom: 30px;"> </div>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->

@@ -1,0 +1,70 @@
+
+<% content_for(:cont) do %>
+<h1>Форум Живого офиса</h1>
+<div class="f_root">
+  <h1 class="forum_h1">Раздел:<span> <%= @forum.title %></span></h1>
+<div class="f_path">
+  Путь: <%= link_to 'Все разделы' , :controller => 'forumroots'  %> /
+       <%=  @forum.title %>
+       <form style="display: inline; float: right">
+         Быстрый переход
+         <select onchange="redir(this)">
+           <% for f_root in Forumroot.find(:all , :conditions => ['vis = ?',1 ]) do %>
+           <optgroup label="<%= f_root.title %>:">
+             <% @theme = f_root.forumtheme.find_all{|f| f.vis} %>
+             <% for theme in @theme do %>
+             <option value="/forumtalks?theme=<%=theme.id%>" <%=  'selected="selected"' if theme.id.to_s == params[:theme]%> > <%=theme.title %>  </option>
+             <% end %>
+           </optgroup>
+           <% end %>
+         </select>
+       </form>
+</div>
+
+<%= button_to 'Создать тему', :action => 'new', :root => params[:id] if @forumthemes.size > 5%>
+
+  <table class="f_root_table" cellpadding="1" cellspacing="1">
+  <tbody>
+    <tr>
+      <th> </th>
+      <th width="65%">Тема </th>
+      <th width="10%" align="center">Автор </th>
+      <th width="10%" align="center">Сообщений </th>
+      <th> Последнее </th>
+    </tr>
+<% @forumthemes.each do |forumtheme| %>
+    <% @auth = forumtheme.office1
+        @talk = forumtheme.forumtalk.find_all{|m| m.vis }
+  %>
+
+    <tr style="background-color: <%= cycle('white','#F2EFF6') %>">
+      <td> <%= image_tag('/images/folder.gif')  %>  </td>
+      <td>  <%= link_to forumtheme.title ,  {:controller=> 'forumtalks' , :theme => forumtheme.id  } %>
+        <% if admin? %>
+        <div style="float: right;">
+        <%='тема отключена'  unless forumtheme.vis  %>
+        <%= link_to 'Редактировать', {:action => 'edit', :id =>forumtheme.id , :root => params[:id]} %> |
+        <%= link_to 'Удалить', {:controller => 'forumthemes' , :action =>'destr' , :id =>forumtheme.id}, :confirm => 'Точно?', :method => :delete %>
+        </div>
+        <% end %>
+      </td>
+      <td align="center"> <%= @auth.last_name if @auth  %> <%= @auth.name if @auth  %>  </td>
+      <td align="center">  <%= @talk.size + 1 %> </td>
+      <td align="center"> <%= @talk[-1].created_at.strftime("%d")+'.'+ @talk[-1].created_at.strftime("%m")+'.'+ @talk[-1].created_at.strftime("%Y") if @talk.any? %> </td>
+
+</tr>
+<% end %>
+
+
+</tbody>
+</table>
+
+<%= button_to 'Создать тему', :action => 'new', :root => params[:id] %>
+
+
+</div>
+
+
+
+
+<% end %>

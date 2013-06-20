@@ -1,0 +1,125 @@
+<% content_for(:cont) do %>
+<style type="text/css">
+  #errorExplanation
+  {
+    padding:15px;
+    background-color:#dcdcdc;
+    color: red;
+  }
+
+  .errorExplanation h2
+  {
+    visibility:hidden;
+    display:none;
+  }
+  .errorExplanation p
+  {
+    visibility:hidden;
+    display:none;
+  }
+</style>
+
+
+<!-- Начало верстки -->
+
+<div class="spens_form" style="width:545px;">
+  <br>
+  <span><b>
+  Сайт находится в режиме тестирования.<br> Приносим извинения за временные неудобства.
+    </b></span>
+  <br><br>
+  Для регистрации сотрудника на сайте заполните следующую форму:<br /><br />
+<!--  <span>Информация для новых пользователей</span>
+  <ul>
+    <li>После завершения регистрации с Вами свяжется персональный менеджер и  мы самостоятельно заполним все необходимые реквизиты для оформления заказа.</li>
+
+  </ul> -->
+  <br /><span>Поля в красной рамке обязательны к заполнению.</span><br />
+  <%=error_messages_for 'user'%>
+
+    <% form_for :user do |form| %>
+      <input name="authenticity_token" type="hidden" value="3a0328c1591f06d9095a4c59aa9c22d9ec3afd49" />
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr class="odd">
+          <td><label for="user_name">Введите  логин, в дальнейшем он будет использоваться для идентификации  в качестве клиента <a href="">zhivojoffice.ru</a>:</label></td>
+          <td> <%= form.text_field :name, :size => 30 ,:class=>'it' %></td>
+        </tr>
+        <tr>
+          <td><label for="user_password">Придумайте и введите пароль,<br />рекомендуется не менее пяти символов:</label></td>
+          <td> <%= form.password_field :password, :size => 30 %></td>
+        </tr>
+        <tr class="odd">
+          <td><label for="user_password_confirmation">Введите пароль еще раз:</label></td>
+          <td>  <%= form.password_field :password_confirmation, :size => 30 %></td>
+        </tr>
+        <tr>
+          <td><label for="user_surname">Фамилия:</label></td>
+          <td> <%= form.text_field :surname, :size => 30  ,:class=>'input_n'%></td>
+        </tr>
+        <tr class="odd">
+          <td><label for="user_scr_name">Имя:</label></td>
+          <td><%= form.text_field :scr_name, :size => 30 %></td>
+        </tr>
+        <tr>
+          <td><label for="user_patronymic">Отчество:</label></td>
+          <td> <%= form.text_field :patronymic, :size => 30 ,:class=>'input_n'%></td>
+        </tr>
+        <tr class="odd">
+          <td><label for="user_mail">Введите  e-mail:</label></td>
+          <td><%= form.text_field :mail, :size => 30 %></td>
+        </tr>
+        <tr>
+          <td><label for="otdel">Отдел:</label></td>
+          <td><%= form.text_field :otdel, :size => 30 %></td>
+        </tr>
+         <tr class="odd">
+          <td><label for="limit">Лимит разового заказа в рублях:</label></td>
+          <td><%= form.text_field :limit, :size => 30 %></td>
+        </tr>
+        <tr>
+          <td><!--
+            <label for="user_phone">Введите ваш телефон, мы свяжемся с Вами сразу после завершения регистрации:</label></td>
+          <td>
+          <input id="user_phone" name="user[phoneprefix]" pattern="\S" size="4" type="text" />&nbsp;&nbsp;&nbsp;-->
+            <%#= form.text_field :phone, :size => 30 %>
+            </td>
+        </tr>
+      </table>
+         <%= form.hidden_field :role, :value=>'poduser' %>
+          <%= form.hidden_field :role2, :value=>'poduser' %>
+      <% @user=User.find_by_id(session[:user_id]) %>
+      <%= form.hidden_field :client1_id, :value=>@user.client1_id %>
+      <%= form.hidden_field :client_id, :value=>@user.client1_id %>
+      <%= form.hidden_field :inn, :value=>@user.inn %>
+      <%= form.hidden_field :company_ind, :value=>@user.company_ind %>
+      <%= form.hidden_field :price, :value=>@user.price %>
+      <%= form.hidden_field :price1, :value=>@user.price1 %>
+       <%= form.hidden_field :phone, :value=>@user.phone %>
+       <%= form.hidden_field :soglasen, :value=>@user.soglasen %>
+      <br>
+      <p style="text-align: center;">
+         <%= submit_tag "Завершить оформление", :class => "submit" %>
+
+
+      </p>
+      <br>
+    <%end%>
+<ul>
+
+    <li>Личные сведения, полученные в распоряжение <a href="http://www.zhivojoffice.ru">www.zhivojoffice.ru</a> при регистрации или каким-либо иным образом, не будут без разрешения пользователей передаваться третьим организациям и лицам, за исключением ситуаций, когда этого требует закон или судебное решение.</li>
+  </ul>
+</div>
+
+<!--  Конец верстки -->
+<%  end %>
+
+
+<% content_for(:bs) do %>
+  <%=bs%>
+  <%  end %>
+
+<%# content_for(:sp) do %>
+  <%#=sp%>
+  <%#  end %>
+
+

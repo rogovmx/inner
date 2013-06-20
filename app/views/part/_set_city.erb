@@ -1,0 +1,14 @@
+<% @path='новости / Санкт-Петербург' if session[:city]==nil %>
+<span style="color: #955aa5;">
+ <%= @path %>
+</span>
+
+<span style="color: #999999; cursor: pointer;" onclick="show_id('change_city')">
+/ выбрать другой город
+ </span>
+<div id="change_city" style="display: none;" onmouseout="zp('change_city')"  onmouseover="show_id('change_city')">
+  <%=  link_to 'общие новости' ,:controller=>'desk_subjs' , :action=>'index' , :smenu=>'0' %> <br />
+  <%=  link_to 'Санкт-Петербург' ,:controller=>'desk_subjs' , :action=>'index' , :smenu=>'1' %> <br />
+  <%=  link_to 'Москва' ,:controller=>'desk_subjs' , :action=>'index' , :smenu=>'2' %> <br />
+  <%=  link_to 'Смоленск' ,:controller=>'desk_subjs' , :action=>'index' , :smenu=>'3' %> <br />
+</div>

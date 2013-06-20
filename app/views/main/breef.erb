@@ -1,0 +1,13 @@
+<% content_for(:cont) do %>
+<div style="margin: 0 auto; width: 600px; min-height: 400px; background: url(/images/back.jpg) repeat; padding: 20px;">
+  <span style="margin-right: 20px; margin-bottom: 20px; float: left;">
+    <img src="/images/photo/<%=@man.pic %>.jpg"/>
+  </span>
+  <span >
+    <%=raw @man.about %>
+  </span> <br/> <br/><br/><br/>
+  <%= link_to 'Вернуться', :back %>
+</div>
+
+
+<% end %>

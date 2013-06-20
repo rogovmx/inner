@@ -1,0 +1,32 @@
+<div id="<%='a'+@desk_subj_id.id.to_s%>" class="answ" style="display: none;">
+<%=  form_for :desk_answ_new, :url=>{ :action => "save_answ" } do |f|  %>
+
+  
+
+
+      <%= f.hidden_field :desk_subj_id, :value => @desk_subj_id.id%>
+       <%= f.hidden_field :desk_subj2_id, :value => @desk_subj_id.id%>
+  
+  <div class="okno">
+    <%= f.text_area :a_text , :rows=>'4' , :cols=>'64'  %>
+  </div>
+
+
+  <% if login? %>
+  <% @user = Office1.find_by_id(session[:user_id]) %>
+  <%= f.hidden_field :user_id , :value=>@user.id  %>
+  <% end %>
+
+
+  <span style="float: right; margin-right: 70px;" >
+    <%= f.submit "" %>
+     </span>
+  <span style="float: left;" >
+    <i onclick="zp('<%='a'+@desk_subj_id.id.to_s%>')" style="cursor: pointer;"> Не отвечать </i>
+     </span>
+
+
+ 
+<% end %>
+  
+</div>

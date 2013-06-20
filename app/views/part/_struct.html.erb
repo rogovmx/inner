@@ -1,0 +1,759 @@
+<div style="margin: 0 auto; text-align: center;">
+  <h2>Управляющий группы компаний Живой офис</h2>
+</div>
+<div style="margin: 0 auto; text-align: center; position: relative;">
+  <span style=" cursor: pointer; font-weight: bold;" onclick="show_id('alf78')" >Пикалева Эльвира Владимировна</span>
+  <% stuff = Office1.find_by_id(78) %>
+      <div id="alf78" class="alf_about" style="display: none; left:315px;" onmouseout="zp('alf78')" onmouseover="show_id('alf78')" style="padding-bottom: 10px;" >
+      <div style="width: 70px; height: 70px; margin: 10px; float: left; border: 1px solid #00ae4d;">
+        <% if stuff.pic %>
+        <img src="/images/photo/<%=stuff.pic + '.jpg'%>" width="70px" />
+        <% else %>
+        <img src="/images/no_image_s.gif" width="70px" />
+      <%end %>
+      </div>
+      <div style=" width: 200px; margin-left: 90px; margin-top: 10px; padding-bottom: 10px;">
+        <span style="color: #00ae4d;  font-weight: bold; font-size: 13px; ">
+        <%= stuff.last_name %> <br/>
+        <%= stuff.name + ' ' + stuff.patronimic %>
+        </span>
+        <br/>
+
+        <span>
+            <%= stuff.job %>
+        </span>
+        <br/> <br/>
+        <span>
+             <% @otdel=Otdel1.find_by_id(stuff.otdel1) %>
+          <b>Отдел:&nbsp; </b> <%= @otdel.name %>
+        </span>
+        <br/> <br/>
+        <span>
+          <b>Tелефон: &nbsp; </b><%= stuff.phone %>
+        </span>
+        <br/>
+        <span style="padding-bottom: 10px;">
+          <a href="mailto:<%= stuff.mail %>"><%= stuff.mail %></a>
+        </span>
+<br/>
+
+      </div>
+    </div>
+</div>
+<div style="float: none; clear: both; height: 30px;"> </div>
+
+
+
+
+<div class="clear" style="border-bottom: 1px dotted green; margin-bottom: 10px;"> </div>
+
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+
+<div style=" float: left;">
+  <div class="str_box">
+
+<h2>Департамент по корпоративной политике</h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=?',1 , 10 , 1] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+
+</div>
+
+</div>
+
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+
+
+
+
+<div style=" float: left;">
+  <div class="str_box">
+
+
+<h2>Дирекция по закупкам</h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=?',1 , 4 , 1] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+<div class="str_box">
+
+<% @dep='Дирекция по маркетингу' %>
+  <h2> <%=@dep %> </h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=?',1 , 5] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+<div class="str_box">
+
+<% @dep='Дирекция по IT' %>
+  <h2> <%=@dep %> </h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=?',1 , 7 ] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+<div class="str_box">
+
+<% @dep='Финансовая дирекция' %>
+  <h2> <%=@dep %> </h2>
+
+ <% @dir=Office1.find( :all , :conditions=>['dir=? and dep1=?  and city = ? ',1 , 6 ,1 ]).sort{|s, n| n.last_name <=> s.last_name } %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+<div class="str_box">
+
+<% @dep='Отдел персонала' %>
+  <h2> <%=@dep %> </h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and otdel1=? ',1 , 4 ] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+<div class="str_box">
+
+<% @dep='Юридический отдел' %>
+  <h2> <%=@dep %> </h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and otdel1=? ',1 , 13 ] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+
+<% @dep='Административный отдел' %>
+  <h2 style="margin-top: 15px;"> <%=@dep %> </h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and otdel1=? ',1 , 12 ] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+</div>
+
+<div class="clear" style="border-bottom: 1px dotted green; margin-bottom: 10px;"> </div>
+
+<div style="margin: 0 auto; text-align: center;">
+  <h2>Операционный директор. Заместитель управляющего.</h2>
+</div>
+<div style="margin: 0 auto; text-align: center; position: relative;">
+  <span style=" cursor: pointer; font-weight: bold;" onclick="show_id('alf70')" > Охочинская Оксана Владимировна</span>
+  <% stuff = Office1.find_by_id(70) %>
+      <div id="alf70" class="alf_about" style="display: none; left:315px;" onmouseout="zp('alf70')" onmouseover="show_id('alf70')" style="padding-bottom: 10px;" >
+      <div style="width: 70px; height: 70px; margin: 10px; float: left; border: 1px solid #00ae4d;">
+        <% if stuff.pic %>
+        <img src="/images/photo/<%=stuff.pic + '.jpg'%>" width="70px" />
+        <% else %>
+        <img src="/images/no_image_s.gif" width="70px" />
+      <%end %>
+      </div>
+      <div style=" width: 200px; margin-left: 90px; margin-top: 10px; padding-bottom: 10px;">
+        <span style="color: #00ae4d;  font-weight: bold; font-size: 13px; ">
+        <%= stuff.last_name %> <br/>
+        <%= stuff.name + ' ' + stuff.patronimic %>
+        </span>
+        <br/>
+
+        <span>
+            <%= stuff.job %>
+        </span>
+        <br/> <br/>
+        <span>
+             <% @otdel=Otdel1.find_by_id(stuff.otdel1) %>
+          <b>Отдел:&nbsp; </b> <%= @otdel.name %>
+        </span>
+        <br/> <br/>
+        <span>
+          <b>Tелефон: &nbsp; </b><%= stuff.phone %>
+        </span>
+        <br/>
+        <span style="padding-bottom: 10px;">
+          <a href="mailto:<%= stuff.mail %>"><%= stuff.mail %></a>
+        </span>
+<br/>
+
+      </div>
+    </div>
+</div>
+
+<div style="margin: 0 auto; text-align: center;">
+  <h2>Заместитель операционного директора.</h2>
+</div>
+<div style="margin: 0 auto; text-align: center; position: relative;">
+  <span style=" cursor: pointer; font-weight: bold;" onclick="show_id('alf33')" > Зенкова Ирина Алексеевна</span>
+  <% stuff = Office1.find_by_id(33) %>
+      <div id="alf33" class="alf_about" style="display: none; left:315px;" onmouseout="zp('alf33')" onmouseover="show_id('alf33')" style="padding-bottom: 10px;" >
+      <div style="width: 70px; height: 70px; margin: 10px; float: left; border: 1px solid #00ae4d;">
+        <% if stuff.pic %>
+        <img src="/images/photo/<%=stuff.pic + '.jpg'%>" width="70px" />
+        <% else %>
+        <img src="/images/no_image_s.gif" width="70px" />
+      <%end %>
+      </div>
+      <div style=" width: 200px; margin-left: 90px; margin-top: 10px; padding-bottom: 10px;">
+        <span style="color: #00ae4d;  font-weight: bold; font-size: 13px; ">
+        <%= stuff.last_name %> <br/>
+        <%= stuff.name + ' ' + stuff.patronimic %>
+        </span>
+        <br/>
+
+        <span>
+            <%= stuff.job %>
+        </span>
+        <br/> <br/>
+        <span>
+            <% @otdel=Otdel1.find_by_id(stuff.otdel1) %>
+          <b>Отдел:&nbsp; </b> <%= @otdel.name %>
+        </span>
+        <br/> <br/>
+        <span>
+          <b>Tелефон: &nbsp; </b><%= stuff.phone %>
+        </span>
+        <br/>
+        <span style="padding-bottom: 10px;">
+          <a href="mailto:<%= stuff.mail %>"><%= stuff.mail %></a>
+        </span>
+<br/>
+
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div style="float: none; clear: both; height: 30px;"> </div>
+
+
+<div class="clear" style="border-bottom: 1px dotted green; margin-bottom: 10px;"> </div>
+<div style="margin: 30px auto; text-align: center; position: relative;">
+  <h2>Санкт-Петербургский департамент</h2>
+</div>
+<div style="margin-left: 75px; ">
+
+
+
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+<div class="str_box" style="width: 600px; margin-left: 0px;" >
+
+<% @dep='Дирекция по продажам' %>
+  <h2 style="text-align: center"> <%=@dep %> </h2>
+
+
+   
+
+<% @dep_prod.each do |prod| %>
+  <div class="str_box">
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(prod.otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+<% @dir=Office1.find :all , :conditions=>['dir=? and otdel1=? and city=?',1 , prod.otdel1, 1] %>
+
+<% @dir.each do |dir| %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+<% ff=0 %>
+
+</div>
+<% end %>
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+<div class="str_box">
+
+<% @dep='Дирекция по обеспечению продаж' %>
+ <h2> <%=@dep %> </h2>
+
+
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=? and otdel1=?',1 , 2, 1 , 15] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+<% @dep_obesp.each do |prod| %>
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(prod.otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and otdel1=? and city=?',1 , prod.otdel1, 1] %>
+
+<% @dir.each do |dir| %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+
+<% end %>
+</div>
+
+
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+</div>
+
+
+
+<div class="clear" style="border-bottom: 1px dotted green; margin-bottom: 10px;"> </div>
+
+
+<div style="margin: 30px auto; text-align: center;">
+  <h2>Московский департамент</h2>
+</div>
+
+<div style="margin: 0 auto; text-align: center;">
+  <h2>Директор Московского департамента.</h2>
+</div>
+<div style="margin: 0 auto; text-align: center; position: relative;">
+  <span style=" cursor: pointer; font-weight: bold;" onclick="show_id('alf412')" > Орлов Юрий Александрович</span>
+  <% stuff = Office1.find_by_id(412) %>
+      <div id="alf412" class="alf_about" style="display: none; left:315px;" onmouseout="zp('alf412')" onmouseover="show_id('alf412')" style="padding-bottom: 10px;" >
+      <div style="width: 70px; height: 70px; margin: 10px; float: left; border: 1px solid #00ae4d;">
+        <% if stuff.pic %>
+        <img src="/images/photo/<%=stuff.pic + '.jpg'%>" width="70px" />
+        <% else %>
+        <img src="/images/no_image_s.gif" width="70px" />
+      <%end %>
+      </div>
+      <div style=" width: 200px; margin-left: 90px; margin-top: 10px; padding-bottom: 10px;">
+        <span style="color: #00ae4d;  font-weight: bold; font-size: 13px; ">
+        <%= stuff.last_name %> <br/>
+        <%= stuff.name + ' ' + stuff.patronimic %>
+        </span>
+        <br/>
+
+        <span>
+            <%= stuff.job %>
+        </span>
+        <br/> <br/>
+        <span>
+            <% @otdel=Otdel1.find_by_id(stuff.otdel1) %>
+          <b>Отдел:&nbsp; </b> <%= @otdel.name %>
+        </span>
+        <br/> <br/>
+        <span>
+          <b>Tелефон: &nbsp; </b><%= stuff.phone %>
+        </span>
+        <br/>
+        <span style="padding-bottom: 10px;">
+          <a href="mailto:<%= stuff.mail %>"><%= stuff.mail %></a>
+        </span>
+<br/>
+
+      </div>
+    </div>
+</div>
+
+<div style="margin-left: 200px;">
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+<div style="margin: 0px auto; width: 450px;">
+<div class="str_box"  >
+
+<% @dep='Дирекция по продажам' %>
+  <h2 style="text-align: center"> <%=@dep %> </h2>
+
+<% @st = Office1.find :all , :conditions=>['dep1=? and dir=? and city=?', 1, 0 ,2]  %>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=?',1 , 1, 2] %>
+
+<% @dir.each do |dir| %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative; width: 140px; ">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+<% @dep_prod_m.each do |prod| %>
+
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(prod.otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+<% end %>
+
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+<div class="str_box">
+
+<% @dep='Дирекция по обеспечению продаж' %>
+ <h2> <%=@dep %> </h2>
+
+
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=? and otdel1=?',1 , 2, 2 , 15] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+<% @dep_obesp_m.each do |prod| %>
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(prod.otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+<% end %>
+</div>
+
+
+
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+</div>
+
+</div>
+
+
+
+
+
+<div class="clear" style="border-bottom: 1px dotted green; margin-bottom: 10px;"> </div>
+
+<!--  ТВЕРЬ    -->
+
+<div style="margin: 30px auto; text-align: center;">
+  <h2>Тверь. Контакт-центр</h2>
+
+</div>
+<div style="margin-left: 200px;">
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+<div style="margin: 0px auto; width: 340px;">
+<div class="str_box"  >
+
+<% @dep='Контакт-центр' %>
+  <h2 style="text-align: center"> <%=@dep %> </h2>
+
+
+
+ <% @dir=@tver.find_all{|m| m.dir}.reverse %>
+
+<% @dir.each do |dir| %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative; width: 140px; ">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(@st[0].otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+
+
+</div>
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+</div>
+
+</div>
+
+
+
+
+
+<!--  СМОЛЕНСК    -->
+
+<div class="clear" style="border-bottom: 3px double green; margin-bottom: 10px;"> </div>
+
+
+<div style="margin: 0px auto;">
+<div style="margin: 30px auto; text-align: center;">
+  <h2>Смоленск</h2>
+  <img src="/images/arr3.jpg" align="center"  style="clear: both; float: none;" />
+</div>
+
+
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+<div style="margin: 0px auto; width: 450px;">
+<div class="str_box"  >
+
+<% @dep='Дирекция по продажам' %>
+  <h2 style="text-align: center"> <%=@dep %> </h2>
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=?',1 , 1, 3] %>
+
+<% @dir.each do |dir| %>
+
+  <div style="border-bottom: 1px dotted #999999; position: relative; width: 140px; margin-left: 10px;">
+  <span class="alf_n_d" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+<% @dep_prod_s.each do |prod| %>
+
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(prod.otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+
+<% end %>
+
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+<div class="str_box">
+
+<% @dep='Дирекция по обеспечению продаж' %>
+ <h2> <%=@dep %> </h2>
+
+
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=?',1 , 2, 3] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+<% @dep_obesp_s.each do |prod| %>
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(prod.otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+
+<% end %>
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+
+<div class="str_box">
+
+<% @dep='Дирекция по обеспечению деятельности' %>
+ <h2> <%=@dep %> </h2>
+
+
+
+ <% @dir=Office1.find :all , :conditions=>['dir=? and dep1=? and city=?',1 , 3, 3] %>
+
+<% @dir.each do |dir| %>
+  <div style="border-bottom: 1px dotted #999999; position: relative;">
+  <span class="alf_n" onclick="show_id('<%="alf"+ dir.id.to_s %>')" >
+      <%= dir.last_name %> <br/>
+        <%= dir.name + ' ' + dir.patronimic %>
+     </span>
+
+
+  <% @stf=dir %>
+    <%= render :partial=>'/part/alf2', :object=>@stf %>
+  </div>
+<% end %>
+
+<% @dep_deyat_s.each do |prod| %>
+  <h3 style="margin-top: 10px;">
+<% otdel1=Otdel1.find_by_id(prod.otdel1) %>
+    <%= otdel1.name  %> </h3>
+
+
+<% end %>
+</div>
+
+
+<!--         ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    -->
+</div>
+
+</div>
+
+

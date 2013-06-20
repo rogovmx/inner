@@ -1,0 +1,57 @@
+<% content_for(:cont) do %>
+  <h1>Форум Живого офиса</h1>
+<div style="width: 730px; ">
+
+
+  <h1  class="forum_h1">Раздел: <span><%= @forumtheme.forumroot.title %></span>. Тема: <span><%= @forumtheme.title %></span></h1>
+
+
+ <div class="f_path">
+  <%= link_to 'Все разделы' , :controller => 'forumroots'  %> /
+       <%= link_to  @forumtheme.forumroot.title, :controller => 'forumthemes' , :id => @forumtheme.forumroot.id %> /
+       <%= @forumtheme.title %>
+
+       <form style="display: inline; float: right">
+         Перейти:
+         <select onchange="redir(this)">
+           <% for f_root in Forumroot.find(:all , :conditions => ['vis = ?',1 ]) do %>
+           <optgroup label="<%= f_root.title %>:">
+             <% @theme = f_root.forumtheme.find_all{|f| f.vis } %>
+              <% for theme in @theme do %>
+             <option value="/forumtalks?theme=<%=theme.id%>" <%=  'selected="selected"' if theme.id.to_s == params[:theme]%> > <%=theme.title %>  </option>
+       
+              <% end %>
+           </optgroup>
+           <% end %>
+         </select>
+       </form>
+
+</div>
+
+
+<div class="forumtalk">
+ <% @post = @forumtheme %>
+<%= render :partial => 'post_t' , :post => @post%>
+
+</div>
+
+
+<% @forumtalks.each do |forumtalk| %>
+
+  <% @post = forumtalk %>
+<div class="forumtalk">
+<%= render :partial => 'post' , :post => @post%>
+</div>
+<% end %>
+
+
+
+<div class="new_mess">
+  <h2>Новое сообщение </h2>
+<%= render :partial =>'form' %>
+</div>
+
+</div>
+<% end %>
+
+

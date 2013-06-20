@@ -1,0 +1,35 @@
+<% content_for(:cont) do %>
+
+<div class="depot-form" id="login_form">
+  
+  <h1>Пожалуйста авторизируйтесь</h1>
+  <br>
+    <% form_tag do %>
+      <p>
+        <p> Имя:<br>
+        <%= text_field_tag :name, params[:name] %>
+      </p>
+
+      <p>
+        Пароль:<br>
+        <%= password_field_tag :password, params[:password] %>
+         </p>
+      <br>
+      <p>
+<%= submit_tag " Войти " %> &nbsp;&nbsp;<span style="color:#F88120;position:relative; top:-1px;font-weight:bolder">РЕГИСТРАЦИЯ</span>&nbsp;&nbsp;<span style="position:relative; top:4px;"> <%= link_to (image_tag("/images/link_cvet.jpg",:width=>'42' )),:controller=>'login',:action=>'add_user' %></span>
+
+
+<%#= link_to "Регистрация" ,:controller=>'login',:action=>'add_user'%>
+      </p>
+    <% end %>
+      <br />
+      <%= link_to 'Забыли пароль?', :controller=>'eml',:action=>'em' %>
+
+      <br />
+      <div style="margin-top: 15px; color: #00aeef;">
+        <img src="/images/snouboll.jpg"/> <a href="/desknews/wallpaper">скачать</a> обои для рабочего стола из весенней коллекции
+      </div>
+</div>
+
+
+<%end%>

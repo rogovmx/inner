@@ -1,0 +1,48 @@
+
+
+
+<table>
+  <tr> <td style="width: 70px" valign="top">
+      <% if login? %>
+       <%# @user2 = Office1.find_by_id(session[:user_id]) %>
+      <div style="width: 70px; height: 70px; background-color: silver; margin-top: 30px; border: 1px solid #b1b3b6;">
+        <img src="/images/photo/<%=@usr.pic %>.jpg" width="70px" />
+      </div>
+<% else %>
+      <div style="width: 70px; height: 70px; background-color: silver; margin-top: 30px; border: 1px solid #b1b3b6;  background-image: url(/images/ava/qq.jpg); background-position: center center;">
+</div>
+<% end %>
+
+
+
+    </td>
+    <td>
+<div id="new_mess" style="  margin-top: 10px; margin-left: 10px">
+<%= form_for(@forumtalk) do |f| %>
+  <%= f.hidden_field :forumtheme_id , :value => @forumtheme.id %>
+  <%= f.hidden_field :office1_id , :value => @usr.id if @usr %>
+
+  <div class="field">
+    <%= f.label 'Заголовок: '%>
+    <%= f.text_field :title , :style => 'width: 487px;' %>
+  </div>
+  <div class="field">
+
+    <%= f.cktext_area :content %>
+  </div>
+<% if admin? %>
+  <div class="field">
+    <%= f.label 'Видимость' %>
+    <%= f.check_box :vis %>
+  </div>
+<% end %>
+  <div class="actions">
+    <%= f.submit 'Написать' %>
+  </div>
+<% end %>
+
+
+
+</div>
+    </td> </tr>
+</table>
