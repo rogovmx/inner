@@ -784,7 +784,7 @@
 <% @st = @tver.find_all{|m| !m.dir}.sort{|a,b| a.last_name <=> b.last_name}  %>
 
  <% @dir=@tver.find_all{|m| m.dir}
-    @dir[0] , @dir[1] = @dir[1] , @dir[0]
+@dir[0] , @dir[2] = @dir[2] , @dir[0]
 %>
   
 <% @dir.each do |dir| %>

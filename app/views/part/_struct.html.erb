@@ -605,7 +605,9 @@
 
 
 
- <% @dir=@tver.find_all{|m| m.dir}.reverse %>
+ <% @dir=@tver.find_all{|m| m.dir}
+@dir[0] , @dir[2] = @dir[2] , @dir[0]
+%>
 
 <% @dir.each do |dir| %>
 
