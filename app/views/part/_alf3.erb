@@ -24,7 +24,7 @@
         <br/> <br/>
         <span>
           <% @otdel=Otdel1.find_by_id(@stf.otdel1) %>
-          <b>Отдел:&nbsp; </b> <%= @otdel.name %>
+          <b>Отдел:&nbsp; </b> <%= @otdel.name if @otdel%>
         </span>
         <br/> <br/>
         <span>
